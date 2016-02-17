@@ -554,6 +554,83 @@ ul.sidebar-menu ul{
 .sidebar-menu .sub-menu-container li:last-child a {
     border: none;
 }
+/*SIDEBAR GALLERY*/
+#sidebar-gallery .gallery li {
+    width:31.6%
+}
+#sidebar-gallery .gallery  li a img,  #sidebar-gallery .gallery  li{
+    min-height: 70px;
+}
+#sidebar-gallery h5 {
+    background-color: #dfeeff;  
+    color:#9f1603;
+    text-align: center
+}
+#sidebar-gallery h5 a{ 
+    color:#9f1603;
+    text-transform: none
+}
+/*Gallery EVENTS*/
+#gallery-events {
+    border-top:1px solid #9f1603; 
+}
+#gallery-events .gallery li{
+    width:16.1%
+}
+#gallery-events .gallery li a img, #gallery-events .gallery  li {
+    min-height: 90px;
+}
+.gallery {
+    width: 100%; 
+}
+.gallery li {
+    float: left; 
+    background-color: #dfeeff;
+    margin: auto 2px;
+    perspective: 140px;
+    -webkit-perspective: 140px;
+    position: relative;
+    transition: .1s;
+    -webkit-transition: .1s
+        
+}
+.gallery a {    
+    vertical-align: bottom;
+    overflow: hidden;    
+    transition: .4s ease-out;
+    -webkit-transition: .4s ease-out;
+    -webkit-transform: rotateX(90deg) translate(-50px, -50%);
+    transform: rotateX(90deg) translate(-50px, -50%)
+}
+.gallery a:active,
+.gallery a:focus {
+    outline: 0
+}
+.gallery a img {    
+    max-width: 100%;
+    transition: .3s ease-out;
+    -webkit-transition: .3s ease-out
+}
+.gallery .loaded a {
+    -webkit-transform: rotateX(0) translate(0, 0);
+    transform: rotateX(0) translate(0, 0)
+}
+
+.gallery li.loaded:hover {
+    z-index: 2;
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4)
+}
+
+.gallery li.loaded a:hover {
+    box-shadow: 0 0 0 2px #06050e, 0 0 20px 5px #06050e;
+    transition: .1s;
+    -webkit-transition: .1s
+}
+.gallery li.loaded:hover img {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2)
+}
 /* BLOCKS */
 .blocks {
     overflow: hidden;
@@ -704,9 +781,8 @@ ul.sidebar-menu ul{
     padding: 20px 10px;
     text-align: center;
 }
-.single-promo .promo-small span{
-   font-size: 16px;
-       padding: 10px 5px;
+.single-promo p{   
+       line-height: 25px;
 }
 .single-promo i {
   font-size: 40px;
@@ -1417,7 +1493,7 @@ ul.pagelist li.active a {
     position: absolute;
     font-size: 18px;
     padding: 10px;
-    background: rgba(18, 33, 64, 0.9);
+    background: rgba(159, 22, 3, 0.5);
     top: 10px;
 }
 .view p {
@@ -1543,90 +1619,12 @@ ul.pagelist li.active a {
     background-color: #9f1603;
     border-color: #2e6da4;
 }
-#gallery { 
-    float:left; 
-    width:100%;   
-}
-#gallery li { 
-    list-style:none; 
-    perspective:140px; 
-    -webkit-perspective:140px; 
-    margin:1px; 
-    float:left; 
-    position:relative; 
-    transition:.1s; 
-    -webkit-transition:0.1s;
-}
-#gallery li.video::before { 
-    content:'\25BA'; 
-    color:#FFF; 
-    font-size:20px; 
-    height:20px; 
-    width:20px; 
-    line-height:0.9; 
-    position:absolute; 
-    bottom:3px; 
-    left:4px; 
-    z-index:1; 
-    background:rgba(0,0,0,0.4); 
-    box-shadow:0 0 0 3px rgba(0,0,0,0.4); 
-    border-radius:0 3px 0 0; 
-    pointer-events:none; 
-    opacity:0; 
-    transition:.5s 0.2s; 
-}
-#gallery li.loaded.video::before {
-    opacity:1; 
-}
-#gallery a { 
-    display:block; 
-    width:140px; 
-    height:127px; 
-    vertical-align:bottom; 
-    overflow:hidden; 
-    background:rgba(0,0,0,0.1);	
-    transition:.4s ease-out; 
-    -webkit-transition:0.4s ease-out; 
-    -webkit-transform:rotateX(90deg) translate(-50px,-50%); 
-    transform:rotateX(90deg) translate(-50px,-50%); 
-}
-#gallery a:active, 
-#gallery a:focus { 
-    outline:none; 
-}
-#gallery a img { 
-    min-height:100%; 
-    width:100%; 
-    transition:.3s ease-out; 
-    -webkit-transition:0.3s ease-out;
-}
-#gallery .loaded a { 
-    -webkit-transform:rotateX(0deg) 
-    translate(0,0); 
-    transform:rotateX(0deg) translate(0,0); 
-}
-#gallery li.loaded:hover { 
-    z-index:2; 
-    transform:scale(1.4); 
-    -webkit-transform:scale(1.4);
-}
-#gallery li.loaded a:hover { 
-    box-shadow:0 0 0 2px #FFF, 0 0 20px 5px #000; 
-    transition:.1s; 
-    -webkit-transition:0.1s; 
-}
-#gallery li.loaded:hover img { 
-    transform:scale(1.2); 
-    -webkit-transform:scale(1.2); 
-}
-#gallery li.loaded.video:hover::before { 
-    opacity:0; 
-}
 /*------ footer ------- */
 footer {
     padding: 26px 0 38px 0;
     background: url(../img/footer.jpg) 0 0 repeat-x;
     color: #a9a9a9;
+    z-index: 1500
 }
 footer h4 {
     font-size: 12px;

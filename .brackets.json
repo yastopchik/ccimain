@@ -1,0 +1,7 @@
+{
+    "jscodehints.detectedExclusions": [
+        "D:/WORK/Templates/Рабочие/ccimain/ccimain/assets/components/gallery/js/mgr/utils/ddview.js",
+        "D:/WORK/Templates/Рабочие/ccimain/ccimain/assets/components/gallery/js/mgr/utils/fileuploader.js",
+        "D:/WORK/Templates/Рабочие/ccimain/ccimain/assets/components/gallery/js/mgr/widgets/album/album.items.view.js"
+    ]
+}
