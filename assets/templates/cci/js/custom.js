@@ -12,7 +12,7 @@
           if (sfmenu.length) {
               $('ul.sf-menu').superfish();
           }
-          /* var sidebar = ("#sidebar");
+          var sidebar = ("#sidebar");
                if (sidebar.length) {
                    $.lockfixed(sidebar, {
                        offset: {
@@ -31,18 +31,17 @@
                            width: 900
                        }
                    });
-               }*/
+               }
           var gallery = $('.gallery');
           if (gallery.length) {
+              function callback() {
+                  console.log('callback for loaded content:', this);
+              };
               gallery.photobox('a', {
                   thumbs: true,
                   loop: true
               }, callback);
-              setTimeout(window._photobox.history.load, 2000);
-
-              function callback() {
-                  console.log('callback for loaded content:', this);
-              };
+              setTimeout(window._photobox.history.load, 2000);              
           }
 
           var link_slider = $('.linkSlider');
@@ -113,16 +112,15 @@
           }
           /*Gallery*/
           var gallery = $('#gallery');
-          if (gallery.length) {
+          if (gallery.length) {              
+              function callback() {
+                  console.log('callback for loaded content:', this);
+              };
               $('#gallery').photobox('a', {
                   thumbs: true,
                   loop: true
               }, callback);
               setTimeout(window._photobox.history.load, 2000);
-
-              function callback() {
-                  console.log('callback for loaded content:', this);
-              };
           }
           $(window).scroll(function () {
               if ($(this).scrollTop() > 0) {
@@ -151,4 +149,15 @@
                   });
               };
           };
+          $('body').delegate("#online","click", function(e){
+              var el = $(e.currentTarget); 
+              var formdiv=$(el.attr('href'));
+              if (formdiv.length) {
+                  formdiv.css("display", "block");
+                  $('html, body').animate({
+				         scrollTop: formdiv.offset().top
+			      }, 1000);
+              }
+              return false;
+          });
       });
