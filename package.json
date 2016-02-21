@@ -1,0 +1,10 @@
+{
+  "name": "ccimain",
+  "version": "0.1.0",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-rename": "^1.2.2"
+  }
+}
