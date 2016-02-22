@@ -20,8 +20,16 @@
                            bottom: 1142
                            //width: 900
                        }
-           });
-               }
+             });
+		   }
+		   var carousel = $(".carousel");
+		   if(carousel.length){               
+                   carousel.bxSlider({
+    slideWidth: 200,
+    minSlides: 2,
+    maxSlides: 4,
+    slideMargin: 10
+			   });}
               var sidebar_secondary = $("#sidebar-secondary");
                if (sidebar_secondary.length) {
                    $.lockfixed(sidebar_secondary, {
@@ -46,7 +54,7 @@
 
           var link_slider = $('.linkSlider');
           if (link_slider.length) {
-              $('.linkSlider').bxSlider({
+              link_slider.bxSlider({
                   minSlides: 3,
                   maxSlides: 6,
                   slideWidth: 200,

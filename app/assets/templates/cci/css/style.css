@@ -298,7 +298,7 @@ header {
 /* search-form */
 .navbar-form {
     background: url(../img/form-search.jpg) 0 0 repeat-x #09051c;
-    border-bottom: #5C5C5C 1px solid;
+    border-bottom: #434343 1px solid;
     margin: 5px 10px 10px 0;
     float: right;
 }
@@ -423,7 +423,7 @@ header {
     list-style: none;
     zoom: 1;
     z-index: 9;
-    background: #122140;
+    background: #101b2d;
     padding: 20px 0 24px 0;
     margin: 0;
 }
@@ -564,13 +564,13 @@ header {
 .content {    
     list-style: none;   
     background-color: #FFFFFF;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 10px rgba(16, 27, 45, 0.51);
     box-sizing: border-box;
     color: #122140;
 }
 .content p, .news-box-item p {
     list-style: none;
-    color: #122140;
+    color: #101b2d;
     line-height: 20px;
     text-indent: 20px;
     text-align: justify;
@@ -612,7 +612,7 @@ ul.sidebar-menu ul{
     *padding: .4em;
     margin: .5em .3em .5em 3em;
     background: #dfeeff;
-    color: #122140;
+    color: #101b2d;
     text-decoration: none;
     -webkit-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
@@ -729,7 +729,7 @@ ul.sidebar-menu ul{
 }
 
 .gallery li.loaded a:hover {
-    box-shadow: 0 0 0 2px #06050e, 0 0 20px 5px #06050e;
+    box-shadow: 0 0 0 2px #101b2d, 0 0 20px 5px #101b2d;
     transition: .1s;
     -webkit-transition: .1s
 }
@@ -764,10 +764,10 @@ ul.sidebar-menu ul{
     overflow: hidden;
 }
 .caption h3, h4 {    
-    color: #fde586;    
+    color: #fde586;  
     letter-spacing: 1px;
     text-transform: uppercase;
-    text-shadow: 1px 5px 2px #000000;
+    text-shadow: 1px 5px 2px #101b2d;
 }
 .caption h3 {
     font-size:20px;
@@ -790,7 +790,7 @@ ul.sidebar-menu ul{
     box-shadow: inset 1px 1px 0 #100933;
 }
 .dark-blue-rotate {    
-    border-top: 4px solid #100933;    
+    border-top: 4px solid #101b2d;    
 }
 /*INFO-BLOK*/
 .info-block {    
@@ -879,7 +879,7 @@ ul.sidebar-menu ul{
   padding: 20px 0 0;
 }
 .promo .zigzag-bottom, {
-    background: #f4f4f4
+    background: #ffffff
 }
 .single-promo {
     font-size: 25px;
@@ -904,7 +904,7 @@ ul.sidebar-menu ul{
 }
 
 .promo2 {
-    background: #3c3c3c;
+    background: #434343;
 }
 
 .promo3 {
@@ -950,7 +950,7 @@ ul.sidebar-menu ul{
     color: #fde586;    
     letter-spacing: 1px;
     text-transform: uppercase;
-    text-shadow: 1px 5px 2px #000000;
+    text-shadow: 1px 5px 2px #101b2d;
 }
 /*GRID PARALLAX*/
 .grid {
@@ -1033,7 +1033,7 @@ ul.sidebar-menu ul{
 
 /* Individual effects */
 figure.effect-zoom {
-	background: #2f3238;
+	background: y;
 }
 
 figure.effect-zoom img {
@@ -1120,11 +1120,11 @@ figure.effect-zoom:hover p {
 	transform: translate3d(0,0,0);
 }
 /*SLIDER-BOTTOM*/
-.bx-wrapper {
+.slider-bottom .bx-wrapper {
 	margin: 0;
 	z-index: -100;
 }
-.bx-wrapper .bx-viewport {
+.slider-bottom .bx-wrapper .bx-viewport {
     list-style: none;
     margin: 0 auto;
     left: 0px;
@@ -1133,6 +1133,19 @@ figure.effect-zoom:hover p {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	border:  none;
+}
+.bx-wrapper .bx-prev {
+    transition: all 0s ease;
+}
+.bx-wrapper .bx-next {
+    transition: all 0s ease;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+        background: #9f1603;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover ,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+        background: #cf3046;
 }
 .slider-bottom {
     margin: 27px 0 10px 0px;
@@ -1291,7 +1304,7 @@ figure.effect-zoom:hover p {
 }
 .list-news-item:hover {
     border-color: #bbb;
-    box-shadow: 0 0 7px rgba(0, 0, 0, .19);
+    box-shadow: 0 0 7px #101b2d;
 }
 .list-news-image {
     position: absolute;    
@@ -1349,7 +1362,7 @@ figure.effect-zoom:hover p {
 /*COMMENTS*/
 .ticket-meta,
 .section-meta {
-    border-top: 1px dotted #3c3c3c;
+    border-top: 1px dotted #434343;
     margin: 0 5px;
 }
 
@@ -1942,7 +1955,7 @@ address span {
 }
 .breadcrumb .divider {
   padding: 0 5px;
-  color: #999999;
+  color: #434343;
 }
 /*Пангинация*/
 
@@ -2110,16 +2123,16 @@ ul.pagelist li.active a {
     display: block;
     text-decoration: none;
     padding: 7px 14px;
-    background: #122140;
+    background: #101b2d;
     position: absolute;
     bottom: 40%;
     margin-left: 35%;
     font-size: 12px;
     color: #fff;
     text-transform: uppercase;
-    -webkit-box-shadow: 0 0 1px #122140;
-    -moz-box-shadow: 0 0 1px #122140;
-    box-shadow: 0 0 1px #122140;
+    -webkit-box-shadow: 0 0 1px #101b2d;
+    -moz-box-shadow: 0 0 1px #101b2d;
+    box-shadow: 0 0 1px #101b2d;
 }
 .view a.info:hover {
     -webkit-box-shadow: 0 0 5px #122140;
@@ -2207,7 +2220,7 @@ ul.pagelist li.active a {
 /*Ovveraide form-group by bootatrap*/
 .form-group .form-control {
     border-radius: 0;
-    background:#fafafa;
+    background:#ffffff;
 }
 /*btn*/
 .btn {
@@ -2303,7 +2316,7 @@ form#newsletter label {
     float: right;
 }
 
-.footer-social a:hover {background-color: #3c3c3c; border-color: #101b2d}
+.footer-social a:hover {background-color: #434343; border-color: #101b2d}
 
 /*MEDIA QUERIES*/
 @media (min-width: 768px) {
@@ -2520,7 +2533,7 @@ form#newsletter label {
         zoom: 1;
         z-index: 999;
         width: 168px;
-        background: #3c3c3c;;
+        background: #434343;;
         padding: 20px 0 24px 0;
         margin: 0;
     }
