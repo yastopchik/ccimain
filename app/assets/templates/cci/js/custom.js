@@ -17,7 +17,7 @@
                    $.lockfixed(sidebar, {
                        offset: {
                            top: 0,
-                           bottom: 1122
+                           bottom: 1142
                            //width: 900
                        }
            });
