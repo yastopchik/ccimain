@@ -1,4 +1,3 @@
 node_modules/*
-*.json
 gulpfile.js
 app/bower_components/*
