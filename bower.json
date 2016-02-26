@@ -11,6 +11,6 @@
     "bxslider-4": "^4.2.5",
     "normalize-css": "^3.0.3",
     "components-font-awesome": "^4.5.0",
-    "jquery-lockfixed": "^0.8.4"
+    "hc-sticky": "^1.2.43"
   }
 }

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Philosopher:700,400&subset=latin,cyrillic);
+.navbar-toggle@import url(https://fonts.googleapis.com/css?family=Philosopher:700,400&subset=latin,cyrillic);
 /*RESET CSS*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -164,7 +164,7 @@ img.img-radius {
     margin-top: 50px;
 }
 .indent-3 {
-    padding-top: 20px;
+    padding-top: 15px;
 }
 .indent-4 {
     padding-top: 10px;
@@ -299,15 +299,22 @@ header {
 .navbar-form {
     background: url(../img/form-search.jpg) 0 0 repeat-x #09051c;
     border-bottom: #434343 1px solid;
-    margin: 5px 10px 10px 0;
+    margin: 5px 10px;
+    position: relative;
     float: right;
+    min-width: 260px;
+    min-height: 30px;
 }
 .navbar-form input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline;
     background: none;
     border: none;
     box-shadow: none;
     line-height: 18px;
-    width: 258px;
+    width: 85%;
     float: left;
     margin: 0px;
     padding-top: 6px;
@@ -320,7 +327,10 @@ header {
 }
 .navbar-form a {
     margin: 0;
-    display: inline-block;
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 40px;
     height: 33px;
     background: url(../img/search.png) 0 0 no-repeat;
@@ -345,6 +355,22 @@ header {
     border: none;
     min-height: inherit;
     filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.navbar_ .navbar-inner_ .navbar-toggle {
+    background-color: #9f1603;    
+    float: left;
+    margin-top: 0;
+    margin-left: 15px;
+    border-radius: 0;
+    border: 1px solid #100933;
+    -moz-border-image: -moz-linear-gradient(left, #100933 0%, #FFFFFF 15%, #100933 25%, #100933 75%, #FFFFFF 85%, #100933 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, #100933 0%, #FFFFFF 15%, #100933 25%, #100933 75%, #FFFFFF 85%, #100933 100%);
+    border-image: linear-gradient(to left, #100933 0%, #FFFFFF 15%, #100933 25%, #100933 75%, #FFFFFF 85%, #100933 100%);
+    border-image-slice: 1;    
+    
+}
+.navbar_ .navbar-inner_ .navbar-toggle .icon-bar {
+   background-color: #ffffff
 }
 /*nav*/
 .navbar_ .container {
@@ -506,7 +532,6 @@ header {
 .sf-menu li.sfHover {
 	background: rgba(16, 27, 45, 0.3);	    
 }
-
 /*** arrows (for all except IE7) **/
 .sf-arrows .sf-with-ul {
 	padding-right: 2.5em;
@@ -750,6 +775,7 @@ ul.sidebar-menu ul{
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);    
+    margin-bottom: 15px;    
 }
 .blocks a:hover .zoom-icon:before {
     -webkit-transform: scale(1);
@@ -875,8 +901,7 @@ ul.sidebar-menu ul{
 /*PROMO*/
 .promo {
   background:none;
-  color: #fff;
-  padding: 20px 0 0;
+  color: #fff;  
 }
 .promo .zigzag-bottom, {
     background: #ffffff
@@ -1148,7 +1173,7 @@ figure.effect-zoom:hover p {
         background: #cf3046;
 }
 .slider-bottom {
-    margin: 27px 0 10px 0px;
+    margin: 15px 0;
 }
 .slider-bottom {
     background: none;
@@ -1207,6 +1232,10 @@ figure.effect-zoom:hover p {
     position: absolute;
     left: 40px;    
 }
+.recent-posts_li .extra-wrap h3 {
+    line-height: 21px
+}
+
 .recent-posts_li .more {   
     position: absolute;
     bottom:5px;
@@ -2353,12 +2382,9 @@ form#newsletter label {
     }   
     .form-404 input {
         width: 223px;
-    }
-    .navbar-inner_ .navbar-btn {
-        display: none;
-    }    
+    }        
 }
-@media (min-width: 980px) and (max-width: 1199px) {   
+@media (min-width: 992px) and (max-width: 1199px) {   
     .brand span {
         font-size: 18px;
         line-height: 19px;
@@ -2366,16 +2392,13 @@ form#newsletter label {
     .header-block .babel_links {
        float: right;
        padding: 5px 0 0 32px;
-   }    
-    .navbar-inner_ .navbar-btn {
-        display: none;
-    }    
+   } 
     .nav-collapse_ .nav > li {
-       padding: 0 5px 0 5px;
+       padding: 0 2px 0 2px;
      }
     .brand div.logo {   
        top: 10px;      
-    }  
+    }    
     .extra-wrap h3 {
        font-size: 20px;
     }
@@ -2395,40 +2418,12 @@ form#newsletter label {
     .list-news-item{
        height: 170px
     }
-}
-@media (max-width: 979px) {
-    .slider {
-        height: auto;
-    }
-    .caption {
-        padding: 17px 0px 13px 21px;
-    }   
-    form#newsletter {
-        margin-bottom: 20px;
-        padding: 15px 27px 15px 28px;
-    }   
-    form#newsletter a.btn_ {
-        margin-top: 15px;
-        float: right;
-    }   
-    .cols-1 .grid-1 img {
-        width: inherit !important;
-        float: left;
-        padding-bottom: 0;
-    }    
-    .form-404 input {
-        width: 100%;
-        float: none;
-    }
-    .form-404 a.btn_ {
-        float: right;
-        margin-top: 20px;
-    }
-    .footer-menu li a {
-        margin: 0 6px;
+    .cronicle-crop {
+        width: 317px;
+        height: 190px;
     }
 }
-@media (min-width: 768px) and (max-width: 979px) {   
+@media (min-width: 768px) and (max-width: 991px) {   
     .brand span {
         font-size: 13px;
         line-height: 20px;
@@ -2436,34 +2431,34 @@ form#newsletter label {
     .brand div.logo span.rus {
         padding-left: 25px;
     }
+    .brand div.logo,
+    .brand div.logo-xs {   
+        top: 10px;  
+    }    
     .header-block .babel_links {
        float: left;
        padding: 5px 0 0 14px;
     }
-    .navbar-form {
-        margin: 0 0 12px 0;
-    }
-    .navbar-form input {
-        width: 120px;
-    }
+    .sf-arrows .sf-with-ul {
+	    padding-right: .2em;
+        padding-left: .2em;
+       *padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+    }    
     .contacts {
         margin-right: 20px;
         padding-right: 20px;
-    }   
-    .navbar-inner_ .navbar-btn {
-        display: none;
-    }
+    } 
     .navbar-inner_ .navbar-collapse {
         overflow: visible;
         height: auto;
     }
     .navbar-inner_ .nav-collapse_ .nav > li {
-        padding: 0 10px 0 10px;
+        padding: 0 2px 0 2px;
         float: left;
     }
     .nav-collapse_ .nav > li.li-first {
         background: none;
-        padding: 0 18px 0 0px;
+        padding: 0 5px 0 0px;
     }
     .nav-collapse_ .nav > li > a {
         margin-bottom: 0;
@@ -2473,37 +2468,69 @@ form#newsletter label {
     }
     .cols-1 .grid-1 {
         width: 100% !important;
-    }     
-    
+    } 
+    .navbar.navbar_.clearfix {
+        min-height: 60px
+    }
+    .nav > li > a {
+        padding:15px 2px 15px 2px
+    }   
+    .nav-collapse_ {
+        padding-top: 5px;
+    }
+    .social {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .social-icons {
+        padding-top:18px;
+    }
+    .social-icons li {
+        margin-left: 0;
+        float:left;
+    }
+    .social-icons li > a > img{
+        width:25px;
+    } 
+    .recent-posts a {
+        font-size: 16px;      
+    }
+    .slider-bottom {
+        margin: 5px 0 15px
+    }
 }
 @media (max-width: 767px) {   
     .header-block-pad .babel_links {
         padding-left: 15px;
+        float: left
     }
     .container {
         padding: 0 20px;
     }
+    .header-block {
+       height: 180px;
+    }
     .header-block-pad {
         padding: 18px 23px 14px 22px;
+    }
+    .brand div.logo, .brand div.logo-xs {
+       top:10px;
     }
     .contacts {
         padding-right: 0;
         margin-right: 0;
         margin-left: 40px;
         background: none;
-    }
-    .navbar-form input {
-        width: 200px;
-    }
+    }    
     .social-icons {
-        margin: 5px 64px 0 0;
+        padding:0;
+        display: block
     }
-    /* navbar */
+    /* navbar */   
     .navbar_ .navbar-inner_ {
-        padding: 13px 0 10px 0px;
+        padding: 13px 0 10px 0px;       
     }
-    .navbar_ .nav-collapse_ {
-        width: 100%;
+    .navbar_ .nav-collapse_ {       
         position: absolute;
         left: 0;
         top: 46px;
@@ -2528,6 +2555,9 @@ form#newsletter label {
         background-color: #9f1603;
         color: #ffffff;
     }
+    .navbar-form {
+        float:none;  
+    }    
     .nav-collapse_ .nav {
         position: relative;
         zoom: 1;
@@ -2681,13 +2711,7 @@ form#newsletter label {
         padding-left: 5px;
         margin-right: auto;
         margin-left: auto;
-    }    
-    .social-icons {
-        margin: 5px 0 0 0;
-    }
-    .navbar-btn {
-        margin-left: -15px;
-    }
+    }     
 }
 @media (max-width: 414px) {
     .brand div.logo-xs span {
@@ -2738,30 +2762,9 @@ form#newsletter label {
         margin-top: 2px;
         line-height: 9px;
         font-size: 9px;
-    }
-    .navbar-btn {
-        position: relative;
-        margin-left: 25% !important;
-    }
-    .social-icons {
-        margin-right: 15% !important;
-    }
+    }      
 }
-@media (max-width: 1081px) {
-    .cronicle-crop {
-        width: 317px;
-        height: 190px;
-    }
-}
-@media (max-width: 900px) {
-    .cronicle-crop {
-        width: 317px;
-        height: 175px;
-    }
-    .view {
-        margin-bottom: 10px;
-    }
-}
+
 @media (max-width: 667px) {
     .cronicle-crop {
         width: 500px;
