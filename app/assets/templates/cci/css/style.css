@@ -1,4 +1,4 @@
-.navbar-toggle@import url(https://fonts.googleapis.com/css?family=Philosopher:700,400&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Philosopher:700,400&subset=latin,cyrillic);
 /*RESET CSS*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -362,7 +362,7 @@ header {
     margin-top: 0;
     margin-left: 15px;
     border-radius: 0;
-    border: 1px solid #100933;
+    border: 2px solid #100933;
     -moz-border-image: -moz-linear-gradient(left, #100933 0%, #FFFFFF 15%, #100933 25%, #100933 75%, #FFFFFF 85%, #100933 100%);
     -webkit-border-image: -webkit-linear-gradient(left, #100933 0%, #FFFFFF 15%, #100933 25%, #100933 75%, #FFFFFF 85%, #100933 100%);
     border-image: linear-gradient(to left, #100933 0%, #FFFFFF 15%, #100933 25%, #100933 75%, #FFFFFF 85%, #100933 100%);
@@ -399,6 +399,9 @@ header {
 }
 .nav-collapse_ .nav > li.li-first.active{  
     background: url(../img/home.png) -40px 0 no-repeat;    
+}
+.nav-collapse_ .nav > li.li-first span {  
+   display: none;   
 }
 .nav-collapse_ .nav > li.li-first a {   
     position: absolute;
@@ -2263,7 +2266,7 @@ ul.pagelist li.active a {
 /*------ footer ------- */
 footer {
     padding: 26px 0 38px 0;
-    background: url(../img/footer.jpg) 0 0 repeat-x;
+    background-color: #101b2d;
     color: #a9a9a9;
     z-index: 1500
 }
@@ -2522,6 +2525,9 @@ form#newsletter label {
         margin-left: 40px;
         background: none;
     }    
+    .social {
+       padding-right: 0;
+    }
     .social-icons {
         padding:0;
         display: block
@@ -2536,7 +2542,7 @@ form#newsletter label {
         top: 46px;
     }    
     .cols-1 .grid-1 {
-        width: 100% !important;
+        width: 50%;
     }
     .navbar_ .btn {
         display: inline-block;
@@ -2556,15 +2562,34 @@ form#newsletter label {
         color: #ffffff;
     }
     .navbar-form {
-        float:none;  
+        float:none; 
+        margin-right: 20px
+    }    
+    .nav-collapse_ .nav > li.li-first span {
+        display:block;  
+        color: #FFFFFF;
+    }
+    .nav-collapse_ .nav > li.li-first,
+    .nav-collapse_ .nav > li.li-first.active{
+        min-height: 30px;
+        background: none;           
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        line-height: 15px;
+        background: none;
+        margin: 0;
+        padding: 0;
+        display: block;
     }    
     .nav-collapse_ .nav {
         position: relative;
         zoom: 1;
         z-index: 999;
-        width: 168px;
-        background: #434343;;
-        padding: 20px 0 24px 0;
+        width: 100%;
+        background-color: #101b2d;
+        padding: 5px 0;
         margin: 0;
     }
     .nav-collapse_ .nav li {
@@ -2594,18 +2619,13 @@ form#newsletter label {
     .nav-collapse_ .nav > li.active,
     .nav-collapse_ .nav > li.active {
         background: none;
-    }
-    .nav-collapse_ .nav > li.sfHover > a,
-    .nav-collapse_ .nav > li.sfHover > a:hover,
-    .nav-collapse_ .nav > li > a:hover,
-    .nav-collapse_ .nav > li.active > a,
-    .nav-collapse_ .nav > li.active > a:hover {
-        background: #FFFFFF;
-        color: #000;
-    }
+    }    
     .sub-menu > a {
         position: relative;
         display: block;
+    }
+    .sf-menu > li {
+        float: none
     }
     .nav-collapse_ .nav > li.sub-menu > a:before,
     .nav-collapse_ .nav > li li.sub-menu > a:before {
@@ -2614,7 +2634,7 @@ form#newsletter label {
         background: url(../img/li-marker.png) left top no-repeat;
         width: 7px;
         height: 5px;
-        right: 10px;
+        left: 10px;
         top: 50%;
         margin-top: -3px;
     }
@@ -2647,7 +2667,10 @@ form#newsletter label {
     .nav-collapse_ .nav ul ul li a {
         padding: 7px 10px 8px 40px;
         text-transform: none;
-    }    
+    }
+    .recent-posts_li {
+        min-height: 120px;
+    }
     .slider {
         padding-top: 68px !important;
         background: #1b1a1d;
@@ -2660,8 +2683,16 @@ form#newsletter label {
         margin-left: -30px;
     }
     /**/
+    footer h4 {
+        font-size: 14px; 
+        text-align: center
+    }
     .footer-menu {
-        display: none;
+        text-align: center;
+        padding: 12px 0;
+    }
+    .footer-menu li {
+        font-size: 14px;
     }
     .float {
         float: right !important;
