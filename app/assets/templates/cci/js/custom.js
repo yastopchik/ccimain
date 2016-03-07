@@ -76,7 +76,7 @@
 
           var link_slider = $('.linkSlider');
           if (link_slider.length) {
-              $('.linkSlider').bxSlider({
+              link_slider.bxSlider({
                   minSlides: 3,
                   maxSlides: 6,
                   slideWidth: 200,
@@ -85,6 +85,17 @@
                   ticker: true,
                   tickerHover: true,
                   speed: 25000
+              });
+          }
+          var slide_promo = $('.slider-promo');
+          if (slide_promo.length) {
+             slide_promo.bxSlider({
+                   slideWidth: 285,
+    minSlides: 2,
+    maxSlides: 4,
+    moveSlides: 1,
+    slideMargin: 10,
+                 pager:false
               });
           }
           /*Sidebar*/
@@ -156,14 +167,14 @@ $(window).resize( function(){
         var width = $(window).width();
           if(width >= 992) {
           var sidebar = $("#sidebar");
-              if (sidebar.length) {
+              if (sidebar.length) {             
                   sidebar.hcSticky({
                     top:0,                    
                    });                   
 		       }
            var sidebar_secondary = $("#sidebar-secondary");
-               if (sidebar_secondary.length) {                   
-                   sidebar.hcSticky({
+               if (sidebar_secondary.length) {                    
+                   sidebar_secondary.hcSticky({
                        top: 0                   
                    }); 
                }    
