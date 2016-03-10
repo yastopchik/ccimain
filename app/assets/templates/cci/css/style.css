@@ -753,7 +753,10 @@ ul.sidebar-menu ul{
 .gallery a img {    
     max-width: 100%;
     transition: .3s ease-out;
-    -webkit-transition: .3s ease-out
+    -webkit-transition: .3s ease-out;
+    -moz-transition: .3s ease-out;
+    -o-transition: .3s ease-out;
+    -ms-transition: .3s ease-out;
 }
 .gallery .loaded a {
     -webkit-transform: rotateX(0) translate(0, 0);
@@ -762,18 +765,57 @@ ul.sidebar-menu ul{
 
 .gallery li.loaded:hover {
     z-index: 2;
-    transform: scale(1.4);
-    -webkit-transform: scale(1.4)
+    cursor: pointer;
+opacity: 1;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
 }
 
 .gallery li.loaded a:hover {
     box-shadow: 0 0 0 2px #101b2d, 0 0 20px 5px #101b2d;
-    transition: .1s;
-    -webkit-transition: .1s
+    transition: .1s;    
+    -webkit-transition:  .1s;
+    -moz-transition:  .1s;
+    -o-transition:  .1s;
+    -ms-transition:  .1s;
 }
 .gallery li.loaded:hover img {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2)
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+/*ALBUMS GRID*/
+.albums_grid {
+    width:100%;
+    display: inline-block;
+}
+.albums_grid li {    
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    width: 31.33%;
+    float: left;
+    margin: 1%;
+    text-align: center
+}
+albums_grid li a:hover {
+    box-shadow: 0 0 0 2px #101b2d, 0 0 20px 5px #101b2d;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition:  .1s;
+    -o-transition:  .1s;
+    -ms-transition:  .1s;
+}
+.albums_grid li img {
+    width:100%;
+    height: 206px;
+}
+.albums_grid li p {      
+   text-indent: 0px; 
 }
 /* BLOCKS */
 .blocks {
@@ -2366,12 +2408,11 @@ form#newsletter label {
     .wbg .list-news-image {
         width: 100px;
         height: 75px;
-    }
-    
+    }    
     .cronicle-crop {
         width: 317px;
         height: 190px;
-    }    
+    }       
 }
 @media (min-width: 768px) and (max-width: 991px) {   
     .brand span {
@@ -2461,6 +2502,12 @@ form#newsletter label {
     .wbg .list-news-image {
         width: 100px;
         height: 75px;
+    }
+     .albums_grid li img {    
+       height: 180px;
+    }
+    .view p {    
+       font-size:14px
     }
 }
 @media (max-width: 767px) {   
@@ -2654,6 +2701,12 @@ form#newsletter label {
     .float2 {
         float: left !important;
     }
+    .albums_grid li img {    
+       height: 150px;
+    }
+    .view p {    
+       font-size:14px
+    }
     /**/
 }
 @media (max-width: 625px) {
@@ -2675,6 +2728,16 @@ form#newsletter label {
     .contact-form input {
         width: 100%;
     }   
+    .albums_grid li, .albums_grid li img {    
+       width:100%
+    }   
+    .albums_grid li img {    
+       min-height: 300px
+    }  
+     .view p {    
+       font-size:16px
+    }
+    
 }
 @media all and (max-width:700px) {	
 	#gallery li { 
@@ -2700,6 +2763,9 @@ form#newsletter label {
     .cols-1 .grid-1, .view-first img {
         width: 100%
     }    
+    .albums_grid li img {    
+       min-height: 250px
+    }  
 }
 @media (max-width: 414px) {
     .brand div.logo-xs span {
@@ -2707,6 +2773,9 @@ form#newsletter label {
         margin-top: 2px;
         line-height: 14px;
         font-size: 13px;
+    }
+    .albums_grid li img {    
+       min-height: 220px
     }
 }
 @media (min-width: 320px) and (max-width: 481px) {
@@ -2753,10 +2822,7 @@ form#newsletter label {
     }      
 }
 
-@media (min-width: 176px) and (max-width: 320px) {
-    .view p {
-        font-size: 11px;
-    }
+@media (min-width: 176px) and (max-width: 320px) {    
     .view h2 {
         font-size: 14px;
         top: 0px;
@@ -2768,6 +2834,9 @@ form#newsletter label {
     }
     .view-first:hover p {
         display: none;
+    }
+    .albums_grid li img {    
+       min-height: 180px
     }
 }
 @media (max-width: 280px) {

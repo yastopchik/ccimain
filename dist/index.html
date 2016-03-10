@@ -9,17 +9,18 @@
     <meta name="keywords" content="">
     <link rel="shortcut icon" href="img/favicon.ico">
     <title>УП "Могилевское отделение БелТПП" | Главная </title>
-   <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
     <header class="p0">
         <div class="container">
@@ -27,7 +28,7 @@
                 <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
                     <div class="header-block clearfix">
                         <div class="clearfix header-block-pad">
-                            <section class="col-lg-11 col-md-11 col-sm-11 col-xs-12 brand">
+                            <section class="col-lg-11 col-md-11 col-sm-12 col-xs-12 brand">
                                 <div class="logo visible-md-block visible-lg-block visible-sm-block">
                                     <span class="rus">Белорусская <br /> торгово-промышленная палата <br />Могилевское отделение</span>
                                     <span class="eng">Belarusian  <br />Chamber of Commerce and Industry<br />Mogilev branch</span>
@@ -37,25 +38,28 @@
                                     <span class="eng">Belarusian Chamber of Commerce and Industry Mogilev branch</span>
                                 </div>
                             </section>
-                            <section class="col-lg-1 col-md-1 col-sm-1 col-xs-12 babel_links">
+                            <section class="col-lg-1 col-md-1 col-sm-3 col-xs-3 babel_links">
                                 <a href="http://stop.of.by/en/" class="en" title="Английский">en<img src="img/en.png"></a>
                             </section>
-                            <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <section class="col-lg-12 col-md-12 col-sm-9 col-xs-9">
                                 <form id="search-form" action="http://stop.of.by/poisk/" method="GET" accept-charset="utf-8" class="navbar-form">
                                     <input type="text" name="query" onBlur="if(this.value=='') this.value=''" onFocus="if(this.value =='' ) this.value=''">
                                     <a href="#" onClick="document.getElementById('search-form').submit(); return false;"></a>
                                 </form>
                             </section>
                         </div>
-                        <div class="navbar navbar_ clearfix">
+                                                <div class="navbar navbar_ clearfix">
                             <div class="navbar-inner navbar-inner_">
-                                <a class="btn btn-default navbar-btn menu" data-toggle="collapse" data-target=".nav-collapse_">
-                                Меню
-                                </a>
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse_">
+                                    <span class="sr-only">Меню</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
                                 <div class="navbar-collapse nav-collapse_ collapse col-lg-10 col-md-10 col-sm-10 col-xs-12">
                                     <ul class="nav navbar-nav sf-menu">
                                         <li class="li-first active">
-                                            <a href="/"></a>
+                                            <a href="/"><span>Главная</span></a>
                                         </li>
                                         <li class="sub-menu">
                                             <a href="about/">О палате</a>
@@ -75,7 +79,7 @@
                                                 <li><a href="about/membership/">Документы</a></li>
                                                 <li class="last"><a href="about/information/">Члены БелТПП</a></li>
                                                 <li class="last"><a href="about/information/">Шкала взносов</a></li>
-                                                <li class="last"><a href="about/information/">Заявление на всупление</a></li>
+                                                <li class="last"><a href="about/information/">Заявление на вступление</a></li>
                                             </ul>
                                         </li>
                                         <li class="sub-menu">
@@ -100,7 +104,7 @@
 
                                     </ul>
                                 </div>
-                                <div class="social col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                <div class="social col-lg-2 col-md-2 col-sm-2 col-xs-10">
                                     <ul class="social-icons">
                                         <li>
                                             <a href="#"><img src="img/icon-1.png" alt=""></a>
@@ -121,6 +125,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="row">
                 <div id="slider" class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
                     <ul class="pgwSlider">
@@ -136,8 +141,8 @@
     <section id="content" class="main-content">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-xs-12 col-sm-12 col-md-3">
-                    <div id="sidebar">
+                <div id="sidebar" class="col-lg-3 col-xs-12 col-sm-12 col-md-3">
+                    <div>
                         <div class="blocks">
                             <div class="caption dark-blue">
                                 <h3>Услуги</h3>
@@ -153,7 +158,7 @@
                                         </ul>
                                     </li>
                                     <li class="menu sub-menu">
-                                        <a href="#">Выстовочная деятельность</a>
+                                        <a href="#">Выставочная деятельность</a>
                                         <ul class="sub-menu-container">
                                             <li><a href="#">Выставки-ярмарки в Республике Беларусь</a></li>
                                             <li><a href="#">Выставки-ярмарки в Российской Федерации</a></li>
@@ -225,155 +230,152 @@
                     </div>
                 </div>
                 <div class="col-lg-5 col-xs-12 col-sm-7 col-md-5">
-                    <div class="col-xs-12">
-                        <div class="blocks">
-                            <div class="caption dark-blue">
-                                <h3>Анонс мероприятий</h3>
-                            </div>
-                            <ul class="recent-posts">
-                                <li class="recent-posts_li">
-                                    <span class="meta">
-       <span class="post-date">Фев
-           <span>05</span>
-                                    </span>
-                                    </span>
-                                    <div class="extra-wrap">
-                                        <figure class="blocks">
-                                            <a href="sobyitiya/xronika-novostej/44-yarmarki-v-rossijskoj-federaczi.html" title="Ярмарки в Российской Федерации, август-сентябрь">
-                                                <img src="img/news/sait-small.jpg" alt="Ярмарки в Российской Федерации, август-сентябрь"></a>
-                                        </figure>
-                                        <h3><a href="sobyitiya/xronika-novostej/44-yarmarki-v-rossijskoj-federaczi.html" title="Ярмарки в Российской Федерации, август-сентябрь">Строительная выставка "Дом.Дача.Дизайн" </a>
-       </h3>
-                                        <div class="excerpt">6-я республиканская специализированная строительная выставка «Дом. Дача. Дизайн» пройдет в Могилёве с 25 по 27 февраля</div>
-                                    </div>
-                                    <div class="more">
-                                        <a href="sobyitiya/xronika-novostej/44-yarmarki-v-rossijskoj-federaczi.html" title="Ярмарки в Российской Федерации, август-сентябрь">Подробнее</a>
-                                    </div>
-                                </li>
-                                <li class="recent-posts_li">
-                                    <span class="meta">
-       <span class="post-date">Янв
-           <span>23</span>
-                                    </span>
-                                    </span>
-                                    <div class="extra-wrap">
-                                        <figure class="blocks">
-                                            <a href="sobyitiya/xronika-novostej/43-vyistavka-yarmarka-goraczki-kirmash.html" title="Выставка-ярмарка Горацкi кiрмаш  г.Горки">
-                                                <img src="img/news/yellow_box-small.png" alt="Выставка-ярмарка Горацкi кiрмаш .Горки"></a>
-                                        </figure>
-                                        <h3><a href="sobyitiya/xronika-novostej/43-vyistavka-yarmarka-goraczki-kirmash.html" title="Выставка-ярмарка Горацкi кiрмаш, г.Горки">Универсальная ярмарка "Мир подарков", г.Бобруйск</a>
-       </h3>
-                                        <div class="excerpt">УП «Могилевское отделение БелТПП» приглашает принять участие в республиканской универсальной ярмарке «МИР ПОДАРКОВ»...</div>
-                                    </div>
-                                    <div class="more">
-                                        <a href="sobyitiya/xronika-novostej/44-yarmarki-v-rossijskoj-federaczi.html" title="Ярмарки в Российской Федерации, август-сентябрь">Подробнее</a>
-                                    </div>
-                                </li>
-                                <li class="recent-posts_li">
-                                    <span class="meta">
-       <span class="post-date">Янв
-           <span>15</span>
-                                    </span>
-                                    </span>
-                                    <div class="extra-wrap">
-                                        <figure class="blocks">
-                                            <a href="sobyitiya/xronika-novostej/42-delovoj-vizit-v-pyatigorsk.html" title="Деловой визит в Пятигорск, Российская Федерация">
-                                                <img src="img/news/krichev-small.jpg" alt="Деловой визит в Пятигорск, Российская Федерация"></a>
-                                        </figure>
-                                        <h3><a href="sobyitiya/xronika-novostej/42-delovoj-vizit-v-pyatigorsk.html" title="Деловой визит в Пятигорск, Российская Федерация">Универсальна ярмарка «Крычаўскi кiрмаш» </a>
-       </h3>
-                                        <div class="excerpt">УП "Могилевское отделение БелТПП" приглашает белорусские предприятия и организации принять участие в универсальной ярмарке в г.Кричеве, которая состоится 17-19</div>
-                                    </div>
-                                    <div class="more">
-                                        <a href="sobyitiya/xronika-novostej/44-yarmarki-v-rossijskoj-federaczi.html" title="Ярмарки в Российской Федерации, август-сентябрь">Подробнее</a>
-                                    </div>
-                                </li>
-                                <li class="recent-posts_li">
-                                    <span class="meta">
-       <span class="post-date">Янв
-           <span>13</span>
-                                    </span>
-                                    </span>
-                                    <div class="extra-wrap">
-                                        <figure class="blocks">
-                                            <a href="sobyitiya/xronika-novostej/41-mezhdunarodnaya-vyistavka-dlya-konditerov-i-xlebopyokov-iba-2015.html" title="Международная выставка для кондитеров и хлебопёков IBA-2015, г.Мюнхен, ФРГ">
-                                                <img src="img/news/small.jpg" alt="Международная выставка для кондитеров и хлебопёков IBA-2015, г.Мюнхен, ФРГ"></a>
-                                        </figure>
-                                        <h3><a href="sobyitiya/xronika-novostej/41-mezhdunarodnaya-vyistavka-dlya-konditerov-i-xlebopyokov-iba-2015.html" title="Международная выставка для кондитеров и хлебопёков IBA-2015, г.Мюнхен, ФРГ">Деловой визит в Казахстан </a>
-       </h3>
-                                        <div class="excerpt">С 14 по 17 марта 2016 года УП «Могилёвское отделение БелТПП» при содействии Посольства Республики Беларусь в Республике Казахстан организует визит делегации белорусских деловых кругов в Республику Казахстан.</div>
-                                    </div>
-                                    <div class="more">
-                                        <a href="sobyitiya/xronika-novostej/44-yarmarki-v-rossijskoj-federaczi.html" title="Ярмарки в Российской Федерации, август-сентябрь">Подробнее</a>
-                                    </div>
-                                </li>
-                                <li class="recent-posts_li">
-                                    <span class="meta">
-       <span class="post-date">Янв           <span>10</span>
-                                    </span>
-                                    </span>
-                                    <div class="extra-wrap">
-                                        <figure class="blocks">
-                                            <a href="sobyitiya/xronika-novostej/40-dni-mogilevskoj-oblasti-projdut-na-ekspo-2015-v-milane.html" title="Дни Могилевской области пройдут на ЭКСПО-2015 в Милане">
-                                                <img src="img/news/yarmarka-small.jpg" alt="Дни Могилевской области пройдут на ЭКСПО-2015 в Милане"></a>
-                                        </figure>
-                                        <h3><a href="sobyitiya/xronika-novostej/40-dni-mogilevskoj-oblasti-projdut-na-ekspo-2015-v-milane.html" title="Дни Могилевской области пройдут на ЭКСПО-2015 в Милане">Ярмарки в Российской Федерации</a>
-       </h3>
-                                        <div class="excerpt">Дни Могилевской области будут проходить 21-23 сентября 2015 г. в Национальном павильоне Республики Беларусь.</div>
-                                    </div>
-                                    <div class="more">
-                                        <a href="sobyitiya/xronika-novostej/44-yarmarki-v-rossijskoj-federaczi.html" title="Ярмарки в Российской Федерации, август-сентябрь">Подробнее</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="pagelist">
-                                <li class="disabled"><span>&laquo;</span></li>
-                                <li class="active"><a href="">1</a></li>
-                                <li><a href="?page=2">2</a></li>
-                                <li><a href="?page=3">3</a></li>
-                                <li class="control"><a href="?page=2">&raquo;</a></li>
-                            </ul>
+                    <div class="blocks">
+                        <div class="caption dark-blue">
+                            <h3>Анонс мероприятий</h3>
                         </div>
+  <ul>
+                               <li class="list-news-item wbg">
+                                   <ul>
+                                       <li class="list-news">
+                                    <div class="list-news-image">
+                                        <a href="#">
+                                            <img src="img/news/sait.jpg" alt="Строительная выставка Дом.Дача.Дизайн">
+                                        </a>
+                                    </div>
+                                    <div class="list-news-description">
+                                        <a class="list-news-model" href="#">Строительная выставка «Дом.Дача.Дизайн»</a>
+                                        <p class="list-news-options" id="list-news-options">6-я республиканская специализированная строительная выставка «Дом. Дача. Дизайн» пройдет в Могилёве с 25 по 27 февраля 2016 года.</p>
+
+                                    </div>
+                                    <div class="list-news-more">
+                                        <a href="#" title="Строительная выставка «Дом.Дача.Дизайн»">Подробнее</a>
+                                    </div>                                  
+                                </li>                                 
+                                   </ul>
+                               </li>
+                                <li class="list-news-item wbg">
+                                    <ul>
+                                        <li class="list-news">
+                                    <div class="list-news-image">
+                                        <a href="#">
+                                            <img src="img/news/krichev.jpg" alt="Универсальна ярмарка «Крычаўскi кiрмаш»">
+                                        </a>
+                                    </div>
+                                    <div class="list-news-description">
+                                        <a class="list-news-model" href="#">Универсальна ярмарка «Крычаўскi кiрмаш»</a>
+                                        <p class="list-news-options" id="list-news-options">УП "Могилевское отделение БелТПП" приглашает белорусские предприятия и организации принять участие в универсальной ярмарке в г.Кричеве, которая состоится 17-19 марта 2016г.</p>
+
+                                    </div>
+                                    <div class="list-news-more">
+                                        <a href="#" title="Универсальна ярмарка «Крычаўскi кiрмаш»">Подробнее</a>
+                                    </div>                                    
+                                </li>                                 
+                                    </ul>
+                                </li>
+                                <li class="list-news-item wbg">
+                                    <ul>
+                                        <li class="list-news">
+                                    <div class="list-news-image">
+                                        <a href="#">
+                                            <img src="img/news/eurem_1.jpg" alt="Немецкая программа по энергосбережению EUREM">
+                                        </a>
+                                    </div>
+                                    <div class="list-news-description">
+                                        <a class="list-news-model" href="#">Немецкая программа по энергосбережению EUREM</a>
+                                        <p class="list-news-options" id="list-news-options">УП «Могилевское отделение БелТПП» предлагает вам принять участие в программе EUREM-Европейский энергетический менеджер.</p>
+
+                                    </div>
+                                    <div class="list-news-more">
+                                        <a href="#" title="Немецкая программа по энергосбережению EUREM">Подробнее</a>
+                                    </div>                                   
+                                </li>                                 
+                                    </ul>
+                                </li>
+                                <li class="list-news-item wbg">
+                                    <ul>
+                                        <li class="list-news">
+                                    <div class="list-news-image">
+                                        <a href="#">
+                                            <img src="img/news/yarmarka1.jpg" alt="Универсальная ярмарка «Мир подарков», г.Бобруйск">
+                                        </a>
+                                    </div>
+                                    <div class="list-news-description">
+                                        <a class="list-news-model" href="#">Универсальная ярмарка «Мир подарков», г.Бобруйск</a>
+                                        <p class="list-news-options" id="list-news-options">УП «Могилевское отделение БелТПП» приглашает принять участие в республиканской универсальной ярмарке «МИР ПОДАРКОВ», которая пройдет в ГУК «Дворец искусств г.Бобруйска» с 18 по 21 февраля 2016 года. </p>
+
+                                    </div>
+                                    <div class="list-news-more">
+                                        <a href="#" title="Универсальная ярмарка «Мир подарков», г.Бобруйск">Подробнее</a>
+                                    </div>                                   
+                                </li>                                 
+                                    </ul>
+                                </li>
+                                <li class="list-news-item wbg">
+                                    <ul>
+                                        <li class="list-news">
+                                    <div class="list-news-image">
+                                        <a href="#">
+                                            <img src="img/news/1.jpg" alt="Деловой визит в Казахстан">
+                                        </a>
+                                    </div>
+                                    <div class="list-news-description">
+                                        <a class="list-news-model" href="#">Деловой визит  в Казахстан</a>
+                                        <p class="list-news-options" id="list-news-options">С 14 по 17 марта 2016 года УП «Могилёвское отделение БелТПП» при содействии Посольства Республики Беларусь в Республике Казахстан организует визит делегации белорусских деловых кругов в Республику Казахстан (г.Алматы).</p>
+
+                                    </div>
+                                    <div class="list-news-more">
+                                        <a href="#" title="Деловой визит в Казахстан">Подробнее</a>
+                                    </div>                                    
+                                </li>                                 
+                                    </ul>
+                                </li> 
+                            </ul>
+                                   <ul class="pagelist">
+                            <li class="disabled"><span>&laquo;</span></li>
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="?page=2">2</a></li>
+                            <li><a href="?page=3">3</a></li>
+                            <li class="control"><a href="?page=2">&raquo;</a></li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xs-12 col-sm-5 col-md-4">
-                    <div class="col-xs-12">
-                        <div class="blocks">
-                            <div class="caption dark-blue">
-                                <h3>Хроника событий</h3>
+                    <div class="blocks">
+                        <div class="caption dark-blue">
+                            <h3>Хроника событий</h3>
+                        </div>
+                        <div class="clearfix cols-1">
+                            <div class="view view-first grid-1">
+                                <img src="img/chronicle/small-1.jpg">
+                                <div class="mask">
+                                    <h2>Январь 2016</h2>
+                                    <a href="#" class="info more">Подробнее</a>
+                                    <p>Деловой визит в Армению</p>
+                                </div>
                             </div>
-                            <div class="clearfix cols-1">
-                                <div class="view view-first grid-1">
-                                    <img src="img/chronicle/small-1.jpg">
-                                    <div class="mask">
-                                        <h2>Январь 2016</h2>
-                                        <a href="#" class="info more">Подробнее</a>
-                                        <p>Деловой визит в Армению</p>
-                                    </div>
+                            <div class="view view-first grid-1">
+                                <img src="img/chronicle/small-2.jpg">
+                                <div class="mask">
+                                    <h2>Январь 2016</h2>
+                                    <a href="#" class="info more">Подробнее</a>
+                                    <p>Деловой визит в США и Канаду</p>
                                 </div>
-                                <div class="view view-first grid-1">
-                                    <img src="img/chronicle/small-2.jpg">
-                                    <div class="mask">
-                                        <h2>Январь 2016</h2>
-                                        <a href="#" class="info more">Подробнее</a>
-                                        <p>Деловой визит в США и Канаду</p>
-                                    </div>
+                            </div>
+                            <div class="view view-first grid-1">
+                                <img src="img/chronicle/small-3.jpg">
+                                <div class="mask">
+                                    <h2>Январь 2016</h2>
+                                    <a href="#" class="info more">Подробнее</a>
+                                    <p>Деловой визит в Аджарию</p>
                                 </div>
-                                <div class="view view-first grid-1">
-                                    <img src="img/chronicle/small-3.jpg">
-                                    <div class="mask">
-                                        <h2>Январь 2016</h2>
-                                        <a href="#" class="info more">Подробнее</a>
-                                        <p>Деловой визит в Аджарию</p>
-                                    </div>
-                                </div>
-                                <div class="view view-first grid-1">
-                                    <img src="img/chronicle/small-4.jpg">
-                                    <div class="mask">
-                                        <h2>Ноябрь 2015</h2>
-                                        <a href="#" class="info more">Подробнее</a>
-                                        <p>Бизнес-форум "Минск-Батуми"</p>
-                                    </div>
+                            </div>
+                            <div class="view view-first grid-1">
+                                <img src="img/chronicle/small-4.jpg">
+                                <div class="mask">
+                                    <h2>Ноябрь 2015</h2>
+                                    <a href="#" class="info more">Подробнее</a>
+                                    <p>Бизнес-форум "Минск-Батуми"</p>
                                 </div>
                             </div>
                         </div>
@@ -382,66 +384,64 @@
             </div>
         </div>
     </section>
-    <section id="info" class="promo indent-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-promo promo1">
-                        <i class="fa fa-user-plus"></i>
-                        <p>Члены
-                            <br><span>БелТПП</span></p>
-                        <a href="#"><i class="fa fa-search-plus"></i></a>
-                    </div>
+    <section id="info" class="promo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo promo1">
+                    <i class="fa fa-user-plus"></i>
+                    <p>Члены
+                        <br><span>БелТПП</span></p>
+                    <a href="#"><i class="fa fa-search-plus"></i></a>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-promo promo2">
-                        <i class="fa fa-tasks"></i>
-                        <p>Опрос по
-                            <br><span>ВЭД</span></p>
-                        <a href="#"><i class="fa fa-search-plus"></i></a>
-                    </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo promo2">
+                    <i class="fa fa-expeditedssl"></i>
+                    <p>Сертификация
+                        <br><span>on-line</span></p>
+                    <a href="#"><i class="fa fa-search-plus"></i></a>
+
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-promo promo3">
-                        <i class="fa fa-expeditedssl"></i>
-                        <p>Сертификация
-                            <br><span>on-line</span></p>
-                        <a href="#"><i class="fa fa-search-plus"></i></a>
-                    </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo promo3">
+                    <i class="fa fa-language"></i>
+                    <p>Курсы иностранных
+                        <br><span>языков</span></p>
+                    <a href="#"><i class="fa fa-search-plus"></i></a>
                 </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-promo promo4">
-                        <i class="fa fa-language"></i>
-                        <p>Курсы иностранных
-                            <br><span>языков</span></p>
-                        <a href="#"><i class="fa fa-search-plus"></i></a>
-                    </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="single-promo promo4">
+                    <i class="fa fa-thumbs-o-up"></i>
+                    <p>Сотрудничество с
+                        <br><span>эрфуртской ТПП</span></p>
+                    <a href="#"><i class="fa fa-search-plus"></i></a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <section id="parallax" class="indent-3">
         <div class="container">
             <div class="row">
-                <div id="parallax-window" data-speed="10" class="parallax-window">
-                    <div class="container">
-                        <div class="row">
-                            <h2 class="box-header">Ближайшие мероприятия</h2>
-
-                            <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-                                <div class="grid">
-                                    <figure class="effect-zoom">
-                                        <img src="img/sliders/slidersTop/parallax-grid.jpg" alt="img21" />
-                                        <figcaption>
-                                            <div>
-                                                <p><img src="img/galochka.png" class="galochka" />Деловой визит в Казахстан </p>
-                                                <p><img src="img/galochka.png" class="galochka" />Универсальна ярмарка «Крычаўскi кiрмаш» </p>
-                                                <p><img src="img/galochka.png" class="galochka" />Строительная выставка "Дом.Дача.Дизайн" </p>
-                                            </div>
-                                            <a href="#">View more</a>
-                                        </figcaption>
-                                    </figure>
-                                </div>
+                <div class="col-sm-12 col-md-12">
+                    <div id="parallax-window" data-speed="10" class="parallax-window">
+                        <h2 class="box-header">Ближайшие мероприятия</h2>
+                        <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                            <div class="grid">
+                                <figure class="effect-zoom">
+                                    <img src="img/sliders/slidersTop/parallax-grid.jpg" alt="img21" />
+                                    <figcaption>
+                                        <div>
+                                            <p><img src="img/galochka.png" class="galochka" />Деловой визит в Казахстан </p>
+                                            <p><img src="img/galochka.png" class="galochka" />Универсальна ярмарка «Крычаўскi кiрмаш» </p>
+                                            <p><img src="img/galochka.png" class="galochka" />Строительная выставка "Дом.Дача.Дизайн" </p>
+                                        </div>
+                                        <a href="#">View more</a>
+                                    </figcaption>
+                                </figure>
                             </div>
                         </div>
                     </div>
@@ -546,7 +546,7 @@
         </div>
     </footer>
     <a id="to-top" href="#" class="scroll-top animated-element" title="to-top"></a>
-   <!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>   
+    <!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>   
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/templates/cci/js/jquery/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="assets/templates/cci/js/jquery/jquery.lockfixed.js"></script>

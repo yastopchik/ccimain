@@ -18,11 +18,11 @@
 <body>
     <header class="p0">
         <div class="container">
-            <div class="row">
+       <div class="row">
                 <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
                     <div class="header-block clearfix">
                         <div class="clearfix header-block-pad">
-                            <section class="col-lg-11 col-md-11 col-sm-11 col-xs-12 brand">
+                            <section class="col-lg-11 col-md-11 col-sm-12 col-xs-12 brand">
                                 <div class="logo visible-md-block visible-lg-block visible-sm-block">
                                     <span class="rus">Белорусская <br /> торгово-промышленная палата <br />Могилевское отделение</span>
                                     <span class="eng">Belarusian  <br />Chamber of Commerce and Industry<br />Mogilev branch</span>
@@ -32,25 +32,28 @@
                                     <span class="eng">Belarusian Chamber of Commerce and Industry Mogilev branch</span>
                                 </div>
                             </section>
-                            <section class="col-lg-1 col-md-1 col-sm-1 col-xs-12 babel_links">
+                            <section class="col-lg-1 col-md-1 col-sm-3 col-xs-3 babel_links">
                                 <a href="http://stop.of.by/en/" class="en" title="Английский">en<img src="img/en.png"></a>
                             </section>
-                            <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <section class="col-lg-12 col-md-12 col-sm-9 col-xs-9">
                                 <form id="search-form" action="http://stop.of.by/poisk/" method="GET" accept-charset="utf-8" class="navbar-form">
                                     <input type="text" name="query" onBlur="if(this.value=='') this.value=''" onFocus="if(this.value =='' ) this.value=''">
                                     <a href="#" onClick="document.getElementById('search-form').submit(); return false;"></a>
                                 </form>
                             </section>
                         </div>
-                        <div class="navbar navbar_ clearfix">
+                                                <div class="navbar navbar_ clearfix">
                             <div class="navbar-inner navbar-inner_">
-                                <a class="btn btn-default navbar-btn menu" data-toggle="collapse" data-target=".nav-collapse_">
-                                Меню
-                                </a>
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse_">
+                                    <span class="sr-only">Меню</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
                                 <div class="navbar-collapse nav-collapse_ collapse col-lg-10 col-md-10 col-sm-10 col-xs-12">
                                     <ul class="nav navbar-nav sf-menu">
                                         <li class="li-first active">
-                                            <a href="/"></a>
+                                            <a href="/"><span>Главная</span></a>
                                         </li>
                                         <li class="sub-menu">
                                             <a href="about/">О палате</a>
@@ -70,7 +73,7 @@
                                                 <li><a href="about/membership/">Документы</a></li>
                                                 <li class="last"><a href="about/information/">Члены БелТПП</a></li>
                                                 <li class="last"><a href="about/information/">Шкала взносов</a></li>
-                                                <li class="last"><a href="about/information/">Заявление на всупление</a></li>
+                                                <li class="last"><a href="about/information/">Заявление на вступление</a></li>
                                             </ul>
                                         </li>
                                         <li class="sub-menu">
@@ -95,7 +98,7 @@
 
                                     </ul>
                                 </div>
-                                <div class="social col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                                <div class="social col-lg-2 col-md-2 col-sm-2 col-xs-10">
                                     <ul class="social-icons">
                                         <li>
                                             <a href="#"><img src="img/icon-1.png" alt=""></a>
@@ -116,13 +119,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+             </div>
     </header>
     <section id="breadcrumb">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-                    <ul class="breadcrumb">
+                    <ul class="breadcrumb gray">
                         <li><a href="#"><i class="fa fa-home"></i></a> </li>
                         <li><a href="#">События</a> </li>
                         <li><a href="">Анонс мероприятий</a></li>
@@ -138,132 +141,130 @@
         <div class="sub-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-xs-12 col-sm-3 col-md-3">
-                        <div id="sidebar-secondary">
-                            <div class="blocks">
-                                <div class="caption dark-blue">
-                                    <h3>Услуги</h3>
-                                </div>
-                                <div>
-                                    <ul class="sidebar-menu">
-                                        <li class="menu sub-menu">
-                                            <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Внешнеэкономическая деятельность</a>
-                                            <ul class="sub-menu-container">
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Организация презентаций</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Организация бизнес-миссий</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Международные контакты</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu sub-menu">
-                                            <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Выстовочная деятельность</a>
-                                            <ul class="sub-menu-container">
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Выставки-ярмарки в Республике Беларусь</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Выставки-ярмарки в Российской Федерации</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Международные выставки, деловые визиты</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu sub-menu">
-                                            <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Сертификация</a>
-                                            <ul class="sub-menu-container">
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Происхождение товара</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Собственное производство</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Подтверждение статуса товара</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Сертификация on-line</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu sub-menu">
-                                            <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Экспертиза</a>
-                                            <ul class="sub-menu-container">
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Экспертизе качества, количества и комплектности</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Судебная экспертиза</a></li>
-                                                <li><a href="uslugi/sudebnaya-stroitelno-texnicheskaya-ekspertiza/">Судебная строительно техническая экспертиза</a></li>
-
-                                            </ul>
-                                        </li>
-                                        <li class="menu sub-menu">
-                                            <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Оценка</a>
-                                            <ul class="sub-menu-container">
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Оценка недвижимости</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Оценка оборудования и транспортных средств</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Экспертиза достоверности оценки</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu sub-menu">
-                                            <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Консалтинг</a>
-                                            <ul class="sub-menu-container">
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Организация и проведение торгов</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Услуги биржевого брокера</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Услуги по формированию уставного фонда</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu sub-menu">
-                                            <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Карнет А.Т.А.</a>
-                                            <ul class="sub-menu-container">
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Оформление и выдача Карнет А.Т.А.</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Товары подпадающие под действие Карнетов А.Т.А.</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Механизм обеспечения Карнетов А.Т.А.</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Документы, необходимые для получения Карнета А.Т.А.</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Порядок заполнения и оформления Карнетов А.Т.А.</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Требования, которые должен соблюдать держатель Карнета А.Т.А.</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu sub-menu">
-                                            <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Переводческие услуги</a>
-                                            <ul class="sub-menu-container">
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Служба переводов</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Курсы иностранных языков</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu sub-menu">
-                                            <a href="uslugi/arenda-pomeshhenij-i-konferencz-zalov/">Аренда</a>
-                                            <ul class="sub-menu-container">
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Аренда помещений</a></li>
-                                                <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Аренда конференц-залов</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
+                    <div id="sidebar-secondary" class="col-lg-3 col-xs-12 col-sm-12 col-md-3">
+                        <div class="blocks">
+                            <div class="caption dark-blue">
+                                <h3>Услуги</h3>
                             </div>
-                            <div id="sidebar-gallery">
-                                <div>
-                                    <div class="caption dark-blue">
-                                        <h3>Галлерея событий</h3>
-                                    </div>
-                                    <ul class="gallery">
-                                        <li class="loaded">
-                                            <a href="img/gallery/4/25.jpg"><img src="img/gallery/4/25.jpg" title=""></a>
-                                        </li>
-                                        <li class="loaded">
-                                            <a href="img/gallery/4/26.jpg"><img src="img/gallery/4/26.jpg" title=""></a>
-                                        </li>
-                                        <li class="loaded">
-                                            <a href="img/gallery/4/45.jpg"><img src="img/gallery/4/45.jpg" title=""></a>
-                                        </li>
-                                        <li class="loaded">
-                                            <a href="img/gallery/4/28.jpg"><img src="img/gallery/4/28.jpg" title=""></a>
-                                        </li>
-                                        <li class="loaded">
-                                            <a href="img/gallery/4/29.jpg"><img src="img/gallery/4/29.jpg" title=""></a>
-                                        </li>
-                                        <li class="loaded">
-                                            <a href="img/gallery/4/30.jpg"><img src="img/gallery/4/30.jpg" title=""></a>
-                                        </li>
-                                        <li class="loaded">
-                                            <a href="img/gallery/4/31.jpg"><img src="img/gallery/4/31.jpg" title=""></a>
-                                        </li>
-                                        <li class="loaded">
-                                            <a href="img/gallery/4/32.jpg"><img src="img/gallery/4/32.jpg" title=""></a>
-                                        </li>
-                                        <li class="loaded">
-                                            <a href="img/gallery/4/33.jpg"><img src="img/gallery/4/33.jpg" title=""></a>
-                                        </li>
-                                    </ul>
-                                    <h5 class="goto"><a href="#">Перейти в галлерею</a> <i class="fa fa-long-arrow-right"></i></h5>
-                                </div>
+                            <div>
+                                <ul class="sidebar-menu">
+                                    <li class="menu sub-menu">
+                                        <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Внешнеэкономическая деятельность</a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Организация презентаций</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Организация бизнес-миссий</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Международные контакты</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu sub-menu">
+                                        <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Выстовочная деятельность</a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Выставки-ярмарки в Республике Беларусь</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Выставки-ярмарки в Российской Федерации</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Международные выставки, деловые визиты</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu sub-menu">
+                                        <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Сертификация</a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Происхождение товара</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Собственное производство</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Подтверждение статуса товара</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Сертификация on-line</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu sub-menu">
+                                        <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Экспертиза</a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Экспертизе качества, количества и комплектности</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Судебная экспертиза</a></li>
+                                            <li><a href="uslugi/sudebnaya-stroitelno-texnicheskaya-ekspertiza/">Судебная строительно техническая экспертиза</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="menu sub-menu">
+                                        <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Оценка</a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Оценка недвижимости</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Оценка оборудования и транспортных средств</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Экспертиза достоверности оценки</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu sub-menu">
+                                        <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Консалтинг</a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Организация и проведение торгов</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Услуги биржевого брокера</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Услуги по формированию уставного фонда</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu sub-menu">
+                                        <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Карнет А.Т.А.</a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Оформление и выдача Карнет А.Т.А.</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Товары подпадающие под действие Карнетов А.Т.А.</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Механизм обеспечения Карнетов А.Т.А.</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Документы, необходимые для получения Карнета А.Т.А.</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Порядок заполнения и оформления Карнетов А.Т.А.</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Требования, которые должен соблюдать держатель Карнета А.Т.А.</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu sub-menu">
+                                        <a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Переводческие услуги</a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Служба переводов</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Курсы иностранных языков</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu sub-menu">
+                                        <a href="uslugi/arenda-pomeshhenij-i-konferencz-zalov/">Аренда</a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Аренда помещений</a></li>
+                                            <li><a href="uslugi/vneshneekonomicheskaya-deyatelnost/">Аренда конференц-залов</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+                        <div id="sidebar-gallery">
+                            <div>
+                                <div class="caption dark-blue">
+                                    <h3>Галерея событий</h3>
+                                </div>
+                                <ul class="gallery">
+                                    <li class="loaded">
+                                        <a href="img/gallery/4/25.jpg"><img src="img/gallery/4/25.jpg" title=""></a>
+                                    </li>
+                                    <li class="loaded">
+                                        <a href="img/gallery/4/26.jpg"><img src="img/gallery/4/26.jpg" title=""></a>
+                                    </li>
+                                    <li class="loaded">
+                                        <a href="img/gallery/4/45.jpg"><img src="img/gallery/4/45.jpg" title=""></a>
+                                    </li>
+                                    <li class="loaded">
+                                        <a href="img/gallery/4/28.jpg"><img src="img/gallery/4/28.jpg" title=""></a>
+                                    </li>
+                                    <li class="loaded">
+                                        <a href="img/gallery/4/29.jpg"><img src="img/gallery/4/29.jpg" title=""></a>
+                                    </li>
+                                    <li class="loaded">
+                                        <a href="img/gallery/4/30.jpg"><img src="img/gallery/4/30.jpg" title=""></a>
+                                    </li>
+                                    <li class="loaded">
+                                        <a href="img/gallery/4/31.jpg"><img src="img/gallery/4/31.jpg" title=""></a>
+                                    </li>
+                                    <li class="loaded">
+                                        <a href="img/gallery/4/32.jpg"><img src="img/gallery/4/32.jpg" title=""></a>
+                                    </li>
+                                    <li class="loaded">
+                                        <a href="img/gallery/4/33.jpg"><img src="img/gallery/4/33.jpg" title=""></a>
+                                    </li>
+                                </ul>
+                                <h5><a class="goto gray" href="#">Перейти в галерею <i class="glyphicon glyphicon-chevron-right"></i></a></h5>                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-9 col-xs-12 col-sm-9 col-md-9 content">
+                    <div class="col-lg-9 col-xs-12 col-sm-12 col-md-9">
+                       <div class="content">
                         <div class="article-head">
                             <h2 class="box-header">Ярмарки в Российской Федерации</h2>
                         </div>
@@ -295,7 +296,7 @@
                                 </p>
                                 <p><strong><span style="font-size: 10pt;"><a href="/index.php/ru/informacia/vystavki-yarmarki-v-rf">График ярмарок в Российской Федерации на 2016 год&nbsp;</a></span></strong></p>
                                 <p style="text-align: justify;"><span style="font-family: philosopher, sans-serif; font-size: 10pt;">Получить дополнительную информацию по вопросам участия можно по тел./факс (0222) 77 80 34</span></p>
-                                <p style="text-align: justify;"><span style="font-family: philosopher, sans-serif; font-size: 10pt;">Контактное лицо: КРАСОВСКАЯ АННА +375 29 684 94 44 (vel), e-mail:&nbsp;</span><strong><span style="font-family: philosopher, sans-serif; font-size: 10pt;"><a href="mailto:&lt;a href="/>kra</a><a href="mailto:sovskaya@cci.by">sovskaya@cci.by</a></span></strong></p>
+                                <p style="text-align: justify;"><span style="font-family: philosopher, sans-serif; font-size: 10pt;">Контактное лицо: КРАСОВСКАЯ АННА +375 29 684 94 44 (vel), e-mail:&nbsp;</span><strong><span style="font-family: philosopher, sans-serif; font-size: 10pt;"><a href="mailto:sovskaya@cci.by">sovskaya@cci.by</a></span></strong></p>
                                 <p><strong><strong><span style="font-family: philosopher, sans-serif; font-size: 10pt;"><a href="/images/news/trebovanija.doc">СКАЧАТЬ:&nbsp;Памятка основных требований по организации торговли&nbsp;на выставке-ярмарке в Российской Федерации&nbsp;</a></span></strong></strong>
                                 </p>
                                 <p><strong><strong><span style="font-family: philosopher, sans-serif; font-size: 10pt;"><a href="/images/news/Blank_yarmarka.doc">СКАЧАТЬ: БЛАНК ЗАЯВКИ...</a></span></strong></strong>
@@ -308,7 +309,7 @@
                                     <img src="img/news/2016/yarmarki-rf/1.jpeg" class="img-thumbnail" alt="Responsive image">
                                     <img src="img/news/2016/yarmarki-rf/2.jpg" class="img-thumbnail" alt="Responsive image">
                                     <img src="img/news/2016/yarmarki-rf/3.jpg" class="img-thumbnail" alt="Responsive image">
-                                </p>                              
+                                </p>
                             </div>
                             <div id="requisition">
                                 <form action="#" method="post" name="fea" enctype="multipart&#x2F;form-data" id="fea">
@@ -390,14 +391,14 @@
                                     <button type="button" class="btn btn-primary btn-block">Отправить</button>
                                 </form>
                             </div>
-                            
-                            <div id="comments-wrap">                               
-                                 <h3 class="box-header title">Комментарии(<span id="comment-total">3</span>)</h3>                             
+
+                            <div id="comments-wrap">
+                                <h3 class="box-header title">Комментарии(<span id="comment-total">3</span>)</h3>
                                 <div id="comments-wrapper">
                                     <ol class="comment-list" id="comments">
                                         <li class="ticket-comment" id="comment-1" data-parent="0" data-newparent="0" data-id="1">
                                             <div class="ticket-comment-body ticket-comment-guest">
-                                                <div class="ticket-comment-header">                                                    
+                                                <div class="ticket-comment-header">
                                                     <img src="https://www.gravatar.com/avatar/b47ffc29910e9dccae5ce7815e4dcde5?s=24&d=mm" class="ticket-avatar" alt="" />
                                                     <span class="ticket-comment-author">Admin</span>
                                                     <span class="ticket-comment-createdon">12 февраля 2016, 16:28</span>
@@ -421,7 +422,7 @@
                                             <ol class="comments-list">
                                                 <li class="ticket-comment" id="comment-2" data-parent="1" data-newparent="1" data-id="2">
                                                     <div class="ticket-comment-body ticket-comment-guest">
-                                                        <div class="ticket-comment-header"> 
+                                                        <div class="ticket-comment-header">
                                                             <img src="https://www.gravatar.com/avatar/b47ffc29910e9dccae5ce7815e4dcde5?s=24&d=mm" class="ticket-avatar" alt="" />
                                                             <span class="ticket-comment-author">Admin</span>
                                                             <span class="ticket-comment-createdon">12 февраля 2016, 16:29</span>
@@ -449,7 +450,7 @@
                                         </li>
                                         <li class="ticket-comment" id="comment-3" data-parent="0" data-newparent="0" data-id="3">
                                             <div class="ticket-comment-body ticket-comment-guest">
-                                                <div class="ticket-comment-header">                                                    
+                                                <div class="ticket-comment-header">
                                                     <img src="https://www.gravatar.com/avatar/c9a6a1dafde560c80630b8fc57e2bdeb?s=24&d=mm" class="ticket-avatar" alt="" />
                                                     <span class="ticket-comment-author">Андрей</span>
                                                     <span class="ticket-comment-createdon">12 февраля 2016, 12:35</span>
@@ -479,55 +480,54 @@
                                 <div id="comments-tpanel">
                                     <div id="tpanel-refresh"></div>
                                     <div id="tpanel-new"></div>
-                                </div>                            
-                            <h4 id="comment-new-link">
+                                </div>
+                                <h4 id="comment-new-link">
 	<a href="#" class="btn btn-default">Написать комментарий</a>
 </h4>
 
-                            <div id="comment-form-placeholder" class="contact-form">
-                                <form id="comment-form" action="" method="post">
-                                    <div id="comment-preview-placeholder"></div>
-                                    <input type="hidden" name="thread" value="resource-44" />
-                                    <input type="hidden" name="parent" value="0" />
-                                    <input type="hidden" name="id" value="0" />
+                                <div id="comment-form-placeholder" class="contact-form">
+                                    <form id="comment-form" action="" method="post">
+                                        <div id="comment-preview-placeholder"></div>
+                                        <input type="hidden" name="thread" value="resource-44" />
+                                        <input type="hidden" name="parent" value="0" />
+                                        <input type="hidden" name="id" value="0" />
 
-                                    <div class="form-group">
-                                        <label for="comment-name">Автор</label>
-                                        <input type="text" name="name" value="" id="comment-name" class="form-control" />
-                                        <span class="error"></span>
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="comment-name">Автор</label>
+                                            <input type="text" name="name" value="" id="comment-name" class="form-control" />
+                                            <span class="error"></span>
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="comment-email">Email</label>
-                                        <input type="text" name="email" value="" id="comment-email" class="form-control" />
-                                        <span class="error"></span>
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="comment-email">Email</label>
+                                            <input type="text" name="email" value="" id="comment-email" class="form-control" />
+                                            <span class="error"></span>
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="comment-editor"></label>
-                                        <textarea name="text" id="comment-editor" cols="30" rows="10" class="form-control"></textarea>
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="comment-editor"></label>
+                                            <textarea name="text" id="comment-editor" cols="30" rows="10" class="form-control"></textarea>
+                                        </div>
 
-                                    <div class="form-group">
-                                        <label for="comment-captcha" id="comment-captcha">Введите сумму 2 + 10</label>
-                                        <input type="text" name="captcha" value="" id="comment-captcha" class="form-control" />
-                                        <span class="error"></span>
-                                    </div>
+                                        <div class="form-group">
+                                            <label for="comment-captcha" id="comment-captcha">Введите сумму 2 + 10</label>
+                                            <input type="text" name="captcha" value="" id="comment-captcha" class="form-control" />
+                                            <span class="error"></span>
+                                        </div>
 
 
-                                    <div class="form-actions">
-                                        <input type="button" class="btn btn-default preview" value="Предпросмотр" title="Ctrl + Enter" />
-                                        <input type="submit" class="btn btn-primary submit" value="Написать" title="Ctrl + Shift + Enter" />
-                                        <span class="time"></span>
-                                    </div>
-                                </form>
-                            </div>
+                                        <div class="form-actions">
+                                            <input type="button" class="btn btn-default preview" value="Предпросмотр" title="Ctrl + Enter" />
+                                            <input type="submit" class="btn btn-primary submit" value="Написать" title="Ctrl + Shift + Enter" />
+                                            <span class="time"></span>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                    </div>   </div>         
+        </div></div>
     </section>
     <footer>
         <div class="container">
@@ -592,8 +592,8 @@
                 </div>
             </div>
         </div>
-   </footer>
-        <!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>   
+    </footer>
+    <!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>   
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/templates/cci/js/jquery/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="assets/templates/cci/js/jquery/jquery.lockfixed.js"></script>
