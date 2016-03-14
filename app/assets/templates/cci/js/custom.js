@@ -48,15 +48,24 @@
               });
           }
           /*Sidebar*/
-          $('ul.sidebar-menu').superfish({
-              delay: 1000,
-              animation: {
-                  opacity: 'show',
-                  height: 'show'
-              },
-              speed: 'fast',
-              autoArrows: false
-          });
+          var sidebar=$('ul.sidebar-menu');
+          if (sidebar.length) {
+              $('ul.sidebar-menu').superfish({
+                  delay: 1000,
+                  animation: {
+                      opacity: 'show',
+                      height: 'show'
+                  },
+                  speed: 'fast',
+                  autoArrows: false, 
+                  onBeforeShow: function(){                      
+                      $('#sidebar-gallery').hide();
+                  },
+                  onBeforeHide: function(){                     
+                      $('#sidebar-gallery').show("slow");
+                  }
+             });
+          }
           $('.sidebar-menu li').hover(function () {
               $('.sidebar-menu .sub-menu-container li').css("display", "block");
           });
