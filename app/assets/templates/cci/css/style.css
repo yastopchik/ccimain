@@ -1,70 +1,22 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=Lora&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&subset=latin,cyrillic);
 
-/*RESET CSS*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
+html,
+body {
+    height: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+}
+body {
+    margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
     font-family: 'Ubuntu', sans-serif;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-html,
-body {
-    height: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-body {
-    margin: 0;
-    padding: 0;
     height: auto !important;
     height: 100%;
-    line-height: 19px;
+    line-height: 1;
     font-size: 16px;    
     font-weight: 400;
     color: #122140;
@@ -571,11 +523,13 @@ header {
 
 /*social-icons*/
 .social-icons {
+    list-style: none;
    width: 100%;
    right:0;
    margin: 0;
    display: block;
    padding-top:15px;   
+    padding-left: 0
 }
 .social-icons li {
     float: right;    
@@ -590,15 +544,19 @@ header {
 .sub-content {
     padding-bottom: 46px;
 }
-.content {    
-    list-style: none;   
+.content { 
     background-color: #FFFFFF;
     box-shadow: 0 3px 10px rgba(16, 27, 45, 0.51);
     box-sizing: border-box;
     color: #122140;
 }
-.content p, .news-box-item p {
-    list-style: none;
+.content .subcontent {
+   padding: 10px;
+}
+.content p strong {
+    font-weight: 700 
+}
+.news-box-item p {   
     color: #101b2d;
     line-height: 20px;
     text-indent: 20px;
@@ -623,6 +581,9 @@ header {
     letter-spacing: 0px;
 }
 /*SIDEBAR*/
+.sidebar-menu {
+   list-style: none;
+}
 ul.sidebar-menu {
 	counter-reset: li;
 	list-style: none;
@@ -725,7 +686,10 @@ ul.sidebar-menu ul{
     min-height: 90px;
 }
 .gallery {
+    list-style: none;
     width: 100%; 
+    margin: 0;
+    padding: 0
 }
 .gallery li {
     float: left; 
@@ -839,12 +803,18 @@ albums_grid li a:hover {
     -o-transform: scale(1);
     transform: scale(1);
 }
+.blocks ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
 .caption {
     padding: 10px 0px 10px 21px;   
     position: relative;
     overflow: hidden;
 }
-.caption h3, h4 {    
+.caption h3, h4 {  
+    margin: 0;
     color: #fde586;  
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -974,6 +944,7 @@ albums_grid li a:hover {
 .promo {
   background:none;
   color: #fff;  
+    padding-top: 5px
 }
 .promo .bx-wrapper {
     margin: 0 auto 0;    
@@ -1329,7 +1300,7 @@ figure.effect-zoom:hover p {
     position: relative
 }
 .wbg .list-news { 
-    min-height: 157px; 
+    min-height: 158px; 
     padding: 0 12px 9px 9px;
 }
 .list-news-image {      
@@ -2243,6 +2214,8 @@ ul.pagelist li.active a {
 }
 /*------ footer ------- */
 footer {
+    margin: 0;
+    display: block;
     padding: 26px 0 38px 0;
     background-color: #101b2d;
     color: #a9a9a9;
@@ -2253,9 +2226,11 @@ footer h4 {
     font-weight: 700
 }
 .footer-menu {
+    list-style: none;
     display: block;   
     padding: 12px 0 47px 0;
-    margin: 0 0 0px 0;
+    margin: 0;
+    padding: 0
 }
 .footer-menu li {
     margin-top: 10px;
@@ -2307,9 +2282,10 @@ form#newsletter label {
     text-transform: none;
 }
 #footer-bottom-area {
-   border-top:1px solid #FFFFFF; 
+    border-top:1px solid #FFFFFF; 
     color: #fff;
     padding-top: 20px;
+    margin-top: 20px
 }
 .copyright p {
     font-size: 14px
