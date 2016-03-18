@@ -315,12 +315,16 @@ header {
     left:0;    
     width: 17px;
     height: 15px;
-    background: url(../img/home.png) 0 0 no-repeat;    
+    background: url(../img/home.png) 0 0 no-repeat;   
+    -webkit-transition: all 0.0s ease;
+    -o-transition: all 0.0s ease;
+    transition: all 0.0s ease;
 }
-.nav-collapse_ .nav > li.li-first.active{  
-    background: url(../img/home.png) -40px 0 no-repeat;    
+.nav-collapse_ .nav > li:hover.li-first{  
+    background: url(../img/home.png) -40px 0 no-repeat;  
+    
 }
-.nav-collapse_ .nav > li.li-first span {  
+.nav-collapse_ .nav > li.li-first.level1 span{  
    display: none;   
 }
 .nav-collapse_ .nav > li.li-first a {   
@@ -528,6 +532,7 @@ header {
 }
 .content .subcontent {
     padding: 10px; 
+    min-height: 800px;
 }
 .content .subcontent p{
    text-indent: 1.5em;   
