@@ -45,42 +45,9 @@ hr {
     height: 1px;
 }
 /* headings, text */
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Ubuntu', sans-serif;
-    color: #9f1603;    
-    line-height: 1.2em;
-}
-h1 {
-    font-size: 40px;    
-    text-transform: uppercase;
-    letter-spacing: -5px;
-}
-h2 {
-    font-size: 36px;
-    color: #434343;
-    letter-spacing: -2px;
-}
-h3 {
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: -2px;
-}
-h4 {
-    font-size: 25px;
-    text-transform: uppercase;
-    letter-spacing: -2px;   
-}
-h5 {
-    font-size: 20px;
-    color: #ffffff;    
-    letter-spacing: -1px;
-}
-h6 {
-    font-size: 18px;   
-    letter-spacing: -1px;
-}
-p {
-    margin-bottom: 20px;
+
+p {    
+    padding-bottom: 10px
 }
 figure {
     width: 100%;
@@ -550,11 +517,24 @@ header {
     box-sizing: border-box;
     color: #122140;
 }
-.content .subcontent {
-   padding: 10px;
+.content .subcontent  h1, 
+.content .subcontent  h2, 
+.content .subcontent h3, 
+.content .subcontent  h4, 
+.content .subcontent h5, 
+.content .subcontent  h6{
+    padding: 5px 10px 0 10px;
+    font-weight: 700
 }
-.content p strong {
-    font-weight: 700 
+.content .subcontent {
+    padding: 10px; 
+}
+.content .subcontent p{
+   text-indent: 1.5em;   
+}
+.content .subcontent  p strong {
+    font-weight: 700;
+    
 }
 .news-box-item p {   
     color: #101b2d;
@@ -563,7 +543,7 @@ header {
     text-align: justify;
     padding: 5px 10px 0 10px
 }
-.content h3, .news-box-item h3 {   
+.news-box-item h3 {   
     color: #9f1603;
     font-size: 18px;  
     padding: 5px 10px 0 10px
@@ -813,7 +793,8 @@ albums_grid li a:hover {
     position: relative;
     overflow: hidden;
 }
-.caption h3, h4 {  
+.caption h3,
+.caption h4 {  
     margin: 0;
     color: #fde586;  
     letter-spacing: 1px;
