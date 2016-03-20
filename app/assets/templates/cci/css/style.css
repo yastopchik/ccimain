@@ -506,7 +506,10 @@ header {
     float: right;    
     margin-left: 3px;
 }
-
+/*pgwSlider*/
+.pgwSlider .ps-current {
+    font-size: 1.2em
+}
 /*------ content ------- */
 
 .main-content {
@@ -1182,7 +1185,6 @@ figure.effect-zoom:hover p {
 /*SLIDER-BOTTOM*/
 .slider-bottom .bx-wrapper {
 	margin: 0;
-	z-index: -100;
 }
 .slider-bottom .bx-wrapper .bx-viewport {
     list-style: none;
@@ -2209,7 +2211,11 @@ footer {
 }
 footer h4 {
     font-size: 12px;
-    font-weight: 700
+    font-weight: 700;
+    color:#fde586;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 5px 2px #101b2d;
 }
 .footer-menu {
     list-style: none;
