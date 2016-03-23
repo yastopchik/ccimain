@@ -1183,6 +1183,7 @@ figure.effect-zoom:hover p {
 	transform: translate3d(0,0,0);
 }
 /*SLIDER-BOTTOM*/
+
 .slider-bottom .bx-wrapper {
 	margin: 0;
 }
@@ -1195,6 +1196,9 @@ figure.effect-zoom:hover p {
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	border:  none;
+}
+.bx-wrapper .bx-loading {  
+  background: url('../img/495.gif') center center no-repeat #ffffff; 
 }
 .bx-wrapper .bx-prev {
     transition: all 0s ease;
@@ -1342,7 +1346,9 @@ figure.effect-zoom:hover p {
     margin-left: 15px;
     text-align: right;
 }
-
+.preview {
+    min-height: 789px;
+}
 /*COMMENTS*/
 .ticket-meta,
 .section-meta {
@@ -1928,7 +1934,9 @@ address span {
   color: #434343;
 }
 /*Пангинация*/
-
+.pagination {
+    display: block
+}
 ul.pagelist {
     text-align: center;
     padding: 8px 0;
@@ -1975,6 +1983,9 @@ ul.pagelist li.active a {
     padding: 7px 10px;
     line-height: 14px;
     border-radius: none;
+}
+ul.pagelist li.control span, ul.pagelist li.disabled span {
+   visibility: hidden
 }
 /*Contact page*/
 
@@ -2476,7 +2487,7 @@ form#newsletter label {
     }
     .view p {    
        font-size:14px
-    }
+    }    
 }
 @media (max-width: 767px) {   
     h2 {
@@ -2674,6 +2685,9 @@ form#newsletter label {
     }
     .view p {    
        font-size:14px
+    }
+    .preview {
+        min-height: 157px;
     }
     /**/
 }
