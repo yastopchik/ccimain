@@ -16,10 +16,15 @@
           var carousel = $(".carousel");
           if (carousel.length) {
               carousel.bxSlider({
-                  slideWidth: 200,
+                  slideWidth: 360,
                   minSlides: 2,
-                  maxSlides: 4,
-                  slideMargin: 10
+                  maxSlides: 2,
+                  slideMargin: 10,
+				  infiniteLoop: false,
+              });
+			  carousel.photobox('a', {
+                  thumbs: true,
+                  loop: true
               });
           }          
           var gallery = $('.gallery');
