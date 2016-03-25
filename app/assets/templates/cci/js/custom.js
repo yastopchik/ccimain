@@ -180,17 +180,26 @@ $(window).resize( function(){
  /*LockFixed*/
         var width = $(window).width();
           if(width >= 992) {
-          var sidebar = $("#sidebar");
-              if (sidebar.length) {             
-                  sidebar.hcSticky({
+          var sidebarleft = $("#sidebar-left");
+              if (sidebarleft.length) {             
+                  sidebarleft.hcSticky({
                     top:0,                    
                    });                   
 		       }
-           var sidebar_secondary = $("#sidebar-secondary");
+          var sidebar_secondary = $("#sidebar-secondary");
                if (sidebar_secondary.length) {                    
                    sidebar_secondary.hcSticky({
                        top: 0                   
                    }); 
-               }    
+               }  
+          }
+          if(width >= 768) {
+           var sidebarright = $("#sidebar-right");
+              if (sidebarright.length) {             
+                  sidebarright.hcSticky({
+                    top:0,  
+                      bottom:0
+                   });                    
+		       }             
           }          
 }).resize(); 
