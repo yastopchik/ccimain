@@ -20,13 +20,13 @@
                   minSlides: 2,
                   maxSlides: 2,
                   slideMargin: 10,
-				  infiniteLoop: false,
+                  infiniteLoop: false,
               });
-			  carousel.photobox('a', {
+              carousel.photobox('a', {
                   thumbs: true,
                   loop: true
               });
-          }          
+          }
           var gallery = $('.gallery');
           if (gallery.length) {
               function callback() {
@@ -53,7 +53,7 @@
               });
           }
           /*Sidebar*/
-          var sidebar=$('ul.sidebar-menu');
+          var sidebar = $('ul.sidebar-menu');
           if (sidebar.length) {
               $('ul.sidebar-menu').superfish({
                   delay: 1000,
@@ -62,14 +62,14 @@
                       height: 'show'
                   },
                   speed: 'fast',
-                  autoArrows: false, 
-                  onBeforeShow: function(){                      
+                  autoArrows: false,
+                  onBeforeShow: function () {
                       $('#sidebar-gallery').hide();
                   },
-                  onBeforeHide: function(){                     
+                  onBeforeHide: function () {
                       $('#sidebar-gallery').show("slow");
                   }
-             });
+              });
           }
           $('.sidebar-menu li').hover(function () {
               $('.sidebar-menu .sub-menu-container li').css("display", "block");
@@ -103,13 +103,13 @@
           }
           var slide_promo = $('.slider-promo');
           if (slide_promo.length) {
-             slide_promo.bxSlider({
-                   slideWidth: 285,
-    minSlides: 2,
-    maxSlides: 4,
-    moveSlides: 1,
-    slideMargin: 10,
-                 pager:false
+              slide_promo.bxSlider({
+                  slideWidth: 285,
+                  minSlides: 2,
+                  maxSlides: 4,
+                  moveSlides: 1,
+                  slideMargin: 10,
+                  pager: false
               });
           }
           /*Sidebar*/
@@ -175,31 +175,43 @@
               }
               return false;
           });
-      });
-$(window).resize( function(){
- /*LockFixed*/
-        var width = $(window).width();
-          if(width >= 992) {
-          var sidebarleft = $("#sidebar-left");
-              if (sidebarleft.length) {             
+          $('[data-toggle="tooltip"]').tooltip();          
+          
+      });      
+      $(window).resize(function () {
+          /*LockFixed*/
+          var width = $(window).width();
+          if (width >= 992) {
+              var sidebarleft = $("#sidebar-left");
+              if (sidebarleft.length) {
                   sidebarleft.hcSticky({
-                    top:0,                    
-                   });                   
-		       }
-          var sidebar_secondary = $("#sidebar-secondary");
-               if (sidebar_secondary.length) {                    
-                   sidebar_secondary.hcSticky({
-                       top: 0                   
-                   }); 
-               }  
+                      top: 0,
+                  });
+              }
+              var sidebar_secondary = $("#sidebar-secondary");
+              if (sidebar_secondary.length) {
+                  sidebar_secondary.hcSticky({
+                      top: 0
+                  });
+              }
           }
-          if(width >= 768) {
-           var sidebarright = $("#sidebar-right");
-              if (sidebarright.length) {             
+          if (width >= 768) {
+              var sidebarright = $("#sidebar-right");
+              if (sidebarright.length) {
                   sidebarright.hcSticky({
-                    top:0,  
-                      bottom:0
-                   });                    
-		       }             
-          }          
-}).resize(); 
+                      top: 0,
+                      bottom: 0
+                  });
+              }
+          }
+      }).resize();
+    $(document).on('click', '.albums-item', function(e){
+        var albumItems = $('#album-items');
+        if(albumItems.length){
+            $('#albums-grid').remove();
+            albumItems.css("display", "inline-block");
+        }
+        e.preventDefault();
+        return false;
+    
+    })
