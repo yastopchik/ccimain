@@ -206,10 +206,22 @@
           }
       }).resize();
     $(document).on('click', '.albums-item', function(e){
-        var albumItems = $('#album-items');
-        if(albumItems.length){
-            $('#albums-grid').remove();
-            albumItems.css("display", "inline-block");
+        var albumsGrid = $('#albums-grid');
+        if(albumsGrid.length){                        
+			var data = $(this).data();
+            var urls = $(this).attr("href");
+            $.ajax({
+              url: urls,
+              cache: false,
+              data: data,
+              beforeSend: function() {
+                  albumsGrid.html("<img src='assets/templates/mogilevcci/img/495.gif' />");
+              },
+              success: function (html) {
+                  albumsGrid.html(html); 
+              }
+          });
+          return false;
         }
         e.preventDefault();
         return false;
