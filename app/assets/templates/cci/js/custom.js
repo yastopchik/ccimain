@@ -207,18 +207,22 @@
       }).resize();
     $(document).on('click', '.albums-item', function(e){
         var albumsGrid = $('#albums-grid');
+		var albumItems = $('#album-items');
         if(albumsGrid.length){                        
 			var data = $(this).data();
             var urls = $(this).attr("href");
+			albumsGrid.remove();
+			$('.pagination').remove();
+			albumItems.css("display", "block");
             $.ajax({
               url: urls,
               cache: false,
               data: data,
               beforeSend: function() {
-                  albumsGrid.html("<img src='assets/templates/mogilevcci/img/495.gif' />");
+                  albumItems.html("<div class=\"loaded\"><img src='assets/templates/mogilevcci/img/495.gif' /></div>");
               },
               success: function (html) {
-                  albumsGrid.html(html); 
+                  albumItems.html(html); 
               }
           });
           return false;

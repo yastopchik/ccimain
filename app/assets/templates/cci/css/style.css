@@ -1279,6 +1279,10 @@ figure.effect-zoom:hover p {
 /*News main page*/
 
 /*LIST-NEWS*/
+.list-news-grid {
+    list-style: none;
+    padding:15px;
+}
 .list-news-item {    
     background-color: #FFFFFF;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
@@ -1368,7 +1372,7 @@ figure.effect-zoom:hover p {
     margin-left: 15px;
     text-align: right;
 }
-.preview {
+.news-preview {
     min-height: 789px;
 }
 /*COMMENTS*/
@@ -1845,15 +1849,20 @@ figure.effect-zoom:hover p {
 }
 /*FORMS*/
 #requisition, #comments-wrap {
-    padding: 5px 10px 10px;
-    background-color: #dfeeff;
+    padding: 5px 10px 10px;    
     display: none;
+}
+#requisition {    
+    background-color: #dfeeff;  
 }
  #comments-wrap {    
     display: block;
 }
 #requisition h3 {    
     text-align: center
+}
+.well {
+    border-radius: 2px;
 }
 /*-- CONTACT PAGE--*/
 .contact-map{
@@ -2721,7 +2730,7 @@ form#newsletter label {
     .view p {    
        font-size:14px
     }
-    .preview {
+    .news-preview {
         min-height: 157px;
     }
     #sidebar-gallery{
