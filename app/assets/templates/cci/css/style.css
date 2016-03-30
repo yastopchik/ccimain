@@ -10,17 +10,16 @@ body {
     margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
     font-family: 'Ubuntu', sans-serif;
     height: auto !important;
     height: 100%;
     line-height: 1;
-    font-size: 16px;    
+    font-size:16px;   
     font-weight: 400;
     color: #122140;
-    background-color: #deeeff;
+    background-color: #dfeeff;
     background-image: url(../img/pattern.gif);
     background-repeat: repeat;
     background-position: left top;
@@ -159,7 +158,7 @@ header {
 }
 .header-block .babel_links a {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 0.875em; 
 }
 .brand {
     display: inline-block;
@@ -168,8 +167,7 @@ header {
     text-transform: none;
 }
 .brand a {
-    display: block;
-    font-size: 0;
+    display: block;    
     line-height: 0px;
 }
 .brand div.logo,
@@ -205,7 +203,7 @@ header {
     margin-left: 50px;
     margin-top: 2px;
     line-height: 17px;
-    font-size: 14px;
+    font-size: 0.875em; 
 }
 .brand div.logo span.rus {
     float: left;
@@ -244,7 +242,7 @@ header {
     padding-top: 6px;
     padding-bottom: 5px;
     color:#ffffff;
-    font-size:14px;
+    font-size: 0.875em; 
 }
 .navbar-form input:focus {
     box-shadow: none;
@@ -307,7 +305,7 @@ header {
 .nav-collapse_ .nav li {    
     position: relative;
     line-height: 17px;
-    font-size: 13px;
+    font-size: 0.8125em; 
 }
 .nav-collapse_ .nav > li {
     background: url(../img/line-1.png) 0 0 repeat-y;
@@ -395,7 +393,7 @@ header {
 .nav-collapse_ .nav ul li a {
     display: block;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 1em; 
     line-height: 15px;
     padding: 7px 10px 8px 24px;
     background: none;
@@ -553,7 +551,7 @@ header {
 }
 .news-box-item h3 {   
     color: #9f1603;
-    font-size: 18px;  
+    font-size: 1.125em;  
     padding: 5px 10px 0 10px
 }
 .news-box-item img {   
@@ -562,7 +560,7 @@ header {
 }
 .content h1 {
     margin: 0 0 25px 0;
-    font-size: 18px;
+    font-size: 1.125em; 
     line-height: 22px;
     text-transform: none;
     font-family: 'Ubuntu', sans-serif;
@@ -826,10 +824,27 @@ opacity: 1;
     text-shadow: 1px 5px 2px #101b2d;
 }
 .caption h3 {
-    font-size:20px;
+    font-size: 1.25em; 
 }
 .caption h4 {
-    font-size: 18px;
+    font-size: 1.125em; 
+}
+.blue {   
+  background-color: #dfeeff;
+  background-image: -moz-linear-gradient(top, #ffffff, #dfeeff);
+  background-image: -ms-linear-gradient(top, #ffffff, #dfeeff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#dfeeff));
+  background-image: -webkit-linear-gradient(top, #ffffff, #dfeeff);
+  background-image: -o-linear-gradient(top, #ffffff, #dfeeff);
+  background-image: linear-gradient(to bottom, #ffffff, #dfeeff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dfeeff', GradientType=0);
+  border: 1px solid #c9d6e5;  
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 0 #ffffff;
+  -moz-box-shadow: inset 0 1px 0 #ffffff;
+  box-shadow: inset 0 1px 0 #ffffff;
+
 }
 .gray {   
   background-color: #a9a9a9;
@@ -929,7 +944,7 @@ opacity: 1;
     margin:5px auto;
 }
 .info-block-wrap .wrap-button button{    
-    font-size: 15px;
+    font-size: 1em;
     line-height: 14px;
     font-weight: normal;    
     color: #FFFFFF;
@@ -961,7 +976,7 @@ opacity: 1;
     background: #ffffff
 }
 .single-promo {
-    font-size: 25px;
+    font-size: 1.5625em; 
     font-weight: normal;
     padding: 20px 10px;
     text-align: center;
@@ -970,7 +985,7 @@ opacity: 1;
        line-height: 25px;
 }
 .single-promo i {
-  font-size: 40px;
+  font-size: 2.5em;
 }
 
 .single-promo:hover {
@@ -1009,7 +1024,7 @@ opacity: 1;
 }
 
 .section-title {
-    font-size: 50px;
+    font-size: 3em;
     font-weight: normal;
     margin-bottom: 15px;
     text-align: center;
@@ -1142,7 +1157,7 @@ figure.effect-zoom p {
 	background: #dfeeff;
 	color: #9f1603;
 	text-transform: none;	
-	font-size: 14px;
+	font-size: 0.875em; 
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(-360px,0,0);
@@ -1314,11 +1329,11 @@ figure.effect-zoom:hover p {
 .list-news {
     display: block;    
     padding: 9px 12px 9px 9px;    
-    min-height: 130px;
+    min-height: 150px;
     position: relative
 }
 .wbg .list-news { 
-    min-height: 158px; 
+    min-height: 175px; 
     padding: 0 12px 9px 9px;
 }
 .list-news-image {      
@@ -1333,38 +1348,43 @@ figure.effect-zoom:hover p {
     height: 100%;    
 }
 .list-news-comment {
-        margin-top: 5px;
+    margin-top: 5px;
     min-height: 35px;
     display: block;
-    font-size: 13px;
+    font-size: 0.8125em; 
 }
 .list-news-more {
     position: absolute;
-    bottom:0;
+    bottom:5px;
     display: inline;
     right: 10px;
     display: block;
-    padding: 3px 6px; 
-    font-size: 16px; 
-    background-color:rgba(221, 237, 255, 0.8);
+    padding: 7px; 
+    font-size: 1em;    
+     
+}
+.list-news-more:hover {
+    background: rgba(239, 239, 239, 0.8);    
 }
 .list-news-model {
     color: #9f1603;
-    font-size: 18px;
-    margin-left: 30px;
-}
+    font-size: 1.125em;
+    background-color: rgba(221, 237, 255, 0.8);
+    margin: 10px 0 10px 130px;
+    padding: 5px;
+}    
 .list-news-model:hover {
     color: #cf3046;
 }
 .list-news-options {
     text-align: justify;
     width: 100%;    
-    font-size: 16px;
+    font-size: 1em;
     line-height: 18px;
     margin-bottom: 0
 }
 .list-news-options-title {
-    font-size: 14px;
+    font-size: 0.875em; 
     font-weight: 700;
 }
 .list-news-wrap {
@@ -1507,7 +1527,23 @@ figure.effect-zoom:hover p {
     display: none;
 }
 
-
+.fileattach {
+    padding: .6em;
+    margin-bottom: 1.25em;
+    min-height: 2em;
+    border: 1px solid #cfdec9;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    font-size: .9em;
+    border-radius: 3px;
+    position: relative;
+}
+.fileattach i {   
+    font-size: 1.8em;
+    opacity: 0.3;
+    text-shadow: 0px 1px 1px #FFF;   
+    top: 0.05em;
+    margin-right: 0.5em;
+}
 /* Guest comment */
 
 .ticket-comment-guest .ticket-comment-author {
@@ -1602,7 +1638,7 @@ figure.effect-zoom:hover p {
 
 #tpanel .change {
     color: #666;
-    font-size: 12px;
+    font-size: 0.75em; 
     text-decoration: none;
     padding: 0 10px;
     position: absolute;
@@ -1636,7 +1672,7 @@ figure.effect-zoom:hover p {
     text-decoration: none;
     display: block;
     color: #fff;
-    font-size: 12px;
+    font-size: 0.75em; 
     padding: 0;
     padding-top: 4px;
     padding-bottom: 6px;
@@ -1874,7 +1910,7 @@ figure.effect-zoom:hover p {
     border: none;
 }
 .contacts h4 {
-    font-size: 18px;
+    font-size: 1.125em; 
     color: #9f1603;
     letter-spacing:normal;
     text-transform: uppercase;
@@ -1898,7 +1934,7 @@ address span {
 }
 .block-404 h1 {
     margin: 0px;
-    font-size: 60px;
+    font-size: 3.75em; 
 }
 .block-404 h4 {
     margin: 28px 0 39px 0;
@@ -1989,7 +2025,7 @@ ul.pagelist .pagelist-item {
     font-family: 'Ubuntu', sans-serif;
 }
 ul.pagelist a {
-    font-size: 13px;
+    font-size: 0.8125em; 
     line-height: 14px;
     font-weight: normal;
     color: #FFFFFF;
@@ -2059,7 +2095,7 @@ ul.pagelist li.control span, ul.pagelist li.disabled span {
     background-color: #FFFFFF !important;
     height: 30px;
     padding: 5px 10px;
-    font-size: 13px;
+    font-size: 0.8125em; 
     line-height: 1.5;
     background-image: none;
     border: 1px solid #ccc !important;
@@ -2120,7 +2156,7 @@ ul.pagelist li.control span, ul.pagelist li.disabled span {
     color: #fff;
     text-align: center;
     position: absolute;
-    font-size: 16px;
+    font-size: 1.5em;
     padding: 10px;
     background: rgba(159, 22, 3, 0.5);
     top: 10px;
@@ -2135,7 +2171,7 @@ ul.pagelist li.control span, ul.pagelist li.disabled span {
 .view p {  
     padding: 10px 0 0;
     width: 100%;
-    font-size: 16px;    
+    font-size: 1em;    
     color: #fff;    
     text-align: center;    
     text-indent: 0px;
@@ -2148,7 +2184,7 @@ ul.pagelist li.control span, ul.pagelist li.disabled span {
     position: absolute;
     bottom: 40%;
     margin-left: 35%;
-    font-size: 12px;
+    font-size: 0.75em; 
     color: #fff;
     text-transform: uppercase;
     -webkit-box-shadow: 0 0 1px #101b2d;
@@ -2262,7 +2298,7 @@ footer {
     z-index: 1500
 }
 footer h4 {
-    font-size: 12px;
+    font-size: 0.75em; 
     font-weight: 700;
     color:#fde586;
     letter-spacing: 1px;
@@ -2280,7 +2316,7 @@ footer h4 {
     margin-top: 10px;
     color: #a9a9a9;
     background: none;
-    font-size: 12px;
+    font-size: 0.75em; 
     line-height: 11px;
 }
 .footer-menu li a {
@@ -2305,7 +2341,7 @@ form#newsletter {
     padding: 25px 27px 28px 28px;
 }
 form#newsletter button {
-    font-size: 14px;
+    font-size: 0.875em; 
     border: none;
 }
 form#newsletter button:hover {  
@@ -2320,7 +2356,7 @@ form#newsletter label {
     color: #ffffff;
     font-weight: 700;
     line-height: 22px;
-    font-size: 18px;
+    font-size: 1.125em; 
     margin-bottom: 16px;
     display: block;
     text-transform: none;
@@ -2332,13 +2368,13 @@ form#newsletter label {
     margin-top: 20px
 }
 .copyright p {
-    font-size: 14px
+    font-size: 0.875em; 
 }
 .footer-social a {
   background: none repeat scroll 0 0 #9f1603;
   color: #fff;
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.25em; 
   height: 30px;
   margin-bottom: 5px;
   margin-right: 5px;
@@ -2381,7 +2417,7 @@ form#newsletter label {
 }
 @media (min-width: 1200px) {
     .brand span {
-        font-size: 20px;
+        font-size: 1.25em; 
         line-height: 21px;
     }   
     .form-404 input {
@@ -2390,7 +2426,7 @@ form#newsletter label {
 }
 @media (min-width: 992px) and (max-width: 1199px) {   
     .brand span {
-        font-size: 18px;
+        font-size: 1.125em; 
         line-height: 19px;
     }
     .header-block .babel_links {
@@ -2407,16 +2443,16 @@ form#newsletter label {
        top: 10px;      
     }    
     .extra-wrap h3 {
-       font-size: 20px;
+       font-size: 1.25em; 
     }
     .excerpt{
        font-size: 15px;
     }
     .single-promo {
-       font-size: 20px;
+       font-size: 1.25em; 
     }
     .single-promo i {
-       font-size: 35px
+       font-size: 2em;
     }
     .news-box-item img {
        width: 220px;
@@ -2436,7 +2472,7 @@ form#newsletter label {
 }
 @media (min-width: 768px) and (max-width: 991px) {   
     .brand span {
-        font-size: 13px;
+        font-size: 0.8125em; 
         line-height: 20px;
     }    
     .brand div.logo span.rus {
@@ -2530,12 +2566,12 @@ form#newsletter label {
         width: 47%;       
     }
     .view p {    
-       font-size:14px
+       font-size: 0.875em; 
     }    
 }
 @media (max-width: 767px) {   
     h2 {
-        font-size: 30px;
+        font-size: 1.875em; 
     }
     .header-block-pad .babel_links {
         padding-left: 15px;
@@ -2631,7 +2667,7 @@ form#newsletter label {
         display: block;
     }
     .nav-collapse_ .nav li a {
-        font-size: 14px;
+        font-size: 0.875em; 
         line-height: 15px;
         color: #ffffff;
         font-weight: normal;
@@ -2686,7 +2722,7 @@ form#newsletter label {
     .nav-collapse_ .nav ul li a {
         display: block;
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 0.875em; 
         line-height: 15px;
         padding: 7px 10px 8px 35px;
         display: block;
@@ -2708,7 +2744,7 @@ form#newsletter label {
     }   
     /**/
     footer h4 {
-        font-size: 14px; 
+        font-size: 0.875em;  
         text-align: center
     }
     .footer-menu {
@@ -2716,7 +2752,7 @@ form#newsletter label {
         padding: 12px 0;
     }
     .footer-menu li {
-        font-size: 14px;
+        font-size: 0.75em; 
     }
     .float {
         float: right !important;
@@ -2728,7 +2764,7 @@ form#newsletter label {
        padding: 0
     }    
     .view p {    
-       font-size:14px
+       font-size: 0.875em; 
     }
     .news-preview {
         min-height: 157px;
@@ -2761,7 +2797,7 @@ form#newsletter label {
         width: 100%;
     }       
      .view p {    
-       font-size:14px
+       font-size: 0.875em; 
     }
     .view .mask h2 {    
       padding: 5px;    
@@ -2805,7 +2841,7 @@ form#newsletter label {
         margin-left: 15px
     }
     .pgwSlider.narrow .ps-current {
-        font-size: 14px;
+        font-size: 0.875em; 
     }
     .cols-1 .grid-1,
     .view-first img {
@@ -2826,10 +2862,10 @@ form#newsletter label {
         width: 100%;
     }
     .single-promo {
-        font-size: 20px
+        font-size: 1.25em; 
     }
     .list-news-options {        
-        font-size: 14px;
+        font-size: 0.875em; 
     }    
     #album-items.gallery .loaded{
         width: 45%;        
@@ -2843,7 +2879,7 @@ form#newsletter label {
         margin-left: 40px;
         margin-top: 2px;
         line-height: 14px;
-        font-size: 13px;
+        font-size: 0.8125em; 
     }
     .albums_grid li img {    
        min-height: 180px
@@ -2873,10 +2909,14 @@ form#newsletter label {
         margin-left: 40px;
         margin-top: 2px;
         line-height: 12px;
-        font-size: 11px;
+        font-size: 0.6875em; 
+        
     }
     .navbar-form a {
         margin-top: -25px;
+    }
+    .grid figure {
+        margin: 0 0 0 -155px;
     }
 }
 @media (max-width: 319px) {
@@ -2901,13 +2941,13 @@ form#newsletter label {
         margin-left: 40px;
         margin-top: 2px;
         line-height: 9px;
-        font-size: 9px;
+        font-size: 0.5625em; 
     }      
 }
 
 @media (min-width: 176px) and (max-width: 320px) {    
     .view h2 {
-        font-size: 14px;
+        font-size: 0.875em; 
         top: 0px;
         padding: 5px;
     }
@@ -2933,7 +2973,7 @@ form#newsletter label {
 @media (max-width: 176px) {
     .view p {
         display: none;
-        font-size: 11px;
+        font-size: 0.6875em; 
     }
     .view h2 {
         display: none;
