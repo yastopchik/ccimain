@@ -1341,7 +1341,7 @@ figure.effect-zoom:hover p {
     height: 90px;
     width: 120px;
     float:left;
-    margin: 4px 10px 2px 0px; 
+    margin: 0 10px 2px 0px; 
 }
 .list-news-image a img {
     width: 100%;
@@ -1373,6 +1373,10 @@ figure.effect-zoom:hover p {
     margin: 10px 0 10px 130px;
     padding: 5px;
 }    
+.list-news-description .all{    
+    margin: 0 0 10px 130px;
+    padding: 5px;
+}  
 .list-news-model:hover {
     color: #cf3046;
 }
