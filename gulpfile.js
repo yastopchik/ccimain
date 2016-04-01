@@ -32,7 +32,9 @@ gulp.task('images', function(cb) {
 // Fonts
 gulp.task('fonts', function() {
     return gulp.src([
-                    'app/bower_components/components-font-awesome/fonts/fontawesome-webfont.*'])
+                    'app/bower_components/components-font-awesome/fonts/fontawesome-webfont.*',
+                    'app/bower_components/bootstrap/fonts/glyphicons-halflings-regular.*' 
+                      ])
             .pipe(gulp.dest('dist/fonts/'));
 });
 // Clean
@@ -41,7 +43,7 @@ gulp.task('clean', function () {
 		.pipe(clean());
 });
 // Build
-gulp.task('build', ['html', 'images', 'fonts']);
+gulp.task('build', ['html', /*'images',*/ 'fonts']);
 
 // Default task
 gulp.task('default', ['clean'], function () {

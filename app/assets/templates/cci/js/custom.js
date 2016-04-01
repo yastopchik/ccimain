@@ -164,6 +164,24 @@
                   });
               };
           };
+          var dateBegin = $('#dateBegin');
+          if (dateBegin.length) {
+              dateBegin.datepicker({
+                  language: 'ru',
+                  format:'dd-mm-yyyy',
+                  todayHighlight:true,
+                  setStartDate: new Date()
+              });
+          };   
+          var dateEnd = $('#dateEnd');
+          if (dateEnd.length) {
+              dateEnd.datepicker({
+                  language: 'ru',
+                  format:'dd-mm-yyyy',
+                  todayHighlight:true,
+                  setStartDate: new Date()
+              });
+          };  
           $('body').delegate("#online", "click", function (e) {
               var el = $(e.currentTarget);
               var formdiv = $(el.attr('href'));
