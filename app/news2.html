@@ -346,27 +346,14 @@
                                 <div>
                                 <form id="requisition" action="" method="post" class="well ajax_form" enctype="multipart/form-data">
                                     <div class="caption dark-blue">
-                                        <h3>Подача заявки на мероприятие</h3>
+                                        <h3>Подача заявки на участие в деловых визитах</h3>
                                     </div>
                                     <h3 class="box-header">Информация о мероприятии</h3>
                                     <div class="form-group">
                                         <label for="request">Мероприятие*</label>
                                         <input type="text" name="request" class="form-control" id="request" value="Ярмарки в Российской Федерации" required />
                                         <span class="error error_request"></span>
-                                    </div>
-                                    <div class="form-inline">
-                                        <div class="form-group">
-                                            <label class="sr-only" for="dateBegin">Дата начала</label>
-                                            <input name="dateBegin" type="text" id="dateBegin" value="" class="form-control" placeholder="Дата начала" required />
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="sr-only" for="dateEnd">Дата окончания</label>
-                                            <input name="dateEnd" type="text" id="dateEnd" value="" class="form-control" placeholder="Дата окончания" required />
-                                            <span class="error error_dateEnd"></span>
-                                        </div>
-                                        <span class="error error_dateBegin"></span>
-                                        <span class="error error_dateEnd"></span>
-                                    </div>
+                                    </div>                                    
                                     <h3 class="box-header">Информация об организации</h3>
                                     <div class="form-group">
                                         <label for="organization">Наименование Организации*</label>
@@ -374,64 +361,73 @@
                                         <span class="error error_organization"></span>
                                     </div>
                                     <div class="form-group">
-                                        <label for="unp">УНП*</label>
-                                        <input type="text" name="unp" class="form-control" id="unp" value="" required />
+                                        <label for="adress">Адрес*</label>
+                                        <input type="text" name="adress" class="form-control" id="adress" value="" required />
+                                        <span class="error error_adress"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="unp">УНП</label>
+                                        <input type="text" name="unp" class="form-control" id="unp" />
                                         <span class="error error_unp"></span>
-                                    </div>
+                                    </div>  
                                     <div class="form-group">
-                                        <label for="phone">Контактный телефон*</label>
-                                        <input type="text" name="phone" class="form-control" id="phone" placeholder="375222778034" value="" required />
-                                        <span class="error error_phone"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Адрес электронной почты*</label>
-                                        <input type="email" name="email" class="form-control" id="email" placeholder="example&#x40;gmail.com" value="" required />
-                                        <span class="error error_email"></span>
-                                    </div>
-                                    
-                                    
-                                    
-                                    <div class="form-group">
-                                        <label for="fio">ФИО руководителя, должность*</label>
-                                        <input type="text" name="fio" class="form-control" id="fio" placeholder="Иванов И.И., директор" value="" />
+                                        <label for="fio">ФИО руководителя в договор, должность</label>
+                                        <input type="text" name="fio" class="form-control" id="fio" />
                                         <span class="error error_fio"></span>
-                                    </div>
+                                    </div>                                  
                                     <div class="form-group">
                                         <label for="rule">Действует на основании</label>
-                                        <input type="text" name="rule" class="form-control" id="rule" placeholder="Устава" value="" />
-                                        <span class="error error_rule"></span>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="bank">Банковские реквизиты</label>
-                                        <textarea name="bank" class="form-control" id="bank" rows="3"></textarea>
-                                        <span class="error error_bank"></span>
+                                        <input type="text" name="rule" class="form-control" id="phone" placeholder="Устава" value="" />
+                                        <span class="error error_phone"></span>
                                     </div>
                                     <h3 class="box-header">Информация об участнике(ах)</h3>
+                                    <div id="members-wrap">
                                     <div class="form-group">
-                                        <label for="place">Размер торговой палатки, м2</label>
-                                        <input type="number" name="place" class="form-control" id="place" placeholder="9" value="" required />
-                                        <span class="error error_place"></span>
+                                        <label for="members">ФИО участника (полностью)*</label>
+                                        <input type="text" name="membersAdd[]" class="form-control" value="" required/>
+                                        <span class="error error_members"></span>
                                     </div>
                                     <div class="form-group">
-                                        <label for="mphone">Контактный телефон*</label>
-                                        <input type="text" name="mphone" id="mphone" class="form-control" placeholder="375295555555" value="" />
+                                        <label for="position">Должность*</label>
+                                        <input type="text" name="positionAdd[]" class="form-control" value="" required/>
+                                        <span class="error error_position"></span>
+                                    </div> 
+                                        <div class="form-inline">
+                                        <div class="form-group">
+                                            <label class="sr-only" for="mphone">Мобильный телефон</label>
+                                            <input name="mphoneAdd[]" type="text"  value="" class="form-control" placeholder="Мобильный телефон" required />                                           
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="wphone">Рабочий телефон</label>
+                                            <input name="wphoneAdd[]" type="text"  value="" class="form-control" placeholder="Рабочий телефон" required />                                           
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="email">E-mail</label>
+                                            <input name="emailAdd[]" type="text" value="" class="form-control" placeholder="Эл.почт" required />                                            
+                                        </div>
                                         <span class="error error_mphone"></span>
+                                        <span class="error error_wphone"></span>
+                                        <span class="error error_email"></span>
+                                        </div>                                        
                                     </div>
                                     <div class="form-group">
-                                        <label for="booking">Бронирование гостиницы</label>
-                                        <select class="form-control" name="booking" id="booking">
-                                            <option value="0" selected="selected">Самостоятельно</option>
-                                            <option value="1">Централизовано</option>
-                                        </select>
-                                        <span class="error error_booking"></span>
+                                        <input type="button" class="btn btn-info addMembers" data-culture-key="ru" value="Добавить участника">  
+                                    </div>  
+                                    <h3 class="box-header">Дополнительная информация</h3>                                    
+                                    <div class="form-group">
+                                        <label for="intresting">Сфера интересов в стране проведения мероприятия</label>
+                                        <textarea name="intresting" class="form-control" id="intresting" rows="3"></textarea>
+                                        <span class="error error_intresting"></span>
                                     </div>
                                     <div class="form-group">
-                                        <label for="executor">Исполнители</label>
-                                        <select class="form-control" name="executor" id="executor">
-                                            <option value="0" selected="selected">Красовская Анна Владимировна</option>
-                                            <option value="1">Свирченкова Юлия Вячеславовна</option>
-                                        </select>
-                                        <span class="error error_executor"></span>
+                                        <label for="company">Компании в стране (регионе) проведения мероприятия, в установлении контактов с которыми заинтересовано предприятие</label>
+                                        <textarea name="company" class="form-control" id="company" rows="3"></textarea>
+                                        <span class="error error_company"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="info">Дополнительная информация</label>
+                                        <textarea name="info" class="form-control" id="info" rows="3"></textarea>
+                                        <span class="error error_info"></span>
                                     </div>
                                     <div class="form-group">
                                         <label for="file">Загрузить оформленный бланк</label>
@@ -439,14 +435,13 @@
                                         <span class="error error_file"></span>
                                         <p class="help-block">Формат Ms Word</p>
                                         <span class="error error_file"></span>  
-                                    </div>                                    
+                                    </div>   
                                     <div class="form-group">
                                         <div class="g-recaptcha" data-sitekey="6LcL9RMTAAAAAHlpaa1i699ggrwLmSqwmUHE0TGg"></div>
                                         <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=ru"></script>
                                         <span class="error error_recaptcha"></span>
                                     </div>
                                     <input type="submit" class="btn btn-primary" value="Отправить" />
-
                                     <input type="hidden" name="af_action" value="989d81662c459095bb7ab7547dc4c33d" />
                                 </form>   
                                 </div>                     

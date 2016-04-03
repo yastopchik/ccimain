@@ -20,6 +20,9 @@
                   minSlides: 2,
                   maxSlides: 2,
                   slideMargin: 10,
+                  onSliderLoad: function () {
+                      $(".carousel-wrap").css("visibility", "visible");
+                  },
                   infiniteLoop: false,
               });
               carousel.photobox('a', {
@@ -168,20 +171,20 @@
           if (dateBegin.length) {
               dateBegin.datepicker({
                   language: 'ru',
-                  format:'dd-mm-yyyy',
-                  todayHighlight:true,
+                  format: 'dd-mm-yyyy',
+                  todayHighlight: true,
                   setStartDate: new Date()
               });
-          };   
+          };
           var dateEnd = $('#dateEnd');
           if (dateEnd.length) {
               dateEnd.datepicker({
                   language: 'ru',
-                  format:'dd-mm-yyyy',
-                  todayHighlight:true,
+                  format: 'dd-mm-yyyy',
+                  todayHighlight: true,
                   setStartDate: new Date()
               });
-          };  
+          };
           $('body').delegate("#online", "click", function (e) {
               var el = $(e.currentTarget);
               var formdiv = $(el.attr('href'));
@@ -193,9 +196,9 @@
               }
               return false;
           });
-          $('[data-toggle="tooltip"]').tooltip();          
-          
-      });      
+          $('[data-toggle="tooltip"]').tooltip();
+
+      });
       $(window).resize(function () {
           /*LockFixed*/
           var width = $(window).width();
@@ -212,6 +215,12 @@
                       top: 0
                   });
               }
+              var mode = $("#mode");
+              if (mode.length) {
+                  mode.hcSticky({
+                      top: 0
+                  });
+              }
           }
           if (width >= 768) {
               var sidebarright = $("#sidebar-right");
@@ -223,29 +232,74 @@
               }
           }
       }).resize();
-    $(document).on('click', '.albums-item', function(e){
-        var albumsGrid = $('#albums-grid');
-		var albumItems = $('#album-items');
-        if(albumsGrid.length){                        
-			var data = $(this).data();
-            var urls = $(this).attr("href");
-			albumsGrid.remove();
-			$('.pagination').remove();
-			albumItems.css("display", "block");
-            $.ajax({
-              url: urls,
-              cache: false,
-              data: data,
-              beforeSend: function() {
-                  albumItems.html("<div class=\"loaded\"><img src='assets/templates/mogilevcci/img/495.gif' /></div>");
-              },
-              success: function (html) {
-                  albumItems.html(html); 
-              }
-          });
+      $(document).on('click', '.albums-item', function (e) {
+          var albumsGrid = $('#albums-grid');
+          var albumItems = $('#album-items');
+          if (albumsGrid.length) {
+              var data = $(this).data();
+              var urls = $(this).attr("href");
+              albumsGrid.remove();
+              $('.pagination').remove();
+              albumItems.css("display", "block");
+              $.ajax({
+                  url: urls,
+                  cache: false,
+                  data: data,
+                  beforeSend: function () {
+                      albumItems.html("<div class=\"loaded\"><img src='assets/templates/mogilevcci/img/495.gif' /></div>");
+                  },
+                  success: function (html) {
+                      albumItems.html(html);
+                  }
+              });
+              return false;
+          }
+          e.preventDefault();
           return false;
-        }
-        e.preventDefault();
-        return false;
-    
-    })
+      });  
+      var lexicon = {  
+          "ru":{
+              "members": "ФИО участника (полностью)*",
+              "position": "Должность*",
+              "mphone": "Мобильный телефон",
+              "wphone": "Рабочий телефон",
+              "email": "Адрес электронной почты"
+          },
+          "en":{
+              "members": "Member name (fully)",
+              "position": "Position*",
+              "mphone": "Mobile phone",
+              "wphone": "Work phone",
+              "email": "E-mail"
+          } 
+      };
+      $(document).on('click', '.addMembers', function (e) {
+          var cultureKey = $('.addMembers').attr("data-culture-key");
+          var membersGroup = document.createElement('div');
+          membersGroup.className = "form-group";
+          membersGroup.innerHTML = "<label for=\"members\">"+lexicon['ru']['members']+"</label>" +
+              "<input type=\"text\" name=\"membersAdd[]\" class=\"form-control\"  required/>" +
+              "<span class=\"error error_members\"></span>";
+          var positionGroup = document.createElement('div');
+          positionGroup.className = "form-group";
+          positionGroup.innerHTML = "<label for=\"position\">"+lexicon['ru']['position']+"</label>" +
+              "<input type=\"text\" name=\"positionAdd[]\" class=\"form-control\" required/>" +
+              "<span class=\"error error_position\"></span>";          
+          var membersInline = document.createElement('div');
+          membersInline.className = "form-inline";
+          membersInline.innerHTML = "<div class=\"form-group\">" +
+              "<label class=\"sr-only\" for=\"mphone\">"+lexicon['ru']['mphone']+"</label>" +
+              "<input name=\"mphoneAdd[]\" type=\"text\" class=\"form-control\" placeholder=\""+lexicon['ru']['mphone']+"\" required /></div>" +
+              "<div class=\"form-group\">" +
+              "<label class=\"sr-only\" for=\"wphone\">"+lexicon['ru']['wphone']+"</label>" +
+              "<input name=\"wphoneAdd[]\" type=\"text\" class=\"form-control\" placeholder=\""+lexicon['ru']['wphone']+"\" required /> </div>" +
+              "<div class=\"form-group\">" +
+              "<label class=\"sr-only\" for=\"email\">"+lexicon['ru']['email']+"</label>" +
+              "<input name=\"emailAdd[]\" type=\"text\" class=\"form-control\" placeholder=\""+lexicon['ru']['email']+"\" required /></div>" +
+              "<span class=\"error error_error_mphone\"></span><span class=\"error error_wphone\"></span><span class=\"error error_email\"></span>";
+          document.getElementById('members-wrap').appendChild(membersGroup);
+          document.getElementById('members-wrap').appendChild(positionGroup);
+          document.getElementById('members-wrap').appendChild(membersInline);
+          e.preventDefault();
+          return false;
+      });

@@ -1210,6 +1210,10 @@ figure.effect-zoom:hover p {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+/*CAROUSEL SLIDER*/
+.carousel-wrap {
+    visibility: hidden;
+}
 /*SLIDER-BOTTOM*/
 
 .slider-bottom .bx-wrapper {
@@ -1294,6 +1298,9 @@ figure.effect-zoom:hover p {
 /*News main page*/
 
 /*LIST-NEWS*/
+.list-news-container {
+    padding:0;
+}
 .list-news-grid {
     list-style: none;
     padding:15px;
@@ -1397,7 +1404,7 @@ figure.effect-zoom:hover p {
     text-align: right;
 }
 .news-preview {
-    min-height: 789px;
+    min-height: 925px;
 }
 /*COMMENTS*/
 .ticket-meta,
@@ -2157,7 +2164,7 @@ ul.pagelist li.control span, ul.pagelist li.disabled span {
     color: #fff;
     text-align: center;
     position: absolute;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 10px;
     background: rgba(159, 22, 3, 0.5);
     top: 10px;
@@ -2590,7 +2597,7 @@ form#newsletter label {
     .contacts {
         padding-right: 0;
         margin-right: 0;
-        margin-left: 40px;
+        margin-left: 0;
         background: none;
     }    
     .social {
@@ -2736,9 +2743,12 @@ form#newsletter label {
         padding: 7px 10px 8px 40px;
         text-transform: none;
     }      
-    .list-news {     
-        min-height: 170px;
-    }    
+    .list-news, .wbg .list-news {     
+        min-height: 280px;
+    } 
+    .wbg .list-news {     
+        min-height: 220px;
+    } 
     /**/
     .lists-width2 {
         margin-left: -30px;
@@ -2791,7 +2801,7 @@ form#newsletter label {
        padding-bottom: 0;
     }
     .contacts {
-        display: none;
+        display: block;
     }
     /* contact-form */
     .contact-form input {
@@ -2808,6 +2818,9 @@ form#newsletter label {
         bottom: 35%;
         margin-left: 25%;
     }    
+    .list-news-options {        
+        font-size: 0.875em; 
+    }
 }
 @media all and (max-width:700px) {	
 	#gallery li { 
@@ -2864,10 +2877,10 @@ form#newsletter label {
     }
     .single-promo {
         font-size: 1.25em; 
-    }
-    .list-news-options {        
-        font-size: 0.875em; 
-    }    
+    }        
+    .list-news-description .all{    
+        margin: 90px 0 10px 0px;   
+    }  
     #album-items.gallery .loaded{
         width: 45%;        
     }
