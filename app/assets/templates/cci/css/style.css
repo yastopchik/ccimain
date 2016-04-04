@@ -153,8 +153,18 @@ header {
     padding: 41px 15px 16px 15px;
 }
 .header-block .babel_links {
-    float: right;
-    padding: 5px 0 0 55px;
+    float: right;    
+}
+.top-link {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.top-link li {
+    float:left;
+    color:#ffffff;
+    margin-right: 10px;
 }
 .header-block .babel_links a {
     color: #ffffff;
@@ -216,6 +226,166 @@ header {
 .brand div.logo-xs span {
     float: left;
     text-align: center;
+}
+/*Login*/
+#login-container {
+    position:relative
+}
+#auth-form {
+    position: absolute;
+    z-index: 133;
+    right: 2px;
+}
+#auth-form input {
+    border-radius: 1px;    
+    -webkit-border-radius: 1px;
+    font-size: 0.875em;
+    border: 1px solid #c9d6e5
+}
+.bar {
+    background: url(../img/495.gif) center no-repeat;
+    height: 40px;
+    width: 230px;
+    margin-top: 100px;
+}
+#login-div, #messageSent, .bar {
+    display: none;
+}
+#login-div {
+    position: fixed
+}
+#auth,
+#registration {
+    height: auto;
+    width: 360px;
+    background: url(../img/pattern.gif) top center;
+    border: 3px solid #101b2d;
+    -moz-border-image: -moz-linear-gradient(left, #101b2d 0, #FFFFFF 5%, #101b2d 15%, #101b2d 85%, #FFFFFF 95%, #101b2d 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, #101b2d 0, #FFFFFF 5%, #101b2d 15%, #101b2d 85%, #FFFFFF 95%, #101b2d 100%);
+    border-image: linear-gradient(to left, #101b2d 0, #FFFFFF 5%, #101b2d 15%, #101b2d 85%, #FFFFFF 95%, #101b2d 100%);
+    border-image-slice: 1;
+    color: #06050e;
+    display: none;
+    padding: 0;
+    float: right;
+}
+#auth-form input,
+#registration-form input {
+    margin-top: 15px;
+}
+#auth-form button,
+#registration-form button {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+#auth-form h4,
+#registration-form h4 {
+    text-align: center;
+}
+
+#auth-form a#registration {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#auth,
+#registration {
+    padding: 0;
+    float: right;
+}
+
+#auth-form h4,
+#registration-form h4 {
+    text-align: center;
+    padding: 5px;
+}
+#login-div {
+    top: 0;
+    right: 0;
+}
+.social {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.closes, .closes:hover {    
+    top: 0;
+}
+.closes, .closes:hover {    
+    position: absolute;
+    display: inline;
+    opacity: 1;
+    width: 24px;
+    height: 24px;
+}
+/*Hybridauth*/
+.hybridauth .ha-avatar {
+    position: absolute;
+    width: 75px
+}
+.hybridauth .ha-info {
+    display: inline-block
+}
+.ha-icon,
+.ha-icon-active {
+    display: inline-block;
+    width: 30px;
+    height: 32px;
+    margin: 0 2px;
+    background-image: url(../img/color-icons.png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    opacity: 1
+}
+.ha-icon:hover {
+    opacity: .8
+}
+.ha-icon.active {
+    background-image: url(../img/grayscale-icons.png);
+    opacity: .5!important
+}
+.ha-icon.facebook {
+    background-position: 0 0
+}
+.ha-icon.github {
+    background-position: -31px 0
+}
+.ha-icon.google {
+    background-position: -60px 0
+}
+.ha-icon.instagram {
+    background-position: -90px 0
+}
+.ha-icon.linkedin {
+    background-position: -120px 0
+}
+.ha-icon.livejournal {
+    background-position: -150px 0
+}
+.ha-icon.mailru {
+    background-position: -179px 0
+}
+.ha-icon.odnoklassniki {
+    background-position: -209px 0
+}
+.ha-icon.thumblr {
+    background-position: -238px 0
+}
+.ha-icon.twitter {
+    background-position: -268px 0
+}
+.ha-icon.vimeo {
+    background-position: -297px 0
+}
+.ha-icon.vkontakte {
+    background-position: -327px 0
+}
+.ha-icon.yandex {
+    background-position: -357px 0
+}
+.ha-icon.youtube {
+    background-position: -387px 0
+}
+.ha-icon.foursquare {
+    background-position: -417px 0
 }
 /* search-form */
 .navbar-form {
@@ -2455,8 +2625,7 @@ form#newsletter label {
         line-height: 19px;
     }
     .header-block .babel_links {
-       float: right;
-       padding: 5px 0 0 32px;
+       float: right;       
    } 
     .nav-collapse_ .nav > li {
        padding: 0 2px 0 2px;
@@ -2511,8 +2680,7 @@ form#newsletter label {
         top: 10px;  
     }    
     .header-block .babel_links {
-       float: left;
-       padding: 5px 0 0 14px;
+       float: left;       
     }
     .sf-arrows .sf-with-ul {
 	    padding-right: .2em;
@@ -2598,8 +2766,7 @@ form#newsletter label {
     h2 {
         font-size: 1.875em; 
     }
-    .header-block-pad .babel_links {
-        padding-left: 15px;
+    .header-block-pad .babel_links {        
         float: left
     }
     .container {
