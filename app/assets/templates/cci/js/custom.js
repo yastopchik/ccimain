@@ -278,24 +278,24 @@
           var membersGroup = document.createElement('div');
           membersGroup.className = "form-group";
           membersGroup.innerHTML = "<label for=\"members\">"+lexicon['ru']['members']+"</label>" +
-              "<input type=\"text\" name=\"membersAdd[]\" class=\"form-control\"  required/>" +
+              "<input type=\"text\" name='membersAdd[]' class=\"form-control\"  required/>" +
               "<span class=\"error error_members\"></span>";
           var positionGroup = document.createElement('div');
           positionGroup.className = "form-group";
           positionGroup.innerHTML = "<label for=\"position\">"+lexicon['ru']['position']+"</label>" +
-              "<input type=\"text\" name=\"positionAdd[]\" class=\"form-control\" required/>" +
+              "<input type=\"text\" name='positionAdd[]' class=\"form-control\" required/>" +
               "<span class=\"error error_position\"></span>";          
           var membersInline = document.createElement('div');
           membersInline.className = "form-inline";
           membersInline.innerHTML = "<div class=\"form-group\">" +
               "<label class=\"sr-only\" for=\"mphone\">"+lexicon['ru']['mphone']+"</label>" +
-              "<input name=\"mphoneAdd[]\" type=\"text\" class=\"form-control\" placeholder=\""+lexicon['ru']['mphone']+"\" required /></div>" +
+              "<input name='mphoneAdd[]' type=\"text\" class=\"form-control\" placeholder=\""+lexicon['ru']['mphone']+"\"  /></div>" +
               "<div class=\"form-group\">" +
               "<label class=\"sr-only\" for=\"wphone\">"+lexicon['ru']['wphone']+"</label>" +
-              "<input name=\"wphoneAdd[]\" type=\"text\" class=\"form-control\" placeholder=\""+lexicon['ru']['wphone']+"\" required /> </div>" +
+              "<input name='wphoneAdd[]' type=\"text\" class=\"form-control\" placeholder=\""+lexicon['ru']['wphone']+"\"  /> </div>" +
               "<div class=\"form-group\">" +
               "<label class=\"sr-only\" for=\"email\">"+lexicon['ru']['email']+"</label>" +
-              "<input name=\"emailAdd[]\" type=\"text\" class=\"form-control\" placeholder=\""+lexicon['ru']['email']+"\" required /></div>" +
+              "<input name='emailAdd[]' type=\"email\" class=\"form-control\" placeholder=\""+lexicon['ru']['email']+"\" /></div>" +
               "<span class=\"error error_error_mphone\"></span><span class=\"error error_wphone\"></span><span class=\"error error_email\"></span>";
           document.getElementById('members-wrap').appendChild(membersGroup);
           document.getElementById('members-wrap').appendChild(positionGroup);

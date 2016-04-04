@@ -1412,6 +1412,10 @@ figure.effect-zoom:hover p {
     border-top: 1px dotted #434343;
     margin: 0 5px;
 }
+.ticket-meta.on-page {
+    border-bottom: 1px dotted #434343;
+    margin: 0 0 10px;
+}
 
 .ticket-comment,
 .ticket-comment-row {
@@ -1554,6 +1558,19 @@ figure.effect-zoom:hover p {
     text-shadow: 0px 1px 1px #FFF;   
     top: 0.05em;
     margin-right: 0.5em;
+}
+.fileattach a{   
+    text-decoration: none;
+	text-transform: uppercase;
+}
+.fileattach a:hover{   
+    color:#101b2d;
+}
+.fileattach.online a{   
+    color: #101b2d
+}
+.fileattach a:hover{   
+    color:#101b2d;
 }
 /* Guest comment */
 
