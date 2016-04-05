@@ -2726,8 +2726,7 @@ form#newsletter label {
         padding: 0 2px 0 2px;
         float: left;
     }
-    .nav-collapse_ .nav > li.li-first {
-        background: none;
+    .nav-collapse_ .nav > li.li-first {        
         padding: 0 5px 0 0px;
     }
     .nav-collapse_ .nav > li > a {
