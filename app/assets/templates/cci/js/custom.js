@@ -234,7 +234,7 @@
       }).resize();
       /*Login*/
       logindiv = $("#login-div");      
-      $(document).on('click', '#login-href', function (e) {
+      $(document).on('click', '.login-href', function (e) {
           var auth = $("#auth");
           var registration = $("#registration");
           if (auth.is(":hidden")) {
@@ -251,37 +251,29 @@
               logindiv.fadeOut("slow");
           }
       });
-
-      $("#login-close").click(function () {
+      $(".login-close").click(function () {
           $("#auth").slideUp("slow");
       });
-      //function for registration form dropdown
-      function dropdownRegistration() {
-          var officeauth = $("#auth");
-          var officeregistration = $("#registration");
-          if (officeregistration.is(":hidden")) {
-              officeauth.hide();
-              officeregistration.slideDown("slow");
+      $(document).on('click', '.reg-link', function(e){
+        var auth = $("#auth");
+          var registration = $("#registration");
+          if (registration.is(":hidden")) {
+              auth.hide();
+              registration.slideDown("slow");
               logindiv.css({
                   "opacity": "1"
               });
               logindiv.fadeIn("slow");
           } else {
-              officeregistration.slideUp("slow");
+              registration.slideUp("slow");
               logindiv.fadeOut("slow");
-          }
-      }
-      $("#registration").click(function () {
-          dropdownRegistration()
-      });
-      $("#registration-close").click(function () {
+          }      
+      })      
+      $(".registration-close").click(function () {
           $("#registration").slideUp("slow");
       });
-
-
-
-
-      $(document).on('click', '.albums-item', function (e) {
+/*Gallery*/
+$(document).on('click', '.albums-item', function (e) {
           var albumsGrid = $('#albums-grid');
           var albumItems = $('#album-items');
           if (albumsGrid.length) {

@@ -153,12 +153,12 @@ header {
     padding: 41px 15px 16px 15px;
 }
 .header-block .babel_links {
-    float: right;    
+    float: left;    
 }
 .top-link {
     list-style: none;
     display: block;
-    margin: 0;
+    margin: 20px 5px;
     padding: 0;
 }
 .top-link li {
@@ -188,7 +188,7 @@ header {
     height: 85px;
     position: relative;
     top: 25px;
-    margin: 0 25px 0 45px;
+    margin: 0 45px 0 45px;
 }
 .brand div.logo {
     background-position: center top;
@@ -234,13 +234,17 @@ header {
 #auth-form {
     position: absolute;
     z-index: 133;
-    right: 2px;
+    left: 2px;
 }
 #auth-form input {
     border-radius: 1px;    
     -webkit-border-radius: 1px;
     font-size: 0.875em;
     border: 1px solid #c9d6e5
+}
+#auth-login, #auth-register {
+    width: 80%;
+    margin: 0 auto
 }
 .bar {
     background: url(../img/495.gif) center no-repeat;
@@ -260,9 +264,9 @@ header {
     width: 360px;
     background: url(../img/pattern.gif) top center;
     border: 3px solid #101b2d;
-    -moz-border-image: -moz-linear-gradient(left, #101b2d 0, #FFFFFF 5%, #101b2d 15%, #101b2d 85%, #FFFFFF 95%, #101b2d 100%);
-    -webkit-border-image: -webkit-linear-gradient(left, #101b2d 0, #FFFFFF 5%, #101b2d 15%, #101b2d 85%, #FFFFFF 95%, #101b2d 100%);
-    border-image: linear-gradient(to left, #101b2d 0, #FFFFFF 5%, #101b2d 15%, #101b2d 85%, #FFFFFF 95%, #101b2d 100%);
+    -moz-border-image: -moz-linear-gradient(top, #101b2d 0, #FFFFFF 5%, #101b2d 15%, #101b2d 85%, #FFFFFF 95%, #101b2d 100%);
+    -webkit-border-image: -webkit-linear-gradient(top, #101b2d 0, #FFFFFF 5%, #101b2d 15%, #101b2d 85%, #FFFFFF 95%, #101b2d 100%);
+    border-image: linear-gradient(to top, #101b2d 0, #FFFFFF 5%, #101b2d 15%, #101b2d 85%, #FFFFFF 95%, #101b2d 100%);
     border-image-slice: 1;
     color: #06050e;
     display: none;
@@ -290,13 +294,14 @@ header {
 #auth,
 #registration {
     padding: 0;
-    float: right;
+    float: left;
 }
 
 #auth-form h4,
 #registration-form h4 {
     text-align: center;
     padding: 5px;
+    margin-top: 20px;
 }
 #login-div {
     top: 0;
@@ -306,8 +311,21 @@ header {
     text-align: center;
     margin-bottom: 10px;
 }
-.closes, .closes:hover {    
+.auth-link {
+    list-style: none;   
+    position: absolute;
     top: 0;
+    width: 100%;
+    padding: 0;
+}
+.auth-link li {
+    float:left;
+    margin-left: 10px;
+    margin-top: 5px
+}
+.user-info {
+    width: 100%;
+    text-align: center
 }
 .closes, .closes:hover {    
     position: absolute;
@@ -315,6 +333,7 @@ header {
     opacity: 1;
     width: 24px;
     height: 24px;
+    right: 0;
 }
 /*Hybridauth*/
 .hybridauth .ha-avatar {
@@ -2625,7 +2644,7 @@ form#newsletter label {
         line-height: 19px;
     }
     .header-block .babel_links {
-       float: right;       
+       float: left;       
    } 
     .nav-collapse_ .nav > li {
        padding: 0 2px 0 2px;
@@ -2681,6 +2700,14 @@ form#newsletter label {
     }    
     .header-block .babel_links {
        float: left;       
+    }
+   #auth-form {   
+    left: 0;
+    right: auto;
+    margin-left: 15px;
+   }
+    .closes, .closes:hover {
+     right: 10px;
     }
     .sf-arrows .sf-with-ul {
 	    padding-right: .2em;
@@ -2769,6 +2796,9 @@ form#newsletter label {
     .header-block-pad .babel_links {        
         float: left
     }
+    .header-block {
+        height: 196px
+    }
     .container {
         padding: 0 20px;
     }    
@@ -2777,6 +2807,18 @@ form#newsletter label {
     }
     .brand div.logo, .brand div.logo-xs {
        top:10px;
+    }
+    .top-link {
+       padding-left:5px;
+       margin: 0; 
+    }
+    #auth-form {    
+    left: 0;
+    right: auto;
+    margin-left: 15px;
+   }
+    .closes, .closes:hover {
+     right: 10px;
     }
     .contacts {
         padding-right: 0;
@@ -2793,7 +2835,7 @@ form#newsletter label {
     }
     /* navbar */   
     .navbar_ .navbar-inner_ {
-        padding: 13px 0 10px 0px;       
+        padding: 4px 0 8px 0px;       
     }
     .navbar_ .nav-collapse_ {       
         position: absolute;
@@ -2984,6 +3026,9 @@ form#newsletter label {
        padding-top: 5px;
        padding-bottom: 0;
     }
+    .navbar_ .navbar-inner_ {
+    padding: 10px 0 10px 0px;
+}
     .contacts {
         display: block;
     }
@@ -3038,6 +3083,9 @@ form#newsletter label {
         margin-right: 0;
         margin-left: 15px
     }
+    .navbar_ .navbar-inner_ {
+    padding: 2px 0 8px 0px;
+}
     .pgwSlider.narrow .ps-current {
         font-size: 0.875em; 
     }
@@ -3101,6 +3149,12 @@ form#newsletter label {
         width: 40%;
         float: left;
     }
+    .top-link li {        
+        margin-right: 2px;
+   }    
+    #auth, #registration {
+       width: 322px;
+    }
 }
 @media (max-width: 320px) {
     .brand div.logo-xs span {
@@ -3158,6 +3212,9 @@ form#newsletter label {
     }
     .albums_grid li img {    
        min-height: 180px
+    }
+    #auth, #registration {
+       width: 280px;
     }
 }
 @media (max-width: 280px) {
