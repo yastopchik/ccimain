@@ -106,13 +106,13 @@ Ext.extend(FormIt.grid.Forms,MODx.grid.Grid,{
                 ,startDate: Ext.getCmp('startdate').getValue()
                 ,endDate: Ext.getCmp('enddate').getValue()
                 ,download: false
+                ,limit: 0
                 ,HTTP_MODAUTH: MODx.siteId
             }
             ,_link = FormIt.config.connectorUrl+'?'+Ext.urlEncode(_params);
  
         var win = window.open(_link, '_blank');
         win.focus();
-        return;
     }
 
 });

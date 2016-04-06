@@ -173,10 +173,10 @@ pdoPage.loadPage = function (href, config, mode) {
                 wrapper.removeClass('loading');
                 if (config['mode'] != 'scroll') {
                     wrapper.css({opacity: 1});
-                   /* if (config['mode'] == 'default') {
-                        var t= wrapper.position().top;
-                        $('html, body').animate({scrollTop: wrapper.position().top - 50 || 0}, 0);
-                    }*/
+                    if (config['mode'] == 'default') {
+                       // $('html, body').animate({scrollTop: wrapper.position().top - 50 || 0}, 0);
+                       $('html, body').animate(0, 0);
+                    }
                 }
             }
             pdoPage.updateTitle(config, response);
