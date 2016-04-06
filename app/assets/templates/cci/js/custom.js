@@ -214,13 +214,7 @@
                   sidebar_secondary.hcSticky({
                       top: 0
                   });
-              }
-              var mode = $("#mode");
-              if (mode.length) {
-                  mode.hcSticky({
-                      top: 0
-                  });
-              }
+              }              
           }
           if (width >= 768) {
               var sidebarright = $("#sidebar-right");

@@ -158,7 +158,7 @@ header {
 .top-link {
     list-style: none;
     display: block;
-    margin: 20px 5px;
+    margin: 20px 0 5px;
     padding: 0;
 }
 .top-link li {
@@ -2115,12 +2115,9 @@ figure.effect-zoom:hover p {
     border-radius: 2px;
 }
 /*-- CONTACT PAGE--*/
-.contact-map{
-    padding: 7px 0 9px 0;
-}
 .contact-map iframe {
     width: 100%;
-    height: 353px;
+    height: 232px;
     border: none;
 }
 .contacts h4 {
@@ -2135,8 +2132,10 @@ address strong {
     font-weight: 700;
 }
 address span {
-    display: inline-block;
-    width: 70px;
+    display: inline-block;    
+}
+#mode {
+    min-height: 290px;
 }
 /*404 page*/
 .block-404 .span8 {
