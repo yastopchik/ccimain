@@ -22,7 +22,7 @@ gulp.task('html', function () {
     .pipe(gulp.dest('app/assets/templates/cci/css/'));
 });*/
 gulp.task('images', function(cb) {
-    gulp.src(['app/assets/templates/cci/img/**/*'])
+    gulp.src(['app/assets/templates/mogilevcci/img/**/*'])
         .pipe(imageop({
         optimizationLevel: 5,
         progressive: true,
@@ -43,7 +43,7 @@ gulp.task('clean', function () {
 		.pipe(clean());
 });
 // Build
-gulp.task('build', ['html', /*'images',*/ 'fonts']);
+gulp.task('build', ['html', 'images', 'fonts']);
 
 // Default task
 gulp.task('default', ['clean'], function () {

@@ -3009,7 +3009,7 @@ form#newsletter label {
     }
     #album-items.gallery .loaded{
         width: 45%;       
-    }
+    }    
     /**/
 }
 @media (max-width: 625px) {
@@ -3111,6 +3111,10 @@ form#newsletter label {
     .list-news-description .all{    
         margin: 90px 0 10px 0px;   
     }  
+    .list-news-more {
+        bottom: auto;
+        top: 10px;
+    }
     #album-items.gallery .loaded{
         width: 45%;        
     }

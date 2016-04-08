@@ -1530,7 +1530,7 @@ figure.effect-zoom:hover p {
 }
 .wbg .list-news { 
     min-height: 175px; 
-    padding: 0 12px 9px 9px;
+    /*padding: 0 12px 9px 9px;*/
 }
 .list-news-image {      
     margin: 5px;
@@ -3110,7 +3110,11 @@ form#newsletter label {
     }        
     .list-news-description .all{    
         margin: 90px 0 10px 0px;   
-    }  
+    } 
+    .list-news-more {
+        bottom: auto;
+        top: 10px;
+    }
     #album-items.gallery .loaded{
         width: 45%;        
     }
