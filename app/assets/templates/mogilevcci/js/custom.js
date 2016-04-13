@@ -275,13 +275,13 @@ $(document).on('click', '.albums-item', function (e) {
               var urls = $(this).attr("href");
               albumsGrid.remove();
               $('.pagination').remove();
-              albumItems.css("display", "block");
+              albumItems.css("display", "inline-block");
               $.ajax({
                   url: urls,
                   cache: false,
                   data: data,
                   beforeSend: function () {
-                      albumItems.html("<div class=\"loaded\"><img src='assets/templates/mogilevcci/img/495.gif' /></div>");
+                      albumItems.html("<img src='assets/templates/mogilevcci/img/495.gif' />");
                   },
                   success: function (html) {
                       albumItems.html(html);

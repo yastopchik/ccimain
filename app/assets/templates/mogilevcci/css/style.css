@@ -164,7 +164,7 @@ header {
 .top-link li {
     float:left;
     color:#ffffff;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .header-block .babel_links a {
     color: #ffffff;
@@ -965,7 +965,7 @@ opacity: 1;
 }
 #album-items.gallery {
     margin: 0;
-    padding-left: 40px;
+    padding: 0;
 }
 #album-items.gallery .loaded{
     width: 32%;
@@ -1313,7 +1313,12 @@ opacity: 1;
 .grid figure p {
 	margin: 0;
 }
-
+/*TAGS*/
+.tags-wrap {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
 /* Individual effects */
 
 figure.effect-zoom img {
@@ -2781,7 +2786,7 @@ form#newsletter label {
        height: 180px;
     }
     #album-items.gallery .loaded{
-        width: 47%;       
+        width: 48.5%;       
     }
     .view p {    
        font-size: 0.875em; 
@@ -2789,7 +2794,7 @@ form#newsletter label {
 }
 @media (max-width: 767px) {   
     h2 {
-        font-size: 1.875em; 
+        font-size: 1.5em; 
     }
     .header-block-pad .babel_links {        
         float: left
@@ -3008,7 +3013,7 @@ form#newsletter label {
         display:none
     }
     #album-items.gallery .loaded{
-        width: 45%;       
+        width: 48.7%;       
     }
     /**/
 }
@@ -3091,6 +3096,9 @@ form#newsletter label {
     .view-first img {
         width: 100%
     }
+    .top-link li {
+        margin-right: 30%;
+    }
     .albums_grid li {
         width: 100%
     }
@@ -3114,6 +3122,7 @@ form#newsletter label {
     .list-news-more {
         bottom: auto;
         top: 10px;
+        font-size: 0.875em
     }
     #album-items.gallery .loaded{
         width: 45%;        
@@ -3150,10 +3159,7 @@ form#newsletter label {
         margin-left: 30px;
         width: 40%;
         float: left;
-    }
-    .top-link li {        
-        margin-right: 2px;
-   }    
+    }      
     #auth, #registration {
        width: 322px;
     }
@@ -3165,10 +3171,7 @@ form#newsletter label {
         line-height: 12px;
         font-size: 0.6875em; 
         
-    }
-    .navbar-form a {
-        margin-top: -25px;
-    }
+    }    
     .grid figure {
         margin: 0 0 0 -155px;
     }
