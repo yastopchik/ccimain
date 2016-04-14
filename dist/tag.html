@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Результат поиска по тэгу">
+    <meta name="keywords" content="Вывод по тэгу">
+    <link rel="shortcut icon" href="assets/templates/mogilevcci/img/favicon.ico">
+    <title>Вывод по тэгу | УП Могилевское отделение БелТПП</title>
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/assets/components/office/css/main/default.css" type="text/css" />
+    <script type="text/javascript">
+        OfficeConfig = {
+            cssUrl: "/assets/components/office/css/",
+            jsUrl: "/assets/components/office/js/",
+            actionUrl: "/assets/components/office/action.php",
+            close_all_message: "закрыть все",
+            pageId: "107"
+        };
+    </script>
+    <link rel="stylesheet" href="/assets/components/pdotools/css/pdopage.css" type="text/css" />
+    <script type="text/javascript">
+        pdoPage = {
+            callbacks: {},
+            keys: {},
+            configs: {}
+        };
+    </script>
+</head>
+
+<body>
+    <header class="p0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                    <div class="header-block clearfix">
+                        <div class="clearfix header-block-pad">
+                            <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 brand">
+                                <div class="logo visible-md-block visible-lg-block visible-sm-block">
+                                    <span class="rus">Белорусская <br /> торгово-промышленная палата <br />Могилевское отделение</span>
+                                    <span class="eng">Belarusian  <br />Chamber of Commerce and Industry<br />Mogilev branch</span>
+                                </div>
+                                <div class="logo-xs visible-xs-block">
+                                    <span class="rus">Белорусская торгово-промышленная палата Могилевское отделение</span>
+                                    <span class="eng">Belarusian Chamber of Commerce and Industry Mogilev branch</span>
+                                </div>
+                            </section>
+                            <section class="col-lg-6 col-md-6 col-sm-6 col-xs-12 babel_links">
+                                <ul class="top-link">
+                                    <li>
+                                        <a href="http://mogilevcci.by/en/?tag=news-cci" class="en" title="Английский"><img src="assets/templates/mogilevcci/img/en.png"></a>
+                                    </li>
+                                    <li><a class="login-href" href="javascript:void(0)">Войти</a> <i class="fa fa-sign-in"></i></li>
+
+                                </ul>
+                            </section>
+                            <section class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <form id="search-form" action="http://stop.of.by/poisk/" method="GET" accept-charset="utf-8" class="navbar-form">
+                                    <input type="text" name="query" onBlur="if(this.value=='') this.value=''" onFocus="if(this.value =='' ) this.value=''">
+                                    <a href="#" onClick="document.getElementById('search-form').submit(); return false;"></a>
+                                </form>
+                            </section>
+                        </div>
+                        <div class="navbar navbar_ clearfix">
+                            <div class="navbar-inner navbar-inner_">
+                                <div class="visible-xs-2">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse_">
+                                        <span class="sr-only">Меню</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                                <div class="navbar-collapse nav-collapse_ collapse col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                    <ul class="nav navbar-nav sf-menu">
+                                        <li class="li-first level1"><a href="/"><span>Главная</span></a></li>
+                                        <li class="level1 sub-menu"><a href="events/"><span>События</span></a>
+                                            <ul class="">
+                                                <li class="li-first level2"><a href="the-announcement/">Анонс мероприятий</a></li>
+                                                <li class="level2"><a href="chronicle-of-events/">Хроника событий</a></li>
+                                                <li class="last level2"><a href="events-gallery/">Галерея событий</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="level1 sub-menu"><a href="about"><span>О палате</span></a>
+                                            <ul class="">
+                                                <li class="li-first level2"><a href="chamber-of-law">Закон о палате</a></li>
+                                                <li class="level2"><a href="statute">Устав БелТПП</a></li>
+                                                <li class="level2"><a href="history">Исторические сведения</a></li>
+                                                <li class="level2"><a href="management">Руководство</a></li>
+                                                <li class="last level2"><a href="structure">Структура БелТПП</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="level1 sub-menu"><a href="membership"><span>Членство в БелТПП</span></a>
+                                            <ul class="">
+                                                <li class="li-first level2"><a href="benefits-of-membership">Преимущества членства</a></li>
+                                                <li class="level2"><a href="regulations-on-membership">Положение о членстве</a></li>
+                                                <li class="level2"><a href="members-documents">Документы</a></li>
+                                                <li class="level2"><a href="members-beltpp">Члены БелТПП</a></li>
+                                                <li class="last level2"><a href="scale-of-contributions">Шкала взносов</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="level1 sub-menu"><a href="partners/"><span>Информация</span></a>
+                                            <ul class="">
+                                                <li class="li-first level2"><a href="cooperation-with-the-cci-erfurt">Сотрудничество с эрфуртской ТПП</a></li>
+                                                <li class="last level2"><a href="belarusian-exporters-2016">Белорусские экспортеры 2016</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="level1 sub-menu"><a href="region"><span>Регион</span></a>
+                                            <ul class="">
+                                                <li class="li-first level2"><a href="mogilev-history">Исторические сведения</a></li>
+                                                <li class="level2"><a href="mogilev-geography">География</a></li>
+                                                <li class="level2"><a href="mogilev-population">Население</a></li>
+                                                <li class="level2"><a href="mogilev-industry">Промышленность</a></li>
+                                                <li class="last level2"><a href="mogilev-agriculture">Сельское хозяйство</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="last level1"><a href="contacts"><span>Контакты</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="social col-lg-2 col-md-2 col-sm-2 col-xs-9">
+                                    <ul class="social-icons">
+                                        <li>
+                                            <a href="#"><img src="assets/templates/mogilevcci/img/icon-1.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="assets/templates/mogilevcci/img/icon-2.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="assets/templates/mogilevcci/img/icon-3.png" alt=""></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="assets/templates/mogilevcci/img/icon-4.png" alt=""></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="login-container" class="row">
+                <div id="auth-form">
+                    <div class="login-loader"></div>
+                    <div class="bar"></div>
+                    <div id="auth">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 auth-login-wrapper">
+                            <h4 class="box-header">Авторизация</h4>
+                            <ul class="auth-link">
+                                <li><a href="javascript:void(0)" class="reg-link">Регистрация</a></li>
+                                <li><a href="javascript:void(0)" class="login-close closes"><i class="fa fa-times"></i></a></li>
+                            </ul>
+                            <form method="post" class="form-horizontal" id="auth-login">
+                                <div class="form-group">
+                                    <input type="text" data-toggle="tooltip" data-placement="bottom" title="Укажите логин или email, которые вы использовали при регистрации." name="username" placeholder="Логин" class="form-control" id="auth-login-username" value="" />
+                                    <input type="password" data-toggle="tooltip" data-placement="bottom" title="Если вы не помните свой пароль - просто оставьте это поле пустым и вы получите новый, вместе со ссылкой на активацию." name="password" placeholder="Пароль" class="form-control" id="login-form-password" value="" />
+                                    <input type="hidden" name="action" value="auth/formLogin" />
+                                    <input type="hidden" name="return" value="" />
+                                    <input type="submit" class="btn btn-default btn-sm btn-block goto blue" value="Вход" />
+                                </div>
+                            </form>
+                            <h4 class="box-header">Социальные сети</h4>
+                            <div class="social" data-toggle="tooltip" data-placement="top" title="Вы можете использовать быстрый вход через социальные сети, при условии, что вы уже зарегистрировались через почту и привязали какой-то из сервисов к своей учётной записи.">
+                                <a href="http://mogilevcci.by/show-posts?tag=trade-fairs-in-belarus&hauth_action=login&amp;provider=Facebook" class="ha-icon facebook" rel="nofollow" title="Facebook">Facebook</a>
+                                <a href="http://mogilevcci.by/show-posts?tag=trade-fairs-in-belarus&hauth_action=login&amp;provider=Google" class="ha-icon google" rel="nofollow" title="Google">Google</a>
+                                <a href="http://mogilevcci.by/show-posts?tag=trade-fairs-in-belarus&hauth_action=login&amp;provider=Twitter" class="ha-icon twitter" rel="nofollow" title="Twitter">Twitter</a>
+                                <a href="http://mogilevcci.by/show-posts?tag=trade-fairs-in-belarus&hauth_action=login&amp;provider=Vkontakte" class="ha-icon vkontakte" rel="nofollow" title="Vkontakte">Vkontakte</a>
+                                <a href="http://mogilevcci.by/show-posts?tag=trade-fairs-in-belarus&hauth_action=login&amp;provider=Yandex" class="ha-icon yandex" rel="nofollow" title="Yandex">Yandex</a>
+
+                            </div>
+
+                        </div>
+                        <div id="login-div"></div>
+                    </div>
+                    <div id="registration">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 auth-register-wrapper">
+                            <h4 class="box-header">Регистрация</h4>
+                            <ul class="auth-link">
+                                <li><a href="javascript:void(0)" class="login-href">Авторизация</a></li>
+                                <li><a href="javascript:void(0)" class="registration-close closes"><i class="fa fa-times"></i></a></li>
+                            </ul>
+                            <form method="post" class="form-horizontal" id="auth-register">
+                                <input type="email" name="email" data-toggle="tooltip" data-placement="bottom" title="На указанный email придёт письмо со ссылкой для активации." placeholder="Email" class="form-control" id="auth-register-email" value="" />
+                                <input type="password" name="password" data-toggle="tooltip" data-placement="bottom" title="Вы можете указать свой пароль, или оставить это поле пустым и тогда он будет сгенерирован автоматически." placeholder="Пароль" class="form-control" id="register-form-password" value="" />
+                                <input type="text" name="username" data-toggle="tooltip" data-placement="bottom" title="Вы можете указать отдельный логин, чтобы не использовать email для входа." placeholder="Логин" class="form-control" id="register-form-username" value="" />
+                                <input type="text" name="fullname" data-toggle="tooltip" data-placement="bottom" title="Ваше имя, для отображения на сайте." placeholder="Имя" class="form-control" id="register-form-fullname" value="" />
+                                <input type="hidden" name="action" value="auth/formRegister" />
+                                <button type="submit" class="btn btn-default btn-sm btn-block goto blue">Регистрация</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                    <ul class="breadcrumb gray">
+                        <li class="home"><a href="/"><i class="fa fa-home"></i></a></li>
+                        <li class="current yellow">Вывод по тэгу</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="content">
+        <div class="sub-content">
+            <div class="container">
+                <div class="row">
+                    <div id="sidebar-secondary" class="col-lg-3 col-xs-12 col-sm-12 col-md-3">
+                        <div class="blocks">
+                            <div class="caption dark-blue">
+                                <h3>Услуги</h3>
+                            </div>
+                            <div>
+                                <ul class="sidebar-menu">
+                                    <li class="menu sub-menu"><a href="fea"><span>Внешнеэкономическая деятельность</span></a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="the-organization-of-presentations">Организация презентаций</a></li>
+                                            <li><a href="business-mission">Организация бизнес-миссий</a></li>
+                                            <li class="last"><a href="international-contacts">Международные контакты</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu sub-menu"><a href="exhibition-activity"><span>Выставочная деятельность</span></a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="trade-fairs-in-belarus">Выставки-ярмарки в Республике Беларусь</a></li>
+                                            <li><a href="trade-fairs-in-russia">Выставки-ярмарки в Российской Федерации</a></li>
+                                            <li class="last"><a href="international-exhibitions">Международные выставки, деловые визиты</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu sub-menu"><a href="certification"><span>Сертификация</span></a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="origin-of-goods">Происхождение товара</a></li>
+                                            <li><a href="own-production">Собственное производство</a></li>
+                                            <li><a href="status-of-goods">Подтверждение статуса товара</a></li>
+                                            <li class="last"><a href="https://ccimogilev.by">Сертификация on-line</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu sub-menu"><a href="assessment"><span>Оценка</span></a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="assessment-of-real-estate">Оценка недвижимости</a></li>
+                                            <li><a href="assessment-of-equipment">Оценка оборудования и транспортных средств</a></li>
+                                            <li class="last"><a href="reliability-of-assessment">Экспертиза достоверности оценки</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu sub-menu"><a href="consulting" consulting><span>Консалтинг</span></a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="tendering">Организация и проведение торгов</a></li>
+                                            <li><a href="stockbroker">Услуги биржевого брокера</a></li>
+                                            <li class="last"><a href="authorized-fund">Услуги по формированию уставного фонда</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu sub-menu"><a href="carnet"><span>Карнет А.Т.А.</span></a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="execution-of-ata-carnets">Оформление и выдача Карнет А.Т.А.</a></li>
+                                            <li><a href="ata-carnets-good">Товары подпадающие под действие Карнетов А.Т.А.</a></li>
+                                            <li><a href="mechanism-ata-carnets">Механизм обеспечения Карнетов А.Т.А.</a></li>
+                                            <li><a href="documents-for-ata-carnets">Документы, необходимые для получения Карнета А.Т.А.</a></li>
+                                            <li><a href="the-procedure-for-filling-ata-carnets">Порядок заполнения и оформления Карнетов А.Т.А.</a></li>
+                                            <li class="last"><a href="ata-carnet-requirements">Требования, которые должен соблюдать держатель Карнета А.Т.А.</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu sub-menu"><a href="translation-services"><span>Переводческие услуги</span></a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="translate-service">Служба переводов</a></li>
+                                            <li class="last"><a href="foreign-language-courses">Курсы иностранных языков</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="last menu sub-menu"><a href="rent"><span>Аренда</span></a>
+                                        <ul class="sub-menu-container">
+                                            <li><a href="rental-of-premises">Аренда помещений</a></li>
+                                            <li class="last"><a href="rental-of-conference-halls">Аренда конференц-залов</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="sidebar-gallery">
+                            <div>
+                                <div class="caption dark-blue">
+                                    <h3>Галерея событий</h3>
+                                </div>
+                                <ul class="gallery">
+                                    <li class="loaded">
+                                        <a href="assets/files/images/resources/94/1919586-639397316200183-8293767420070105449-n.jpg"><img src="assets/files/images/resources/94/120x90/1919586-639397316200183-8293767420070105449-n.jpg" alt="Республиканская универсальная ярмарка «Предновогодняя ярмарка»"></a>
+                                    </li>
+                                    <li class="loaded">
+                                        <a href="assets/files/images/resources/86/12037956-613808552092393-2652958453573068931-n.jpg"><img src="assets/files/images/resources/86/120x90/12037956-613808552092393-2652958453573068931-n.jpg" alt="Презентация Могилевской области на ЭКСПО-2015"></a>
+                                    </li>
+                                    <li class="loaded">
+                                        <a href="assets/files/images/resources/86/12043223-613808258759089-4270465515170342235-n.jpg"><img src="assets/files/images/resources/86/120x90/12043223-613808258759089-4270465515170342235-n.jpg" alt="Презентация Могилевской области на ЭКСПО-2015"></a>
+                                    </li>
+                                    <li class="loaded">
+                                        <a href="assets/files/images/resources/86/12033088-613808785425703-5328536865909929394-n.jpg"><img src="assets/files/images/resources/86/120x90/12033088-613808785425703-5328536865909929394-n.jpg" alt="Презентация Могилевской области на ЭКСПО-2015"></a>
+                                    </li>
+                                    <li class="loaded">
+                                        <a href="assets/files/images/resources/94/12359870-639397266200188-1002053065507775503-n.jpg"><img src="assets/files/images/resources/94/120x90/12359870-639397266200188-1002053065507775503-n.jpg" alt="Республиканская универсальная ярмарка «Предновогодняя ярмарка»"></a>
+                                    </li>
+                                    <li class="loaded">
+                                        <a href="assets/files/images/resources/91/img-0116.jpg"><img src="assets/files/images/resources/91/120x90/img-0116.jpg" alt="Контактно-кооперационная биржа с представителями немецких компаний в Минске и Могилеве"></a>
+                                    </li>
+                                    <li class="loaded">
+                                        <a href="assets/files/images/resources/86/12036942-613808292092419-2525547189541197782-n.jpg"><img src="assets/files/images/resources/86/120x90/12036942-613808292092419-2525547189541197782-n.jpg" alt="Презентация Могилевской области на ЭКСПО-2015"></a>
+                                    </li>
+                                    <li class="loaded">
+                                        <a href="assets/files/images/resources/97/20160125-151419.jpg"><img src="assets/files/images/resources/97/120x90/20160125-151419.jpg" alt="Деловой визит в Армению"></a>
+                                    </li>
+                                    <li class="loaded last">
+                                        <a href="assets/files/images/resources/88/12141743-618858708254044-3874462643518102556-n.jpg" title="Деловой визит в США, штат Висконсин"><img src="assets/files/images/resources/88/120x90/12141743-618858708254044-3874462643518102556-n.jpg" alt="Деловой визит в США, штат Висконсин"></a>
+                                    </li>
+                                </ul>
+                                <h5><a class="goto gray" href="events-gallery/">Перейти в галерею<i class="fa fa-chevron-right"></i></a></h5>
+                            </div>
+                        </div>
+                             </div>
+                    <div class="col-lg-9 col-xs-12 col-sm-12 col-md-9">
+                        <div class="content">
+                            <div class="subcontent">
+                                <div class="article-head">
+                                    <h2 class="box-header">Результат поиска по тэгу</h2>
+                                </div>
+                                <div id="pdopage">
+                                    <ul class="list-news-grid">
+                                        <li class="list-news-item">
+                                            <ul class="list-news-container">
+                                                <li class="list-news">
+                                                    <div class="list-news-image">
+                                                        <a href="">
+                                                            <img src="/assets/files/images/resources/79/120x90/320px-vesna-fair-logo.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="list-news-description">
+                                                        <div class="list-news-model all">
+                                                            <a title="" href="">Универсальная ярмарка Бобруйская весна</a>
+                                                        </div>
+                                                        <p class="list-news-options" id="list-news-options">УП «Могилевское отделение БелТПП» приглашает принять участие в республиканской универсальной ярмарке «БОБРУЙСКАЯ ВЕСНА», которая пройдет в ГУК «Дворец искусств г.Бобруйска» с 24 по 27 марта 2016г.</p>
+                                                     <div class="tag">
+                                                         <span class="btn-primary tags-wrap"><i class="fa fa-tags"></i></span> 
+                                                         <span class="btn-info tags-wrap">Выставки-ярмарки в Республике Беларусь</span>
+                                                         <span class="btn-info tags-wrap">Выставки-ярмарки в Республике Беларусь</span>
+                                                     </div>
+                                                    </div>                                                    
+                                                       <a class="list-news-more goto blue" href="" title="">Подробнее</a>                                                                                                        </li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-news-item">
+                                            <ul class="list-news-container">
+                                                <li class="list-news">
+                                                    <div class="list-news-image">
+                                                        <a href="">
+                                                            <img src="/assets/files/images/resources/77/120x90/kirmash.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="list-news-description">
+                                                        <div class="list-news-model all">
+                                                            <a title="" href="">Универсальная ярмарка КiРМАШ</a>
+                                                        </div>
+                                                        <p class="list-news-options" id="list-news-options">УП "Могилевское отделение БелТПП" приглашает белорусские предприятия и организации принять участие в универсальной ярмарке в г.Костюковичи, которая состоится 14 - 16 апреля 2016г.</p>
+                                                    </div>
+                                                    <div class="list-news-more">
+                                                        <span class="btn btn-primary btn-sm"><i class="fa fa-tags"></i></span>
+                                                        <span class="btn btn-info btn-sm">Выставки-ярмарки в Республике Беларусь</span>
+                                                        <a class=" goto blue" href="" title="">Подробнее</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-news-item">
+                                            <ul class="list-news-container">
+                                                <li class="list-news">
+                                                    <div class="list-news-image">
+                                                        <a href="">
+                                                            <img src="/assets/files/images/resources/76/120x90/fest-pict.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="list-news-description">
+                                                        <div class="list-news-model all">
+                                                            <a title="" href="">Выставка-фестиваль «КРАСОТА & ЗДОРОВЬЕ»</a>
+                                                        </div>
+                                                        <p class="list-news-options" id="list-news-options">Приглашаем принять участие в выставке-фестивале «КРАСОТА & ЗДОРОВЬЕ», которая пройдет 19 - 21 мая 2016г. в г.Могилеве.</p>
+                                                    </div>
+                                                    <div class="list-news-more">
+                                                        <span class="btn btn-primary btn-sm"><i class="fa fa-tags"></i></span>
+                                                        <span class="btn btn-info btn-sm">Выставки-ярмарки в Республике Беларусь</span>
+                                                        <a class=" goto blue" href="" title="">Подробнее</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="list-news-item">
+                                            <ul class="list-news-container">
+                                                <li class="list-news">
+                                                    <div class="list-news-image">
+                                                        <a href="">
+                                                            <img src="/assets/files/images/resources/75/120x90/nash-dom.jpg" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="list-news-description">
+                                                        <div class="list-news-model all">
+                                                            <a title="" href="">Строительная выставка НАШ ДОМ</a>
+                                                        </div>
+                                                        <p class="list-news-options" id="list-news-options">Региональная специализированная строительная выставка «НАШ ДОМ» пройдет в Бобруйске с 28 по 30 апреля 2016 года.</p>
+                                                    </div>
+                                                    <div class="list-news-more">
+                                                        <span class="btn btn-primary btn-sm"><i class="fa fa-tags"></i></span>
+                                                        <span class="btn btn-info btn-sm">Выставки-ярмарки в Республике Беларусь</span>
+                                                        <a class=" goto blue" href="" title="">Подробнее</a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div id="footer-top-area" class="row">
+                <div class="col-lg-3 col-xs-12 col-sm-3 col-md-3">
+                    <h4>УП Могилевское отделение БелТПП</h4>
+                    <ul class="footer-menu">
+                        <li class="first"><a href="about">О палате</a></li>
+                        <li><a href="membership">Членство в БелТПП</a></li>
+                        <li><a href="partners/">Информация</a></li>
+                        <li><a href="region">Регион</a></li>
+                        <li><a href="contacts">Контакты</a></li>
+                        <li><a href="the-announcement/">Анонс мероприятий</a></li>
+                        <li><a href="chronicle-of-events/">Хроника событий</a></li>
+                        <li class="last"><a href="events-gallery/">Галерея событий</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-xs-12 col-sm-3 col-md-3">
+                    <h4>Контактные телефоны</h4>
+                    <ul class="footer-menu">
+                        <li>Отдел ВЭД: +375 (222) 77 80 32</li>
+                        <li>Отдел ЭиС: +375 (222) 77 80 38</li>
+                        <li>Отдел оценки: +375 (222) 77 80 41</li>
+                        <li>Бобруйский филиал: +375 (225) 72 06 99</li>
+                        <li>Кричевский филиал: +375 (2241) 5 15 09</li>
+                        <li>Осиповичский филиал: +375 (2235) 2 05 51</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-xs-12 col-sm-3 col-md-3">
+                    <h4>Отделения БелТПП</h4>
+                    <ul class="footer-menu">
+                        <li><a href="http://cci.by" target="_blank" title="Белорусская торгово-промышленная палата">Центральный аппарат</a></li>
+                        <li><a href="http://ccibrest.by" target="_blank" title="Белорусская торгово-промышленная палата Брестское отделение ">Брестское отделение</a></li>
+                        <li><a href="http://cci-vitebsk.by" target="_blank" title="Белорусская торгово-промышленная палата ">Витебское отделение</a></li>
+                        <li><a href="http://ccigomel.by" target="_blank" title="Белорусская торгово-промышленная палата Гомельское отделение">Гомельское отделение</a></li>
+                        <li><a href="http://grotpp.by/" target="_blank" title="Белорусская торгово-промышленная палата Гродненское отделение">Гродненское отделение</a></li>
+                        <li><a href="http://www.tppm.by" target="_blank" title="Белорусская торгово-промышленная палата Минское отделение">Минское отделение</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-xs-12 col-sm-3 col-md-3">
+                    <form id="newsletter" class="form" method="post" role="form">
+                        <label>Подписка на новости</label>
+                        <div class="clearfix form-group">
+                            <label class="sr-only" for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Введите e-mail">
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm btn-block">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            <div id="footer-bottom-area" class="row">
+                <div class="col-md-8">
+                    <div class="copyright">
+                        <p>&copy; 2016 УП Могилевское отделение БелТПП <a href="http://mogilevcci.by/" target="_blank">http://mogilevcci.by/</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-social">
+                        <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-vk"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+      <!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/templates/mogilevcci/js/jquery/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/templates/mogilevcci/js/jquery/jquery.lockfixed.js"></script>
+    <script type="text/javascript" src="assets/templates/mogilevcci/js/pgwslider.min.js"></script>
+    <script type="text/javascript" src="assets/templates/mogilevcci/js/jquery/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="assets/templates/mogilevcci/js/superfish.js"></script>-->
+    <script src="js/vendor.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write("<script src=\"/assets/components/office/js/main/lib/jquery.min.js\" type=\"text/javascript\"><\/script>");
+        }
+    </script>
+    <script type="text/javascript" src="/assets/components/office/js/main/default.js"></script>
+    <script type="text/javascript" src="/assets/components/office/js/auth/auth.js"></script>
+    <script type="text/javascript" src="/assets/components/pdotools/js/pdopage.js"></script>
+    <script type="text/javascript">
+        pdoPage.initialize({
+            "wrapper": "#pdopage",
+            "rows": "#pdopage .list-news-grid",
+            "pagination": "#pdopage .pagination",
+            "link": "#pdopage .pagination a",
+            "more": "#pdopage .btn-more",
+            "moreTpl": "<button class=\"btn btn-default btn-more\">\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u0435\u0449\u0435<\/button>",
+            "mode": "scroll",
+            "history": 0,
+            "pageVarKey": "page",
+            "pageLimit": "5",
+            "assetsUrl": "\/assets\/components\/pdotools\/",
+            "connectorUrl": "\/assets\/components\/pdotools\/connector.php",
+            "pageId": 107,
+            "hash": "f19922980da17f5921a5f11e9d9f595608598e3b"
+        });
+    </script>
+</body>
+
+</html>
