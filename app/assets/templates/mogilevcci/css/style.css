@@ -470,7 +470,8 @@ header {
 .navbar_ .navbar-inner_ .navbar-toggle {
     background-color: #9f1603;    
     float: left;
-    margin-top: 0;   
+    margin-top: 5px;
+    margin-bottom: 4px;
     border-radius: 0;
     border: 2px solid #100933;
     -moz-border-image: -moz-linear-gradient(left, #100933 0%, #FFFFFF 15%, #100933 25%, #100933 75%, #FFFFFF 85%, #100933 100%);
@@ -2797,10 +2798,11 @@ form#newsletter label {
         font-size: 1.5em; 
     }
     .header-block-pad .babel_links {        
-        float: left
+        float: left;
+		    padding-bottom: 5px;
     }
     .header-block {
-        height: 196px
+        height: 204px
     }
     .container {
         padding: 0 20px;
@@ -2811,9 +2813,12 @@ form#newsletter label {
     .brand div.logo, .brand div.logo-xs {
        top:10px;
     }
-    .top-link {
-       padding-left:5px;
+    .top-link {       
        margin: 0; 
+    }
+	.top-link  .auth-login{
+       float:right;
+	       margin-right: 0;
     }
     #auth-form {    
     left: 0;
@@ -2831,12 +2836,16 @@ form#newsletter label {
     }    
     .social {
        padding-right: 0;
+	   padding-top: 5px;
     }
     .social-icons {
         padding:0;
         display: block
     }
-    /* navbar */   
+    /* navbar */ 
+     .navbar-toggle {   
+        margin-left: 15px
+    }	
     .navbar_ .navbar-inner_ {
         padding: 4px 0 8px 0px;       
     }
@@ -3030,7 +3039,7 @@ form#newsletter label {
        padding-bottom: 0;
     }
     .navbar_ .navbar-inner_ {
-    padding: 10px 0 10px 0px;
+    padding: 5px 0 10px 0px;
 }
     .contacts {
         display: block;
@@ -3083,8 +3092,7 @@ form#newsletter label {
         min-height: 30px;
     }
     .navbar-toggle {
-        margin-right: 0;
-        margin-left: 15px
+        margin-right: 0;        
     }
     .navbar_ .navbar-inner_ {
     padding: 2px 0 8px 0px;

@@ -30,6 +30,23 @@
                   loop: true
               });
           }
+		  var carousel = $(".carousel4");
+          if (carousel.length) {
+              carousel.bxSlider({
+                  slideWidth: 200,
+                  minSlides: 2,
+                  maxSlides: 4,
+                  slideMargin: 10,
+                  onSliderLoad: function () {
+                      $(".carousel-wrap").css("visibility", "visible");
+                  },
+                  infiniteLoop: false,
+              });
+              carousel.photobox('a', {
+                  thumbs: true,
+                  loop: true
+              });
+          }
           var gallery = $('.gallery');
           if (gallery.length) {
               function callback() {
@@ -70,7 +87,9 @@
                       $('#sidebar-gallery').hide();
                   },
                   onBeforeHide: function () {
-                      $('#sidebar-gallery').show("slow");
+					  if ($(window).width() > 767) {
+                          $('#sidebar-gallery').show("slow");
+					  }
                   }
               });
           }
