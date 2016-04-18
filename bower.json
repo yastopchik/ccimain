@@ -12,6 +12,7 @@
     "components-font-awesome": "^4.5.0",
     "hc-sticky": "^1.2.43",
     "bootstrap-datepicker": "^1.6.0",
-    "modernizer": "^2.8.2"
+    "modernizer": "^2.8.2",
+    "social-likes": "^3.1.0"
   }
 }

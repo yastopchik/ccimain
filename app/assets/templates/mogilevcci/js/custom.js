@@ -221,7 +221,7 @@
       $(window).resize(function () {
           /*LockFixed*/
           var width = $(window).width();
-          if (width >= 992) {
+          if (width >= 768) {
               var sidebarleft = $("#sidebar-left");
               if (sidebarleft.length) {
                   sidebarleft.hcSticky({
