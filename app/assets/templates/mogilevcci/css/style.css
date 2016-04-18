@@ -46,6 +46,9 @@ hr {
     background-color: #122140;
     height: 1px;
 }
+blockquote {
+    border-left: 5px solid #9f1603;
+}
 /* headings, text */
 
 p {    
@@ -532,6 +535,11 @@ header {
     text-shadow: none;
     text-decoration: none;
 }
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: inherit;
+}
 .nav-collapse_ .nav > li.li-first.sfHover a > em,
 .nav-collapse_ .nav > li.li-first:hover a > em {
     background-position: right 0;
@@ -732,8 +740,7 @@ header {
     min-height: 800px;
 }
 .content .subcontent  p strong {
-    font-weight: 700;
-    
+    font-weight: 700;    
 }
 .news-box-item p {   
     color: #101b2d;
@@ -3143,6 +3150,11 @@ form#newsletter label {
     }
     #album-items.gallery .loaded img {
         min-height: 100px
+    }
+    .content .subcontent  img {
+        max-width: 100%;  
+        margin: 0;
+        height: auto;
     }
 }
 @media (max-width: 414px) {
