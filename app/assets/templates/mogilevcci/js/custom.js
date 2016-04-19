@@ -289,10 +289,20 @@
 $(document).on('click', '.albums-item', function (e) {
           var albumsGrid = $('#albums-grid');
           var albumItems = $('#album-items');
+          var boxHeader = $('.box-header');
+          var breadcrumb = $('.breadcrumb');
           if (albumsGrid.length) {
               var data = $(this).data();
               var urls = $(this).attr("href");
+              var pagetitle = $(this).data("pagetitle");              
               albumsGrid.remove();
+              if (pagetitle.length > 0){
+                  boxHeader.html(pagetitle);   
+                  var current = $('.current');
+                  current.empty();
+                  current.append('<a href = "' +document.location.pathname+ '">' +document.title+ '</a>');
+                  breadcrumb.append('<li>' + pagetitle + '</li>');
+              }
               $('.pagination').remove();
               albumItems.css("display", "inline-block");
               $.ajax({
