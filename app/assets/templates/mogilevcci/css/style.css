@@ -739,7 +739,7 @@ header {
     font-weight: 700
 }
 .content .subcontent {
-    padding: 10px; 
+    padding: 20px; 
     min-height: 800px;
 }
 .content .subcontent  p strong {
@@ -1235,7 +1235,7 @@ opacity: 1;
 /*PARALLAX*/
 .parallax-window {
     min-height: 500px;   
-    background: url(../img/sliders/slidersTop/parallax2.jpg) no-repeat center;
+    background: url(../img/parallax2.jpg) no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
     width:100%;
