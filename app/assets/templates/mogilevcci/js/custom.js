@@ -1,4 +1,25 @@
       $(document).ready(function () {
+          function clickIE4() {
+              if (event.button == 2) {
+                  return false;
+              }
+          }
+
+          function clickNS4(e) {
+              if (document.layers || document.getElementById && !document.all) {
+                  if (e.which == 2 || e.which == 3) {
+                      return false;
+                  }
+              }
+          }
+          if (document.layers) {
+              document.captureEvents(Event.MOUSEDOWN);
+              document.onmousedown = clickNS4;
+          } else if (document.all && !document.getElementById) {
+              document.onmousedown = clickIE4;
+          }
+          document.oncontextmenu = new Function("return false");
+          
           var pgw = $('.pgwSlider');
           if (pgw.length) {
               $('.pgwSlider').pgwSlider({
@@ -30,7 +51,7 @@
                   loop: true
               });
           }
-		  var carousel = $(".carousel4");
+          var carousel = $(".carousel4");
           if (carousel.length) {
               carousel.bxSlider({
                   slideWidth: 200,
@@ -87,9 +108,9 @@
                       $('#sidebar-gallery').hide();
                   },
                   onBeforeHide: function () {
-					  if ($(window).width() > 767) {
+                      if ($(window).width() > 767) {
                           $('#sidebar-gallery').show("slow");
-					  }
+                      }
                   }
               });
           }
@@ -233,7 +254,7 @@
                   sidebar_secondary.hcSticky({
                       top: 0
                   });
-              }              
+              }
           }
           if (width >= 768) {
               var sidebarright = $("#sidebar-right");
@@ -246,7 +267,7 @@
           }
       }).resize();
       /*Login*/
-      logindiv = $("#login-div");      
+      logindiv = $("#login-div");
       $(document).on('click', '.login-href', function (e) {
           var auth = $("#auth");
           var registration = $("#registration");
@@ -259,6 +280,11 @@
                   "opacity": "1"
               });
               logindiv.fadeIn("slow");
+              if ($('.breadcrumb').length) {
+                  $('html, body').animate({
+                      scrollTop: $('.breadcrumb').offset().top
+                  }, 2000);
+              }
           } else {
               auth.slideUp("slow");
               logindiv.fadeOut("slow");
@@ -267,8 +293,8 @@
       $(".login-close").click(function () {
           $("#auth").slideUp("slow");
       });
-      $(document).on('click', '.reg-link', function(e){
-        var auth = $("#auth");
+      $(document).on('click', '.reg-link', function (e) {
+          var auth = $("#auth");
           var registration = $("#registration");
           if (registration.is(":hidden")) {
               auth.hide();
@@ -280,13 +306,13 @@
           } else {
               registration.slideUp("slow");
               logindiv.fadeOut("slow");
-          }      
-      })      
+          }
+      })
       $(".registration-close").click(function () {
           $("#registration").slideUp("slow");
       });
-/*Gallery*/
-$(document).on('click', '.albums-item', function (e) {
+      /*Gallery*/
+      $(document).on('click', '.albums-item', function (e) {
           var albumsGrid = $('#albums-grid');
           var albumItems = $('#album-items');
           var boxHeader = $('.box-header');
@@ -294,13 +320,13 @@ $(document).on('click', '.albums-item', function (e) {
           if (albumsGrid.length) {
               var data = $(this).data();
               var urls = $(this).attr("href");
-              var pagetitle = $(this).data("pagetitle");              
+              var pagetitle = $(this).data("pagetitle");
               albumsGrid.remove();
-              if (pagetitle.length > 0){
-                  boxHeader.html(pagetitle);   
+              if (pagetitle.length > 0) {
+                  boxHeader.html(pagetitle);
                   var current = $('.current');
                   current.empty();
-                  current.append('<a href = "' +document.location.pathname+ '">' +document.title+ '</a>');
+                  current.append('<a href = "' + document.location.pathname + '">' + document.title + '</a>');
                   breadcrumb.append('<li>' + pagetitle + '</li>');
               }
               $('.pagination').remove();

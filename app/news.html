@@ -30,13 +30,14 @@
 </head>
 
 <body>
-    <header class="p0">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
-                    <div class="header-block clearfix">
-                        <div class="clearfix header-block-pad">
-                            <section class="col-lg-11 col-md-11 col-sm-12 col-xs-12 brand">
+    <div class="wrap">
+        <header class="p0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+                        <div class="header-block clearfix">
+                            <div class="clearfix header-block-pad">
+                            <section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 brand">
                                 <div class="logo visible-md-block visible-lg-block visible-sm-block">
                                     <span class="rus">Белорусская <br /> торгово-промышленная палата <br />Могилевское отделение</span>
                                     <span class="eng">Belarusian  <br />Chamber of Commerce and Industry<br />Mogilev branch</span>
@@ -46,89 +47,150 @@
                                     <span class="eng">Belarusian Chamber of Commerce and Industry Mogilev branch</span>
                                 </div>
                             </section>
-                            <section class="col-lg-1 col-md-1 col-sm-3 col-xs-3 babel_links">
-                                <a href="http://info.of.by/en/" class="en" title="Английский"><img src="assets/templates/mogilevcci/img/en.png"></a>
+                            <section class="col-lg-6 col-md-6 col-sm-6 col-xs-12 babel_links">
+                                <ul class="top-link">
+                                   <li>
+                                        <a href="http://info.of.by/en/" class="en" title="Английский"><img src="assets/templates/mogilevcci/img/en.png"></a>
+                                    </li>
+                                    <li class="auth-login"><i class="fa fa-sign-in"></i> <a class="login-href" href="javascript:void(0)">yastopchik</a></li>                                    
+                                </ul>
                             </section>
-                            <section class="col-lg-12 col-md-12 col-sm-9 col-xs-9">
+                            <section class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                 <form id="search-form" action="http://stop.of.by/poisk/" method="GET" accept-charset="utf-8" class="navbar-form">
                                     <input type="text" name="query" onBlur="if(this.value=='') this.value=''" onFocus="if(this.value =='' ) this.value=''">
                                     <a href="#" onClick="document.getElementById('search-form').submit(); return false;"></a>
                                 </form>
                             </section>
                         </div>
-                        <div class="navbar navbar_ clearfix">
-                            <div class="navbar-inner navbar-inner_">
-                                <div class="visible-xs-2">
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse_">
-                                        <span class="sr-only">Меню</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-                                <div class="navbar-collapse nav-collapse_ collapse col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                                    <ul class="nav navbar-nav sf-menu">
-                                        <li class="li-first level1"><a href="/"><span>Главная</span></a></li>
-                                        <li class="level1 sub-menu"><a href="events/"><span>События</span></a>
-                                            <ul class="">
-                                                <li class="li-first level2"><a href="the-announcement/">Анонс мероприятий</a></li>
-                                                <li class="level2"><a href="chronicle-of-events/">Хроника событий</a></li>
-                                                <li class="last level2"><a href="events-gallery/">Галерея событий</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level1 sub-menu"><a href="about"><span>О палате</span></a>
-                                            <ul class="">
-                                                <li class="li-first level2"><a href="chamber-of-law">Закон о палате</a></li>
-                                                <li class="level2"><a href="statute">Устав БелТПП</a></li>
-                                                <li class="level2"><a href="history">Исторические сведения</a></li>
-                                                <li class="level2"><a href="management">Руководство</a></li>
-                                                <li class="last level2"><a href="structure">Структура БелТПП</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level1 sub-menu"><a href="membership"><span>Членство в БелТПП</span></a>
-                                            <ul class="">
-                                                <li class="li-first level2"><a href="benefits-of-membership">Преимущества членства</a></li>
-                                                <li class="level2"><a href="regulations-on-membership">Положение о членстве</a></li>
-                                                <li class="level2"><a href="members-documents">Документы</a></li>
-                                                <li class="level2"><a href="members-beltpp">Члены БелТПП</a></li>
-                                                <li class="last level2"><a href="scale-of-contributions">Шкала взносов</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="level1"><a href="partners/"><span>Партнеры</span></a></li>
-                                        <li class="level1 sub-menu"><a href="region"><span>Регион</span></a>
-                                            <ul class="">
-                                                <li class="li-first level2"><a href="mogilev-history">Исторические сведения</a></li>
-                                                <li class="level2"><a href="mogilev-geography">География</a></li>
-                                                <li class="level2"><a href="mogilev-population">Население</a></li>
-                                                <li class="level2"><a href="mogilev-industry">Промышленность</a></li>
-                                                <li class="last level2"><a href="mogilev-agriculture">Сельское хозяйство</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="last level1"><a href="contacts"><span>Контакты</span></a></li>
-                                    </ul>
-                                </div>
-                                <div class="social col-lg-2 col-md-2 col-sm-2 col-xs-9">
-                                    <ul class="social-icons">
-                                        <li>
-                                            <a href="#"><img src="assets/templates/mogilevcci/img/icon-1.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="assets/templates/mogilevcci/img/icon-2.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="assets/templates/mogilevcci/img/icon-3.png" alt=""></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><img src="assets/templates/mogilevcci/img/icon-4.png" alt=""></a>
-                                        </li>
-                                    </ul>
+                            <div class="navbar navbar_ clearfix">
+                                <div class="navbar-inner navbar-inner_">
+                                    <div class="visible-xs-2">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse_">
+                                            <span class="sr-only">Меню</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <div class="navbar-collapse nav-collapse_ collapse col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                                        <ul class="nav navbar-nav sf-menu">
+                                            <li class="li-first active">
+                                                <a href="/"></a>
+                                            </li>
+                                            <li class="sub-menu">
+                                                <a href="#">О палате</a>
+                                                <ul class="">
+                                                    <li class="li-first"><a href="about/history/">Закон о палате</a></li>
+                                                    <li><a href="about/about-cci/">Устав БелТПП</a></li>
+                                                    <li><a href="about/membership/">Исторические сведения</a></li>
+                                                    <li class="last"><a href="about/information/">Руководство</a></li>
+                                                    <li class="last"><a href="about/information/">Структура БелТПП</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-menu">
+                                                <a href="#">Членство в БелТПП</a>
+                                                <ul class="">
+                                                    <li class="li-first"><a href="about/history/">Преимущества членства</a></li>
+                                                    <li><a href="about/about-cci/">Положение о членстве</a></li>
+                                                    <li><a href="about/membership/">Документы</a></li>
+                                                    <li class="last"><a href="about/information/">Члены БелТПП</a></li>
+                                                    <li class="last"><a href="about/information/">Шкала взносов</a></li>
+                                                    <li class="last"><a href="about/information/">Заявление на всупление</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-menu">
+                                                <a href="#">События</a>
+                                                <ul class="">
+                                                    <li class="last"><a href="sobyitiya/xronika-novostej/">Анонс мероприяий</a></li>
+                                                    <li class="li-first"><a href="sobyitiya/xronika-sobyitij/">Хроника событий</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-menu">
+                                                <a href="#">Регион</a>
+                                                <ul class="">
+                                                    <li class="last"><a href="sobyitiya/xronika-novostej/">История</a></li>
+                                                    <li class="li-first"><a href="sobyitiya/xronika-sobyitij/">География</a></li>
+                                                    <li class="li-first"><a href="sobyitiya/xronika-sobyitij/">Население</a></li>
+                                                    <li class="li-first"><a href="sobyitiya/xronika-sobyitij/">Промышленность</a></li>
+                                                    <li class="li-first"><a href="sobyitiya/xronika-sobyitij/">Сельское хозяйство</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="contact/">Предложения</a></li>
+                                            <li><a href="contact/">Контакты</a></li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="social col-lg-2 col-md-2 col-sm-2 col-xs-9">
+                                        <ul class="social-icons">
+                                            <li>
+                                                <a href="#"><img src="assets/templates/mogilevcci/img/icon-1.png" alt=""></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="assets/templates/mogilevcci/img/icon-2.png" alt=""></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="assets/templates/mogilevcci/img/icon-3.png" alt=""></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="assets/templates/mogilevcci/img/icon-4.png" alt=""></a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                <div id="login-container" class="row">
+                    <div id="auth-form">
+                        <div class="login-loader"></div>
+                        <div class="bar"></div>
+                        <div id="auth">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 auth-login-wrapper">
+                                <h4 class="box-header">Авторизация</h4>
+                                <ul class="auth-link">                                    
+                                    <li><a href="javascript:void(0)" class="reg-link">Регистрация</a></li>
+                                    <li><a href="javascript:void(0)" class="forgot-link">Забыли пароль?</a></li>
+                                    <li><a href="javascript:void(0)" class="login-close closes"><i class="fa fa-times"></i></a></li>
+                                </ul>
+                                   <form method="post" class="form-horizontal" id="auth-login">
+                                    <input type="text" data-toggle="tooltip" data-placement="bottom" title="Укажите логин или email, которые вы использовали при регистрации." name="username" placeholder="Логин*" class="form-control" id="auth-login-username" value="" />
+                                    <input type="password" data-toggle="tooltip" data-placement="bottom" title="Если вы не помните свой пароль - просто оставьте это поле пустым и вы получите новый, вместе со ссылкой на активацию." name="password" placeholder="Пароль" class="form-control" id="login-form-password" value="" />
+                                    <input type="hidden" name="action" value="auth/formLogin" />
+                                    <input type="hidden" name="return" value="" />
+                                    <input type="submit" class="btn btn-default btn-sm btn-block goto blue" value="Вход" />
+                                </form>
+                                <h4 class="box-header">Вход через:</h4>
+                                <div class="social" data-toggle="tooltip" data-placement="top" title="Вы можете использовать быстрый вход через социальные сети, при условии, что вы уже зарегистрировались через почту и привязали какой-то из сервисов к своей учётной записи.">
+                                    <a href="http://piramida-yan.com/?hauth_action=login&amp;provider=Google" class="ha-icon google" rel="nofollow" title="Google">Google</a>
+                                    <a href="http://piramida-yan.com/?hauth_action=login&amp;provider=Yandex" class="ha-icon yandex" rel="nofollow" title="Yandex">Yandex</a>
+
+                                </div>                                
+                            </div>
+                            <div id="login-div"></div>
+                        </div>
+                        <div id="registration">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 auth-register-wrapper">
+                                <h4 class="box-header">Регистрация</h4>
+                                <ul class="auth-link">  
+                                    <li><a href="javascript:void(0)" class="login-href">Войти на сайт</a></li>
+                                    <li><a href="javascript:void(0)" class="forgot-link">Забыли пароль?</a></li>
+                                    <li><a href="javascript:void(0)" class="registration-close closes"><i class="fa fa-times"></i></a></li>
+                                </ul>                                
+                                <form method="post" class="form-horizontal" id="auth-register">
+                                    <input type="email" name="email" data-toggle="tooltip" data-placement="bottom" title="На указанный email придёт письмо со ссылкой для активации." placeholder="Email*" class="form-control" id="auth-register-email" value="" />
+                                    <input type="password" name="password" data-toggle="tooltip" data-placement="bottom" title="Вы можете указать свой пароль, или оставить это поле пустым и тогда он будет сгенерирован автоматически." placeholder="Пароль" class="form-control" id="register-form-password" value="" />
+                                    <input type="text" name="username" data-toggle="tooltip" data-placement="bottom" title="Вы можете указать отдельный логин, чтобы не использовать email для входа." placeholder="Логин" class="form-control" id="register-form-username" value="" />
+                                    <input type="text" name="fullname" data-toggle="tooltip" data-placement="bottom" title="Ваше имя, для отображения на сайте." placeholder="Имя" class="form-control" id="register-form-fullname" value="" />
+                                    <input type="hidden" name="action" value="auth/formRegister" />
+                                    <button type="submit" class="btn btn-default btn-sm btn-block goto blue">Регистрация</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>    
     </header>
     <section id="breadcrumb">
         <div class="container">
@@ -450,67 +512,30 @@
 
                                     <input type="hidden" name="af_action" value="989d81662c459095bb7ab7547dc4c33d" />
                                 </form>   
-                                </div>                     
+   
                                 <div id="comments-wrap">
-                                    <h3 class="box-header title">Комментарии (<span id="comment-total">0</span>)</h3>
+	
 
-                                    <div id="comments-wrapper">
-                                        <ol class="comment-list" id="comments"></ol>
-                                    </div>
+	<h4 class="box-header title">Комментарии (<span id="comment-total">0</span>)</h4>
 
-                                    <div id="comments-tpanel">
-                                        <div id="tpanel-refresh"></div>
-                                        <div id="tpanel-new"></div>
-                                    </div>
-                                </div>
-                                <h4 id="comment-new-link">
-	<a href="#" class="btn btn-default">Написать комментарий</a>
-</h4>
+	<div id="comments-wrapper">
+		<ol class="comment-list" id="comments"></ol>
+	</div>
 
-                                <div id="comment-form-placeholder" class="contact-form">
-                                    <form id="comment-form" action="" method="post" class="well">
-                                        <div id="comment-preview-placeholder"></div>
-                                        <input type="hidden" name="thread" value="resource-74" />
-                                        <input type="hidden" name="parent" value="0" />
-                                        <input type="hidden" name="id" value="0" />
-
-                                        <div class="form-group">
-                                            <label for="comment-name">Автор</label>
-                                            <input type="text" name="name" value="" id="comment-name" class="form-control" />
-                                            <span class="error"></span>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="comment-email">Email</label>
-                                            <input type="text" name="email" value="" id="comment-email" class="form-control" />
-                                            <span class="error"></span>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="comment-editor"></label>
-                                            <textarea name="text" id="comment-editor" cols="30" rows="10" class="form-control"></textarea>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label for="comment-captcha" id="comment-captcha">Введите сумму 8 + 7</label>
-                                            <input type="text" name="captcha" value="" id="comment-captcha" class="form-control" />
-                                            <span class="error"></span>
-                                        </div>
-
-
-                                        <div class="form-actions">
-                                            <input type="button" class="btn btn-default preview" value="Предпросмотр" title="Ctrl + Enter" />
-                                            <input type="submit" class="btn btn-primary submit" value="Написать" title="Ctrl + Shift + Enter" />
-                                            <span class="time"></span>
-                                        </div>
-                                    </form>
-                                </div>
-                        </div>
+	<div id="comments-tpanel">
+		<div id="tpanel-refresh"></div>
+		<div id="tpanel-new"></div>
+	</div>
+</div><div class="ticket-comments alert alert-warning">
+    <p>Вы должны <a class="login-href" href="javascript:void(0)">авторизироваться</a>, чтобы оставить комментарий.</p>
+</div>
+                                 <div class="btn-group"><span class="btn btn-primary btn-sm"><i class="fa fa-tags"></i></span><a class="btn btn-info btn-sm" href="show-posts?tag=trade-fairs-in-russia">Выставки-ярмарки в Российской Федерации</a></div> <div class="btn-group"><span class="btn btn-primary btn-sm"><i class="fa fa-tags"></i></span><a class="btn btn-info btn-sm" href="show-posts?tag=news-cci">Новости УП Могилевское отделение БелТПП</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>        
+            </div>
+        </div>
     </section>
     <footer>
         <div class="container">
@@ -597,8 +622,10 @@
     <script src="bower_components/photobox/photobox/jquery.photobox.js"></script>
     <script src="bower_components/bxslider-4/dist/jquery.bxslider.js"></script>      
     <!-- endbower -->
-    <script src="bower_components/social-likes/dist/social-likes.min.js"></script>    
+    <script src="bower_components/social-likes/dist/social-likes.min.js"></script>  
+    <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>    
     <script type="text/javascript" src="bower_components/hc-sticky/jquery.hc-sticky.js"></script>
+    
     <!-- endbuild -->
     <!-- build:js js/custom.js -->
     <script type="text/javascript" src="assets/templates/mogilevcci/js/custom.js"></script>
