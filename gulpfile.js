@@ -43,7 +43,7 @@ gulp.task('clean', function () {
 		.pipe(clean());
 });
 // Build
-gulp.task('build', ['html', 'images', 'fonts']);
+gulp.task('build', ['html', /*'images', 'fonts'*/]);
 
 // Default task
 gulp.task('default', ['clean'], function () {
