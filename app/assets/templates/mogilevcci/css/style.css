@@ -40,12 +40,7 @@ a:hover {
     color: #cf3046;
     text-decoration: none;
 }
-hr {
-    border: none;
-    color: #122140;
-    background-color: #122140;
-    height: 1px;
-}
+
 blockquote {
     border-left: 5px solid #9f1603;
 }
@@ -2684,6 +2679,8 @@ form#newsletter {
 form#newsletter button {
     font-size: 0.875em; 
     border: none;
+    border-radius: 0px;
+    background-color: #9f1603;
 }
 form#newsletter button:hover {  
     background-color: #cf3046;
@@ -2726,7 +2723,26 @@ form#newsletter label {
     float: right;
 }
 
-.footer-social a:hover {background-color: #434343; border-color: #101b2d}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+.footer-social a:hover {background-color: #cf3046; border-color: #cf3046}
 
 /*MEDIA QUERIES*/
 @media (max-width: 768px) {

@@ -27,8 +27,7 @@
                   intervalDuration: 10000,
                   transitionDuration: 3000
               });
-          }
-
+          }          
           var sfmenu = $('ul.sf-menu');
           if (sfmenu.length) {
               $('ul.sf-menu').superfish();
