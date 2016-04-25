@@ -311,60 +311,61 @@
                                           Вы должны заполнить обязательные поля профиля, отмеченные звёздочкой<sup class="red">*</sup>.
                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <div class="col-sm-6 col-xs-12">      
+                                    <div class="form-group col-sm-6 col-xs-12">
+                                             
                                            <label class="box-contact" for="username">Имя пользователя<sup class="red">*</sup></label>    
                                            <input type="text" name="username" value="yastopchik" data-toggle="tooltip" data-placement="bottom" title="Имя пользователя, например ivan_petrov" placeholder="Имя пользователя" class="form-control" />
                                             <p class="help-block message"></p>
-                                        </div>
-                                        <div class="col-sm-6 col-xs-12">      
+                                        </div>                                        
+                                        <div class="form-group col-sm-6 col-xs-12">    
                                            <label class="box-contact" for="email">Email<sup class="red">*</sup></label>    
                                            <input type="text" name="email" value="yastopch@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Новый email нужно будет подтвердить." placeholder="Email" class="form-control" />
                                             <p class="help-block message"></p>
-                                        </div>
-                                    </div>                                      
-                                    <div class="form-group"> 
-                                        <div class="col-sm-12">  
+                                        </div>                                                                       
+                                    <div class="form-group col-sm-12">                                          
                                             <label class="box-contact" for="fullname">Полное имя<sup class="red">*</sup></label>
                                             <input type="text" name="fullname" value="Могилев БелТПП" data-toggle="tooltip" data-placement="bottom" title="Ваше полное имя, например Иван Петров." placeholder="Полное имя" class="form-control" />
                                             <p class="help-block message"></p>
-                                        </div>
+                                        
                                     </div>
-                                    <div class="form-group">
-                                        <div class="col-sm-6 col-xs-12">      
+                                    <div class="form-group col-sm-6 col-xs-12">
+                                            
                                            <label class="box-contact" for="password">Пароль<sup class="red">*</sup></label>    
                                            <input type="password" name="specifiedpassword" value="" data-toggle="tooltip" data-placement="bottom" title="Вы можете указать новый пароль." placeholder="********" class="form-control" />
                                             <p class="help-block message"></p>
-                                        </div>
-                                        <div class="col-sm-6 col-xs-12">      
+                                      </div>
+                                    <div class="form-group col-sm-6 col-xs-12">      
                                            <label class="box-contact" for="email">Повторите пароль<sup class="red">*</sup></label>    
                                            <input type="password" name="confirmpassword" value="" data-toggle="tooltip" data-placement="bottom" title="Нужно повторить новый пароль еще раз, чтобы исключить опечатку." placeholder="********" class="form-control" />
                                             <p class="help-block message"></p>
-                                        </div>
-                                    </div>  
-                                    <div class="form-group">
+                                        </div>                                     
+                                    <div class="form-group col-sm-6 col-xs-12">
+                                      
                                        <label class="box-contact" for="email">Аватар</label> 
-                                       <div class="col-sm-1 col-xs-4 avatar" data-toggle="tooltip" data-placement="top" title='Если вы не загрузите собственную картинку, аватар будет получен автоматически с сервиса <a target="_blank" href="http://gravatar.com/">Gravatar</a>'> 
+                                       <div class="avatar" data-toggle="tooltip" data-placement="top" title='Если вы не загрузите собственную картинку, аватар будет получен автоматически с сервиса <a target="_blank" href="http://gravatar.com/">Gravatar</a>'> 
                                            <img src="https://gravatar.com/avatar/b47ffc29910e9dccae5ce7815e4dcde5?s=45" id="profile-user-photo" data-gravatar="https://gravatar.com/avatar/b47ffc29910e9dccae5ce7815e4dcde5?s=45" width="45" class="img-thumbnail"/>
-                                        </div>
-                                        <div class="col-sm-5 col-xs-8">
-                                                <a href="#" class="closes" id="office-user-photo-remove" style="display:none;" data-toggle="tooltip" data-placement="top" title='Удалить изображение'>
-                                                </a>
+                                           <a href="#" class="closes" id="office-user-photo-remove" style="display:none;" data-toggle="tooltip" data-placement="top" title='Удалить изображение'>
+                                                </a>                                              
+                                           
+                                           <div class="avatar-upload">
                                                 <input type="hidden" name="photo" value="" />
                                                 <input type="file" class="filestyle" data-input="false" data-buttonText="Загрузить" data- name="newphoto" data-buttonName="btn-danger" id="profile-photo" data-bfi-disabled />
-                                           
-                                        </div>  
-                                        <div class="col-sm-6 col-xs-12">
-                                           <label class="box-contact" for="email">Доступны провайдеры</label>                                         
+                                           </div>
+                                        </div>
+                                    </div> 
+                                       <div class="form-group col-sm-6 col-xs-12"> 
+                                        
+                                           <label class="box-contact" for="email">Доступны провайдеры</label>                                                                                 <div>
                                             <a href="http://info.of.by/userprofile?hauth_action=login&amp;provider=Google" class="ha-icon google" rel="nofollow" title="Google">Google</a>
                                             <a href="http://info.of.by/userprofile?hauth_action=login&amp;provider=Twitter" class="ha-icon twitter" rel="nofollow" title="Twitter">Twitter</a>
                                             <a href="http://info.of.by/userprofile?hauth_action=login&amp;provider=Facebook" class="ha-icon facebook" rel="nofollow" title="Facebook">Facebook</a>
                                             <a href="http://info.of.by/userprofile?hauth_action=login&amp;provider=Yandex" class="ha-icon yandex" rel="nofollow" title="Yandex">Yandex</a>
-                                        </div> 
-                                    </div> 
+                                            </div>
+                                      
+                                    </div>
                                     <hr />
                                     <div class="form-group">
-                                       <div class="col-sm-12">
+                                       <div class="profile col-sm-12">
                                         <button type="submit" class="btn btn-primary">Сохранить</button>
 			                               &nbsp;&nbsp;&nbsp;&nbsp;
 			                             <a class="btn btn-danger" href="[[~[[*id]]]]?action=auth/logout">Выйти</a>
@@ -465,6 +466,7 @@
     <script src="bower_components/bxslider-4/dist/jquery.bxslider.js"></script>  
     <script src="bower_components/bootstrap-filestyle/src/bootstrap-filestyle.js"></script>        
     <!-- endbower -->
+    <script src="bower_components/bootstrap-filestyle/src/bootstrap-filestyle.js"></script> 
     <script src="bower_components/social-likes/dist/social-likes.min.js"></script> 
     <script type="text/javascript" src="bower_components/hc-sticky/jquery.hc-sticky.js"></script>
     <!-- endbuild -->

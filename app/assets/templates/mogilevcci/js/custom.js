@@ -248,6 +248,8 @@
                       top: 0,
                   });
               }
+           }
+          if (width >= 992) {
               var sidebar_secondary = $("#sidebar-secondary");
               if (sidebar_secondary.length) {
                   sidebar_secondary.hcSticky({
