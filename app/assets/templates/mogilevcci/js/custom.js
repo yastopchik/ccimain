@@ -1,5 +1,5 @@
       $(document).ready(function () {
-         /* function clickIE4() {
+         function clickIE4() {
               if (event.button == 2) {
                   return false;
               }
@@ -18,7 +18,7 @@
           } else if (document.all && !document.getElementById) {
               document.onmousedown = clickIE4;
           }
-          document.oncontextmenu = new Function("return false");*/
+          document.oncontextmenu = new Function("return false");
           
           var pgw = $('.pgwSlider');
           if (pgw.length) {

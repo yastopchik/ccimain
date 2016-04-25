@@ -28,7 +28,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 /*------ template stylization ------*/
-
+h3 {
+    font-size:1.25em
+}
+h3 {
+    font-size:1.125em
+}
 a {
     color: #9f1603;
     text-decoration: none;
@@ -1548,7 +1553,7 @@ figure.effect-zoom:hover p {
     transition: all 0s ease;
 }
 .scroll-top.animated-element {    
-    right: 50px;    
+    right: 0;    
 }
 .scroll-top.animated-element:hover {
     background-position: right 0;
@@ -1812,7 +1817,10 @@ figure.effect-zoom:hover p {
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);    
     position: relative;
 }
-.fileattach a{   
+.fileattach p, .fileattach a {
+   font-size: 0.9375em;
+}
+.fileattach a {   
     text-decoration: none;
 	text-transform: uppercase;
 }
@@ -2059,7 +2067,7 @@ figure.effect-zoom:hover p {
 
 #tpanel .refresh {
     display: block;
-    background: url("../../img/web/refresh.gif") no-repeat left top;
+    background: url("../img/refresh.gif") no-repeat left top;
     width: 28px;
     margin: 2px;
     height: 28px;
@@ -2067,7 +2075,7 @@ figure.effect-zoom:hover p {
 }
 
 #tpanel .refresh.loading {
-    background: url("../../img/web/loading.gif") no-repeat left top;
+    background: url("../img/loading.gif") no-repeat left top;
     background-size: 32px;
 }
 
@@ -2087,7 +2095,7 @@ figure.effect-zoom:hover p {
     opacity: .5;
     width: 32px;
     height: 32px;
-    background-image: url('../../img/web/refresh.gif');
+    background-image: url('../img/refresh.gif');
     background-size: 32px;
     cursor: pointer;
 }
@@ -2098,7 +2106,7 @@ figure.effect-zoom:hover p {
 
 #tpanel-refresh.loading {
     opacity: 1;
-    background-image: url('../../img/web/loading.gif');
+    background-image: url('../img/loading.gif');
     cursor: default;
 }
 
@@ -3289,6 +3297,14 @@ form#newsletter label {
 	    -webkit-transform:none; 
 	}	
 } 
+@media screen and (max-height: 575px) {
+    #rc-imageselect,
+    .g-recaptcha {
+        transform: scale(0.7);
+        -webkit-transform: scale(0.7);
+        transform-origin: 0 0;
+        -webkit-transform-origin: 0 0;
+    }
 @media (max-width: 481px) {
     .brand div.logo,
     .brand div.logo-xs {

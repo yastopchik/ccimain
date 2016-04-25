@@ -18,7 +18,6 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="assets/components/office/css/main/default.css" type="text/css" />
     <script type="text/javascript">
         OfficeConfig = {
             cssUrl: "assets/components/office/css/",
@@ -28,7 +27,6 @@
             pageId: "110"
         };
     </script>
-    <link rel="stylesheet" href="assets/components/office/css/profile/default.css" type="text/css" />
 </head>
 
 <body>
@@ -170,7 +168,6 @@
             </div>
         </div>
     </section>
-
     <section id="content">
         <div class="sub-content">
             <div class="container">
@@ -285,79 +282,78 @@
                         <div class="content">
                             <div class="subcontent">
                                 <div class="article-head">
-                                    <h2 class="box-header">Профиль пользователя</h2>
+                                    <h2 class="box-header">Авторизация</h2>
                                 </div>
-                                <form action="" method="post" role="form" id="office-profile-form" enctype="multipart/form-data">
-                                    <div class="form-group">
-                                       <div class="alert alert-warning alert alert-warning alert-white rounded">
-                                        <a href="#" class="closes" data-dismiss="alert" aria-label="close"><i class="fa fa-times"></i></a>
-                                        <div class="icon">
-                                           <i class="fa fa-exclamation-triangle"></i>
-                                        </div>
-                                          Вы должны заполнить обязательные поля профиля, отмеченные звёздочкой<sup class="red">*</sup>.
-                                       </div>
-                                    </div>
-                                    <div class="form-group col-sm-6 col-xs-12">
-                                             
-                                           <label class="box-contact" for="username">Имя пользователя<sup class="red">*</sup></label>    
-                                           <input type="text" name="username" value="yastopchik" data-toggle="tooltip" data-placement="bottom" title="Имя пользователя, например ivan_petrov" placeholder="Имя пользователя" class="form-control" />
-                                            <p class="help-block message"></p>
-                                        </div>                                        
-                                        <div class="form-group col-sm-6 col-xs-12">    
-                                           <label class="box-contact" for="email">Email<sup class="red">*</sup></label>    
-                                           <input type="text" name="email" value="yastopch@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Новый email нужно будет подтвердить." placeholder="Email" class="form-control" />
-                                            <p class="help-block message"></p>
-                                        </div>                                                                       
-                                    <div class="form-group col-sm-12">                                          
-                                            <label class="box-contact" for="fullname">Полное имя<sup class="red">*</sup></label>
-                                            <input type="text" name="fullname" value="Могилев БелТПП" data-toggle="tooltip" data-placement="bottom" title="Ваше полное имя, например Иван Петров." placeholder="Полное имя" class="form-control" />
-                                            <p class="help-block message"></p>
-                                        
-                                    </div>
-                                    <div class="form-group col-sm-6 col-xs-12">
-                                            
-                                           <label class="box-contact" for="password">Пароль<sup class="red">*</sup></label>    
-                                           <input type="password" name="specifiedpassword" value="" data-toggle="tooltip" data-placement="bottom" title="Вы можете указать новый пароль." placeholder="********" class="form-control" />
-                                            <p class="help-block message"></p>
-                                      </div>
-                                    <div class="form-group col-sm-6 col-xs-12">      
-                                           <label class="box-contact" for="email">Повторите пароль<sup class="red">*</sup></label>    
-                                           <input type="password" name="confirmpassword" value="" data-toggle="tooltip" data-placement="bottom" title="Нужно повторить новый пароль еще раз, чтобы исключить опечатку." placeholder="********" class="form-control" />
-                                            <p class="help-block message"></p>
-                                        </div>                                     
-                                    <div class="form-group col-sm-6 col-xs-12">
-                                      
-                                       <label class="box-contact" for="email">Аватар</label> 
-                                       <div class="avatar" data-toggle="tooltip" data-placement="top" title='Если вы не загрузите собственную картинку, аватар будет получен автоматически с сервиса <a target="_blank" href="http://gravatar.com/">Gravatar</a>'> 
-                                           <img src="https://gravatar.com/avatar/b47ffc29910e9dccae5ce7815e4dcde5?s=45" id="profile-user-photo" data-gravatar="https://gravatar.com/avatar/b47ffc29910e9dccae5ce7815e4dcde5?s=45" width="45" class="img-thumbnail"/>
-                                           <a href="#" class="closes" id="office-user-photo-remove" style="display:none;" data-toggle="tooltip" data-placement="top" title='Удалить изображение'>
-                                                </a>                                              
-                                           
-                                           <div class="avatar-upload">
-                                                <input type="hidden" name="photo" value="" />
-                                                <input type="file" class="filestyle" data-input="false" data-buttonText="Загрузить" data- name="newphoto" data-buttonName="btn-danger" id="profile-photo" data-bfi-disabled />
-                                           </div>
-                                        </div>
-                                    </div> 
-                                       <div class="form-group col-sm-6 col-xs-12"> 
-                                        
-                                           <label class="box-contact" for="email">Доступны провайдеры</label>                                                                                 <div>
-                                            <a href="http://info.of.by/userprofile?hauth_action=login&amp;provider=Google" class="ha-icon google" rel="nofollow" title="Google">Google</a>
-                                            <a href="http://info.of.by/userprofile?hauth_action=login&amp;provider=Twitter" class="ha-icon twitter" rel="nofollow" title="Twitter">Twitter</a>
-                                            <a href="http://info.of.by/userprofile?hauth_action=login&amp;provider=Facebook" class="ha-icon facebook" rel="nofollow" title="Facebook">Facebook</a>
-                                            <a href="http://info.of.by/userprofile?hauth_action=login&amp;provider=Yandex" class="ha-icon yandex" rel="nofollow" title="Yandex">Yandex</a>
+                                <div class="row" id="office-auth-form">
+                                    <div class="office-auth-login-wrapper">
+                                        <form method="post" class="form-horizontal" id="office-auth-login">
+                                            <div class="form-group">
+                                                <label for="office-auth-login-email" class="col-md-2 control-label">Логин&nbsp;<span class="red">*</span></label>
+                                                <div class="col-md-10 col-xs-12">
+                                                    <input type="text" name="username" data-toggle="tooltip" data-placement="bottom" title="Укажите логин или email, которые вы использовали при регистрации." placeholder="" class="form-control" id="office-auth-login-username" value="" />
+                                                </div>
                                             </div>
-                                      
+                                            <div class="form-group">
+                                                <label for="office-auth-login-password" class="col-md-2 control-label">Пароль</label>
+                                                <div class="col-md-10 col-xs-12">
+                                                    <input type="password" name="password" data-toggle="tooltip" data-placement="bottom" title="Если вы не помните свой пароль - просто оставьте это поле пустым и вы получите новый, вместе со ссылкой на активацию." placeholder="" class="form-control" id="office-login-form-password" value="" />
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="action" value="auth/formLogin" />
+                                            <input type="hidden" name="return" value="" />
+                                            <div class="form-group">
+                                               <div class="col-md-offset-2 col-md-10">
+                                                <button type="submit" class="btn btn-primary">Вход</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <div class="col-md-offset-1 indent-3" data-toggle="tooltip" data-placement="bottom" title="Вы можете использовать быстрый вход через социальные сети, при условии, что вы уже зарегистрировались через почту и привязали какой-то из сервисов к своей учётной записи.">
+                                            <label class="col-md-2 control-label">Вход через</label>
+                                            <div class="col-md-9 col-xs-12"><a href="http://mogilevcci.by/userprofile?hauth_action=login&amp;provider=Google" class="ha-icon google" rel="nofollow" title="Google">Google</a>
+                                                <a href="http://mogilevcci.by/userprofile?hauth_action=login&amp;provider=Yandex" class="ha-icon yandex" rel="nofollow" title="Yandex">Yandex</a>
+                                                <a href="http://mogilevcci.by/userprofile?hauth_action=login&amp;provider=Twitter" class="ha-icon twitter" rel="nofollow" title="Twitter">Twitter</a>
+                                                <a href="http://mogilevcci.by/userprofile?hauth_action=login&amp;provider=Facebook" class="ha-icon facebook" rel="nofollow" title="Facebook">Facebook</a>
+                                            </div>
+                                        </div>
+                                    </div>                                  
+                                    
+                                    <div class="office-auth-register-wrapper">
+                                        <h3 class="title box-header align-center">Регистрация</h3>
+                                        <form method="post" class="form-horizontal" id="office-auth-register">
+                                            <div class="form-group">
+                                                <label for="office-auth-register-email" class="col-md-2 control-label">Email&nbsp;<span class="red">*</span></label>
+                                                <div class="col-md-10 col-xs-12">
+                                                    <input type="email" name="email" data-toggle="tooltip" data-placement="bottom" title="На указанный email придёт письмо со ссылкой для активации." placeholder="" class="form-control" id="office-auth-register-email" value="" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="office-auth-register-password" class="col-md-2 control-label">Пароль</label>
+                                                <div class="col-md-10 col-xs-12">
+                                                    <input type="password" name="password" data-toggle="tooltip" data-placement="bottom" title="Вы можете указать свой пароль, или оставить это поле пустым и тогда он будет сгенерирован автоматически." placeholder="" class="form-control" id="office-register-form-password" value="" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="office-auth-register-username" class="col-md-2 control-label">Логин</label>
+                                                <div class="col-md-10 col-xs-12">
+                                                    <input type="text" name="username" data-toggle="tooltip" data-placement="bottom" title="Вы можете указать отдельный логин, чтобы не использовать email для входа." placeholder="" class="form-control" id="office-register-form-username" value="" />
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="office-auth-register-fullname" class="col-md-2 control-label">Имя</label>
+                                                <div class="col-md-10">
+                                                    <input type="text" name="fullname" data-toggle="tooltip" data-placement="bottom" title="Ваше имя, для отображения на сайте." placeholder="" class="form-control" id="office-register-form-fullname" value="" />
+                                                </div>
+                                            </div>
+                                            <input type="hidden" name="action" value="auth/formRegister" />
+                                            <div class="form-group">
+                                               <div class="col-md-offset-2 col-md-10">
+                                                <button type="submit" class="btn btn-danger">Регистрация</button>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <hr />
-                                    <div class="form-group">
-                                       <div class="profile col-sm-12">
-                                        <button type="submit" class="btn btn-primary">Сохранить</button>
-			                               &nbsp;&nbsp;&nbsp;&nbsp;
-			                             <a class="btn btn-danger" href="[[~[[*id]]]]?action=auth/logout">Выйти</a>
-                                    </div></div>
-                                </form>
-                             </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
