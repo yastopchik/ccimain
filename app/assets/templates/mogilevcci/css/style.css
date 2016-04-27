@@ -1759,6 +1759,7 @@ figure.effect-zoom:hover p {
 }
 .avatar-upload, .avatar-upload .input-group, .avatar-upload input[type="file"] {
     display: inline;
+    max-width: 150px
 }
 .profile {
     margin-top: 20px;
@@ -3297,8 +3298,7 @@ form#newsletter label {
 	    -webkit-transform:none; 
 	}	
 } 
-@media screen and (max-height: 575px) {
-    #rc-imageselect,
+@media screen and (max-height: 575px) {    
     .g-recaptcha {
         transform: scale(0.7);
         -webkit-transform: scale(0.7);
