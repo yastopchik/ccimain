@@ -3027,8 +3027,11 @@ form#newsletter label {
         height: 204px
     }
     .container {
-        padding: 0 5px;
-    }
+        padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    }    
     .header-block-pad {
         padding: 18px 23px 14px 22px;
     }
@@ -3310,6 +3313,12 @@ form#newsletter label {
         transform-origin: 0 0;
         -webkit-transform-origin: 0 0;
     }
+.grid figure {		
+	width: 350px;
+	height: auto;	
+    margin: 0 0 0 -175px;
+}
+}
 @media (max-width: 481px) {
     .brand div.logo,
     .brand div.logo-xs {
@@ -3326,6 +3335,13 @@ form#newsletter label {
     }
     .navbar-toggle {
         margin-right: 0;        
+    }
+    .grid figure {
+        width: 300px;       
+        margin: 0 0 0 -165px;
+    }
+    figure.effect-zoom img {
+        height: auto
     }
     .navbar_ .navbar-inner_ {
     padding: 2px 0 8px 0px;
@@ -3345,12 +3361,7 @@ form#newsletter label {
     }
     .albums_grid li img {
         min-height: 203px
-    }
-    .grid figure {
-        width: 100%;
-        max-width: 300px;
-        margin: 0 0 0 -160px;
-    }
+    }   
     figure.effect-zoom img {
         width: 100%;
     }
@@ -3389,10 +3400,7 @@ form#newsletter label {
     }
     .list-news-model {
         margin-left: 0px;
-    }
-    .grid figure {
-        margin: 0 0 0 -165px;
-    }
+    }  
     #album-items.gallery .loaded{
         width: 100%;        
     }
@@ -3409,6 +3417,10 @@ form#newsletter label {
     #auth, #registration {
        width: 322px;
     }
+    .grid figure {
+        width: 270px;       
+        margin: 0 0 0 -150px;
+    }
 }
 @media (max-width: 320px) {
     .brand div.logo-xs span {
@@ -3418,8 +3430,9 @@ form#newsletter label {
         font-size: 0.6875em; 
         
     }    
-    .grid figure {
-        margin: 0 0 0 -155px;
+   .grid figure {
+        width: 270px;       
+        margin: 0 0 0 -150px;
     }
 }
 @media (max-width: 319px) {
