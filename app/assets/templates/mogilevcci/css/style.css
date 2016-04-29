@@ -3018,10 +3018,7 @@ form#newsletter label {
         font-size: 1em;
     }
 }
-@media (max-width: 767px) {
-    h2 {
-        font-size: 1em;
-    }
+@media (max-width: 767px) {    
     .header-block-pad .babel_links {
         float: left;
         padding-bottom: 5px;
@@ -3030,7 +3027,7 @@ form#newsletter label {
         height: 204px
     }
     .container {
-        padding: 0 20px;
+        padding: 0 5px;
     }
     .header-block-pad {
         padding: 18px 23px 14px 22px;
@@ -3205,7 +3202,10 @@ form#newsletter label {
     .nav-collapse_ .nav ul ul li a {
         padding: 7px 10px 8px 40px;
         text-transform: none;
-    }  
+    }     
+    .content .subcontent, .list-news {
+        padding: 10px;
+    }
     .list-news, .wbg .list-news {
         min-height: 150px;
     }
@@ -3238,13 +3238,18 @@ form#newsletter label {
     }
     #album-items.gallery .loaded {
         width: 48.7%;
-    }  
-    .pgwSlider .ps-current, .caption h3, .wbg .list-news-model,  .wbg .list-news-more, .view p, form#newsletter label, .brand span, .header-block .babel_links, #sidebar-left ul.sidebar-menu > li, .wbg .list-news-options, figure.effect-zoom p, .nav-collapse_ .nav li, .nav-collapse_ .nav > li > a, .breadcrumb li, #sidebar-secondary ul.sidebar-menu > li {
-        font-size: 1em;
-    }    
-    .single-promo {
+    } 
+    .single-promo, h2 {
         font-size: 1.125em;
+    }     
+    .pgwSlider .ps-current, .caption h3, .wbg .list-news-model,  .wbg .list-news-more, .view p, form#newsletter label, .brand span, .header-block .babel_links, #sidebar-left ul.sidebar-menu > li, .wbg .list-news-options, figure.effect-zoom p, .nav-collapse_ .nav li, .nav-collapse_ .nav > li > a, .breadcrumb li, #sidebar-secondary ul.sidebar-menu > li, .list-news-model {
+        font-size: 0.9375em;
+        line-height: 1.4;
+    }    
+    .fileattach p, .fileattach a {
+        font-size: 0.75em;
     }
+    
     /**/
 }
 @media (max-width: 625px) {
@@ -3326,7 +3331,7 @@ form#newsletter label {
     padding: 2px 0 8px 0px;
 }
     .pgwSlider.narrow .ps-current {
-        font-size: 0.875em; 
+        font-size: 0.75em; 
     }
     .cols-1 .grid-1,
     .view-first img {

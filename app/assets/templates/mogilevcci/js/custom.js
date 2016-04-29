@@ -18,14 +18,13 @@
           } else if (document.all && !document.getElementById) {
               document.onmousedown = clickIE4;
           }
-          document.oncontextmenu = new Function("return false");*/
-          
+          document.oncontextmenu = new Function("return false");*/          
           var pgw = $('.pgwSlider');
           if (pgw.length) {
               $('.pgwSlider').pgwSlider({
                   maxHeight: 425,
                   intervalDuration: 10000,
-                  transitionDuration: 3000
+                  transitionDuration: 3000,                 
               });
           }          
           var sfmenu = $('ul.sf-menu');
